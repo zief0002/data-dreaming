@@ -1,0 +1,16 @@
+---
+title: "Deprecating Statistical Significance: Toward Better Science"
+author: "~"
+date: '2019-04-26'
+tags: ["Science", "History"]
+header:
+  image: ""
+  caption: ""
+---
+
+
+On Friday April 26, 2019 I gave an invited talk to the [Department of Speech-Language-Hearing Sciences](https://cla.umn.edu/slhs) in their Pro-Sem series. These are really neat as they are organized by the graduate students. This is the third one of these I have given over the years and each is a treat.
+
+In this talk I spoke about the ASA's recent call for the deprecation of "statistical significance" and all its related variants (e.g., "significantly different," "*p* < 0.05", and "nonsignificant", asterisks in a table). Citing articles in the recent volume of [The American Statistician](https://www.tandfonline.com/toc/utas20/73/sup1) and drawing on the historical conflagration that is NHST I laid out why scientists and statisticians have an issue with "statistical significance" and also proposed some ideas for moving forward based on those proposed by [Ronald L. Wasserstein, Allen L. Schirm & Nicole A. Lazar](https://www.tandfonline.com/doi/full/10.1080/00031305.2019.1583913).
+
+The slides for the talk are available [here](https://github.com/zief0002/website/raw/master/public/files/2019-slhs-prosem.pdf).

@@ -1,0 +1,342 @@
+---
+title: "Minnesota State High School Boys Hockey Predictions"
+author: "~"
+date: 2018-03-03
+tags: ["Hockey", "Elo", "R"]
+header:
+  image: "headers/km-klemencic-header.jpg"
+  caption: "Image Credit: A flickr photo by K.M. Klemencic"
+---
+
+The state high school boys hockey tournament, scheduled for March 7&ndash;10, is one of the premiere sporting events in the state of Minnesota. According to [Wikipedia](https://en.wikipedia.org/wiki/High_school_boys_ice_hockey_in_Minnesota), this event has drawn over 100,000 spectators 22 times in its history, eclipsing 135,000 spectoators in 2015. Many national caliber players played high school hockey in Minnesota, several taking part in the state tournament. Names like Neal Broten, Herb Brooks, and T. J. Oshie are alumni of state tournaments past.
+
+Minnesota high school hockey teams are split into two classes based on school enrollment sizes; the largest 64 schools are classified as Class AA and the remainder are classified as Class A. Each of these classes are subdivided into eight sections. (Sections are based on a combination of school location and competitivness.)
+
+This year's state tournament features 16 teams (8 from Class A and 8 from Class AA) that qualified for the tournament by winning their section tournament. Within each class, the top five teams are seeded (ranked) by the coaches of the teams that qualified for the state tournament. The \#4 and \#5 seeds play each other and the remaining three teams in each class are assigned by lottery to play the \#1, \#2, and \#3 seeded teams. The seeds in the 2018 tournament, announced on March 3, are:
+
+```{r echo=FALSE}
+seeds = data.frame(
+  Seed = 1:8,
+  A = c("Hermantown", "Mahtomedi", "Orono", "Alexandria", "Thief River Falls", "Litchfield/Dassel-Cokato", "Mankato East/Loyola", "Monticello"),
+  AA = c("Minnetonka", "Edina", "Duluth East", "St. Thomas Academy", "Centennial", "St. Michael-Albertville (STMA)", "Lakeville North", "Hill-Murray")
+)
+
+knitr::kable(seeds, caption = "Top eight seeds based on the 2018 state tournament bracket. The 6&ndash;8 seeds are based on the opponents the teams were assigned to in the lottery.", align = c("c", "l", "l"))
+```
+
+I wanted to make compute probabilities, &agrave; la fivethirtyeight, for which each team's chances of winning the state tournament. The methodology I used to do this was:
+
+- Use the regular season and section tournament game data to compute Elo ratings for all the teams.
+- Use these Elo rating to simulate 10,000 state tournament winners.
+- Each team's probability of winning was then computed as the proportion of times that team won the tournament in the simulation. 
+
+## Scraping the Game-Level Data
+
+To begin, I had to obtain the game data for both the regular season and the section tournaments. [MN Hockey Hub](http://www.mnhockeyhub.com/) is a website that has the results for all high school hockey games played in Minnesota. I used the **rvest** package to scrape these data. Unfortunately, MN Hockey Hub separates their regular season and section playoffs, so I had to run the scrape on each separately and then combine the data.
+
+```{r eval=FALSE}
+# Beginning and ending dates for regular season games
+start = as.Date("2017/11/22", format = "%Y/%m/%d")
+end   = as.Date("2018/02/17",format="%Y/%m/%d")
+
+# Create an empty list with 101 elements
+results = rep(list(NA), 88) 
+
+# Initialize values
+theDate = start
+i = 1
+
+# Loop over dates
+while (theDate <= end){
+  url = paste0("http://www.mnhockeyhub.com/schedule/day/league_instance/60876/",
+               format(theDate,"%Y/%m/%d"),
+              "?subseason=434877&referrer=3596811"
+               )
+  
+  results[[i]] = as.data.frame(
+    url %>% 
+      read_html() %>% 
+      html_table()
+    ) %>% 
+    mutate(date = theDate)
+  theDate = theDate + 1 
+  i = i + 1
+}
+
+## Scrape section games
+start = as.Date("2018/02/17", format = "%Y/%m/%d")
+end   = as.Date("2018/03/02",format="%Y/%m/%d")
+results2 = rep(list(NA), 14) 
+theDate = start
+i = 1
+
+while (theDate <= end){
+  url = paste0("http://www.mnhockeyhub.com/schedule/day/league_instance/60876/",
+               format(theDate,"%Y/%m/%d"),
+               "?subseason=486996"
+  )
+  
+  results2[[i]] = as.data.frame(
+    url %>% 
+      read_html() %>% 
+      html_table()
+  ) %>% 
+    mutate(date = theDate)
+  theDate = theDate + 1 
+  i = i + 1
+}
+```
+
+I then took these scraped data, and put them into a dataframe using `do.call()` and formatted the data frame using **dplyr** functions.
+
+```{r eval=FALSE}
+# Transform lists to data frames
+hockey_reg_season = do.call(rbind, results)
+hockey_sections = do.call(rbind, results2)
+
+# Format the data
+library(dplyr)
+
+hockey = rbind(hockey_reg_season, hockey_sections) %>%
+  select(date,
+         home = Home,
+         home_score = H,
+         visitor = Visitor,
+         visitor_score = V,
+         location = Location
+  ) %>%
+  mutate(
+    home_score = as.integer(home_score),
+    visitor_score = as.integer(visitor_score)
+  ) %>%
+  tidyr::drop_na()
+```
+
+At this point I did a data integrity check. The first thing I noticed was that there were games in the data on every day from the start of the regular season through the section playoffs. I knew somethibng was wrong as high school teams do not play games on Sundays or on holidays. In looking at those days, it turned out the web scraper just duplicated games from future days (e.g., there was no game on 12-25-2017, so it just skipped ahead to the next day a game was played, 12-26-2017, and put those games in the December 25th date. It then also put them in the 12-26-2017 date as well.) Rather than try to program a solution in R, I outputted the data to a CSV file and manually removed the few dates that there were no games played.
+
+```{r echo=FALSE, message=FALSE}
+library(dplyr)
+hockey = readr::read_csv("~/Dropbox/data/mn-hockey-boys-2018-03-09.csv") %>%
+  filter(season != "State Tournament")
+hockey
+```
+
+## Compute Elo Ratings
+
+After scraping and formatting the data, I used the **elo** package to compute Elo ratings. The [package vignette](https://cran.r-project.org/web/packages/elo/vignettes/elo.html) is helpful for understanding the syntax used to fit different Elo models. The `elo.run()` function initializes each team's Elo rating to 1500, and then updates each team's rating after every game played based on whether the team won or lost. In the model I fitted, I also accounted for the score differential.
+
+The rate at which each team's Elo rating changes based on a win or loss is referred to as the $K$-factor. Larger values of $K$ have a bigger change in the Elo rating. I didn't think that result of any one hockey game should impact the rating too greatly, so I chose a $K$-factor of 15. Rather than set this to a constant value for each game, the model I used adjusted this factor based on the score differential, mathematically,
+
+$$
+15 \times \ln(| \mathrm{Score}_{\mathrm{Home}} - \mathrm{Score}_{\mathrm{Visitor}} |) + 1.
+$$
+
+Taking the natural logarithm helps to lessen the impact of games where one team runs up the score on another team. 
+
+I also considered whether Elo ratings needed to take into account a home ice advantage. The empirical data indicated that the home team in the 2017&ndash;2018 season did not have an advantage, winning about 48\% of the games played. Thus, ultimately, I decided not to include any home ice advantage (or disadvantage).
+
+Since during the regular season teams play games with other teams that are in other classes, I opted to fit one model taht included teams from both classes rather than fit the model within class.
+
+```{r}
+library(elo)
+elo_reg_season = elo.run(score(home_score, visitor_score) ~ home + visitor +
+                    k(15*log(abs(home_score - visitor_score) + 1)), data = hockey)
+```
+
+The final Elo ratings and rankings for teams that qualified for the state tournament are shown below.
+
+```{r echo=FALSE}
+e = data.frame(final.elos(elo_reg_season))
+names(e) = "Elo"
+     
+class_a = e %>% 
+  mutate(Team = row.names(e)) %>% 
+  arrange(desc(Elo)) %>%
+  mutate(Rank = 1:nrow(e)) %>%
+  filter(Team %in% c("Hermantown", "Mahtomedi", "Orono", "Alexandria", "Thief River Falls", "Litchfield/Dassel-Cokato", "Mankato East", "Monticello")) %>%
+  select(Team, Elo, Rank)
+
+knitr::kable(class_a, caption = "Elo ratings and rankings for the eight Class A teams that qualified for the state tournament.", align = c("l", "c", "c"))
+```
+
+```{r echo=FALSE}
+class_aa = e %>% 
+  mutate(Team = row.names(e)) %>% 
+  arrange(desc(Elo)) %>%
+  mutate(Rank = 1:nrow(e)) %>%
+  filter(Team %in% c("Minnetonka", "Edina", "Duluth East", "St. Thomas Academy", "Centennial", "STMA", "Lakeville North", "Hill-Murray")) %>%
+  select(Team, Elo, Rank)
+
+knitr::kable(class_aa, caption = "Elo ratings and rankings for the eight Class AA teams that qualified for the state tournament.", align = c("l", "c", "c"))
+```
+
+Comparing these to the actual tournament seeds, we see several differences in the top four seeds. In Class A, the coaches included Alexandria in the top five, while our Elo model put Monticello in the top four. In Class AA, the Elo model and the coaches selected the same top five teams, but had a different rank ordering for those teams. There are also some ranking differences between the coaches picks and our Elo model for the other teams. 
+
+
+
+## Simulate the State Tournament
+
+We can now use these Elo ratings to determine the probability that one team would beat another. For example, in the Class A quarterfinal game between Hermantown (\#1) and Monticello (\#8), Hermantown's probability of beating Monticello is 0.574 .
+
+```{r}
+predict(elo_reg_season, data.frame(home = "Hermantown", visitor = "Monticello"))
+```
+
+I simulated the state tournament by using a random-number generator to determine the winner of each game. For instance, to simulate the Hermantown/Monticello game, I used the `runif()` function to generate a random number drawn from the uniform distribution between 0 and 1. If the result is less than or equal to 0.574, Hermantown is the winner; if not, Monticello wins. The syntax for simulating the Class A state tournament 10,000 times is below.
+
+```{r cache=TRUE}
+# Enter teams in rank order
+team_1 = "Hermantown"
+team_2 = "Mahtomedi"
+team_3 = "Orono"
+team_4 = "Alexandria"
+team_5 = "Thief River Falls"
+team_6 = "Litchfield/Dassel-Cokato"
+team_7 = "Mankato East"
+team_8 = "Monticello"
+
+# Set up empty vector to store winner in
+champion = rep(NA, 10000)
+
+
+for(i in 1:10000){
+  
+  ### SIMULATE THE QUARTEFINALS
+  
+  # Predict Game 1 winner: team_1 vs. team_8
+  p_game_1 = predict(elo_reg_season, data.frame(home = team_1, visitor = team_8))
+  w_game_1 = ifelse(runif(1, min = 0, max = 1) <= p_game_1, team_1, team_8)
+  
+  # Predict Game 2 winner: team_4 vs. team_4
+  p_game_2 = predict(elo_reg_season, data.frame(home = team_4, visitor = team_5))
+  w_game_2 = ifelse(runif(1, min = 0, max = 1) <= p_game_2, team_4, team_5)
+  
+  # Predict Game 3 winner: team_3 vs. team_6
+  p_game_3 = predict(elo_reg_season, data.frame(home = team_3, visitor = team_6))
+  w_game_3 = ifelse(runif(1, min = 0, max = 1) <= p_game_3, team_3, team_6)
+  
+  # Predict Game 4 winner: team_2 vs. team_7
+  p_game_4 = predict(elo_reg_season, data.frame(home = team_2, visitor = team_7))
+  w_game_4 = ifelse(runif(1, min = 0, max = 1) <= p_game_4, team_2, team_7)
+  
+  
+  ### SIMULATE THE SEMIFINALS
+  
+  # Predict Game 5 winner: winner Game 1 vs. winner Game 2
+  p_game_5 = predict(elo_reg_season, data.frame(home = w_game_1, visitor = w_game_2))
+  w_game_5 = ifelse(runif(1, min = 0, max = 1) <= p_game_5, w_game_1, w_game_2)
+  
+  # Predict Game 6 winner: winner Game 3 vs. winner Game 4
+  p_game_6 = predict(elo_reg_season, data.frame(home = w_game_4, visitor = w_game_3))
+  w_game_6 = ifelse(runif(1, min = 0, max = 1) <= p_game_6, w_game_4, w_game_3)
+  
+  
+  ### SIMULATE THE FINALS
+  
+  # Predict Game 5 winner: winner Game 1 vs. winner Game 2
+  p_game_7 = predict(elo_reg_season, data.frame(home = w_game_5, visitor = w_game_6))
+  w_game_7 = ifelse(runif(1, min = 0, max = 1) <= p_game_7, w_game_5, w_game_6)
+  
+  champion[i] = w_game_7
+  
+}
+```
+
+Now I can compute the proportion of times each team "won" the state tournament.
+
+```{r eval=FALSE}
+data.frame(champion) %>% 
+  group_by(champion) %>%
+  summarize(Probability = length(champion)/10000) %>%
+  arrange(desc(Probability))
+```
+
+```{r echo=FALSE}
+A = data.frame(champion) %>% 
+  group_by(champion) %>%
+  summarize(Probability = length(champion)/10000) %>%
+  arrange(desc(Probability))
+
+knitr::kable(A, caption = "Probability that each of the eight Class A teams will win the state tournament.", align = c("l", "c"), col.names = c("Team", "Probability"))
+```
+
+Based on these simulations, Mahtomedi, Hermantown and Orono all have about an equal chance of winning the Class A tournament.
+
+I also carried out a similar simulation for the Class AA tournament.
+
+```{r cache=TRUE}
+# Enter teams in rank order
+team_1 = "Minnetonka"
+team_2 = "Edina"
+team_3 = "Duluth East"
+team_4 = "St. Thomas Academy"
+team_5 = "Centennial"
+team_6 = "STMA"
+team_7 = "Lakeville North"
+team_8 = "Hill-Murray"
+
+# Set up empty vector to store winner in
+champion2 = rep(NA, 10000)
+
+
+for(i in 1:10000){
+  
+  ### SIMULATE THE QUARTEFINALS
+  
+  # Predict Game 1 winner: team_1 vs. team_8
+  p_game_1 = predict(elo_reg_season, data.frame(home = team_1, visitor = team_8))
+  w_game_1 = ifelse(runif(1, min = 0, max = 1) <= p_game_1, team_1, team_8)
+  
+  # Predict Game 2 winner: team_4 vs. team_4
+  p_game_2 = predict(elo_reg_season, data.frame(home = team_4, visitor = team_5))
+  w_game_2 = ifelse(runif(1, min = 0, max = 1) <= p_game_2, team_4, team_5)
+  
+  # Predict Game 3 winner: team_3 vs. team_6
+  p_game_3 = predict(elo_reg_season, data.frame(home = team_3, visitor = team_6))
+  w_game_3 = ifelse(runif(1, min = 0, max = 1) <= p_game_3, team_3, team_6)
+  
+  # Predict Game 4 winner: team_2 vs. team_7
+  p_game_4 = predict(elo_reg_season, data.frame(home = team_2, visitor = team_7))
+  w_game_4 = ifelse(runif(1, min = 0, max = 1) <= p_game_4, team_2, team_7)
+  
+  
+  ### SIMULATE THE SEMIFINALS
+  
+  # Predict Game 5 winner: winner Game 1 vs. winner Game 2
+  p_game_5 = predict(elo_reg_season, data.frame(home = w_game_1, visitor = w_game_2))
+  w_game_5 = ifelse(runif(1, min = 0, max = 1) <= p_game_5, w_game_1, w_game_2)
+  
+  # Predict Game 6 winner: winner Game 3 vs. winner Game 4
+  p_game_6 = predict(elo_reg_season, data.frame(home = w_game_4, visitor = w_game_3))
+  w_game_6 = ifelse(runif(1, min = 0, max = 1) <= p_game_6, w_game_4, w_game_3)
+  
+  
+  ### SIMULATE THE FINALS
+  
+  # Predict Game 5 winner: winner Game 1 vs. winner Game 2
+  p_game_7 = predict(elo_reg_season, data.frame(home = w_game_5, visitor = w_game_6))
+  w_game_7 = ifelse(runif(1, min = 0, max = 1) <= p_game_7, w_game_5, w_game_6)
+  
+  champion2[i] = w_game_7
+  
+}
+```
+
+```{r eval=FALSE}
+data.frame(champion2) %>% 
+  group_by(champion2) %>%
+  summarize(Probability = length(champion2)/10000) %>%
+  arrange(desc(Probability))
+```
+
+```{r echo=FALSE}
+AA = data.frame(champion2) %>% 
+  group_by(champion2) %>%
+  summarize(Probability = length(champion2)/10000) %>%
+  arrange(desc(Probability))
+
+knitr::kable(AA, caption = "Probability that each of the eight Class AA teams will win the state tournament.", align = c("l", "c"), col.names = c("Team", "Probability"))
+```
+
+The simulation results suggest that both Edina and St. Thomas Academy have a pretty good shot of winning the tournament, and Minnetonka and Duluth East are also in the mix.
+

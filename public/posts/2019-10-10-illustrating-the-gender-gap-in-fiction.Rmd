@@ -1,0 +1,22 @@
+---
+title: Illustrating the Gender Gap in Fiction
+author: Andy
+date: '2019-10-10'
+slug: illustrating-the-gender-gap-in-fiction
+categories: []
+tags:
+  - Miscellaneous
+header:
+  caption: ''
+  image: ''
+  preview: yes
+---
+
+[Loganberry Books](http://www.loganberrybooks.com/), an independent bookstore in Cleveland, intitiated a social experiment for in March 2019 called *Illustrating the Gender Gap in Fiction*. This experiment, in honor of Women's History Month, was decribed as, "a live performance art project where we will shelve the works by men in our LitArts room backwards". What a cool idea, and very eye-opening.
+
+<figure>
+<img src="https://img.huffingtonpost.com/asset/58bef44c1500003b16abdba9.jpeg?cache=llc8jv8akx&ops=scalefit_720_noupscale" alt="" width="70%"/>
+<figcaption style="text-align:center;">Shelves of backward books emphasize the gender imbalance in literature. </figcaption>
+</figure>
+
+This would likely be worse if the experiment was carried out with mathematics, statistics, and computer science books. May have to replicate this in my office at some point.

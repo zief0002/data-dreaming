@@ -1,0 +1,302 @@
+---
+title: "Minnesota State High School Boys Hockey Predictions (Updated Quarterfinals)"
+author: "~"
+date: 2018-03-08
+tags: ["Hockey", "Elo", "R"]
+header:
+  image: "headers/km-klemencic-header.jpg"
+  caption: "Image Credit: A flickr photo by K.M. Klemencic"
+---
+
+
+
+<p>In a <a href="/post/2018-03-03-boys-hockey/">previous post</a>, I used Monte Carlo simulation to predict the winner of the 2018 Minnesota State High School Boys Hockey tournament. Now that the quarterfinal games have been played, I thought I would update my predictions. The process for this is to:</p>
+<ul>
+<li>Update the Elo ratings based on the quarterfinal games;</li>
+<li>Re-simulate the tournament</li>
+</ul>
+<p>I simulated the Class A state tournament 10,000 times using the same process as described in my <a href="/post/2018-03-03-boys-hockey/">previous post</a>.</p>
+<div id="class-a-tornament" class="section level2">
+<h2>Class A Tornament</h2>
+<table>
+<caption><span id="tab:unnamed-chunk-2">Table 1: </span>Original (at beginning of tournament) and updated Elo ratings (after the quartefinal games) for the eight Class A teams that qualified for the state tournament.</caption>
+<thead>
+<tr class="header">
+<th align="left">Team</th>
+<th align="center">Original Elo</th>
+<th align="center">Updated Elo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Hermantown</td>
+<td align="center">1639.196</td>
+<td align="center">1657.756</td>
+</tr>
+<tr class="even">
+<td align="left">Orono</td>
+<td align="center">1624.538</td>
+<td align="center">1624.505</td>
+</tr>
+<tr class="odd">
+<td align="left">Mahtomedi</td>
+<td align="center">1609.513</td>
+<td align="center">1619.517</td>
+</tr>
+<tr class="even">
+<td align="left">Alexandria</td>
+<td align="center">1587.179</td>
+<td align="center">1571.723</td>
+</tr>
+<tr class="odd">
+<td align="left">Monticello</td>
+<td align="center">1571.198</td>
+<td align="center">1569.096</td>
+</tr>
+<tr class="even">
+<td align="left">Thief River Falls</td>
+<td align="center">1562.803</td>
+<td align="center">1568.797</td>
+</tr>
+<tr class="odd">
+<td align="left">Mankato East</td>
+<td align="center">1551.141</td>
+<td align="center">1549.453</td>
+</tr>
+<tr class="even">
+<td align="left">Litchfield/Dassel-Cokato</td>
+<td align="center">1530.773</td>
+<td align="center">1515.494</td>
+</tr>
+</tbody>
+</table>
+<pre class="r"><code># Enter teams in rank order
+team_1 = &quot;Hermantown&quot;
+team_2 = &quot;Mahtomedi&quot;
+team_3 = &quot;Orono&quot;
+team_4 = &quot;Alexandria&quot;
+
+
+# Set up empty vector to store winner in
+champion = rep(NA, 10000)
+
+
+for(i in 1:10000){
+  
+  ### SIMULATE THE SEMIFINALS
+  
+  # Predict Game 1 winner: team_1 vs. team_4
+  p_game_1 = predict(elo_reg_season, data.frame(home = team_1, visitor = team_4))
+  w_game_1 = ifelse(runif(1, min = 0, max = 1) &lt;= p_game_1, team_1, team_4)
+  
+  # Predict Game 2 winner: team_2 vs. team_3
+  p_game_2 = predict(elo_reg_season, data.frame(home = team_2, visitor = team_3))
+  w_game_2 = ifelse(runif(1, min = 0, max = 1) &lt;= p_game_2, team_2, team_3)
+  
+  
+  ### SIMULATE THE FINALS
+  
+  # Predict Game 3 winner: winner Game 1 vs. winner Game 2
+  p_game_3 = predict(elo_reg_season, data.frame(home = w_game_1, visitor = w_game_2))
+  w_game_3 = ifelse(runif(1, min = 0, max = 1) &lt;= p_game_3, w_game_1, w_game_2)
+  
+  
+  champion[i] = w_game_3
+  
+}</code></pre>
+<table>
+<caption><span id="tab:unnamed-chunk-3">Table 2: </span>Probability that each of the eight Class A teams will win the state tournament.</caption>
+<thead>
+<tr class="header">
+<th align="left">Team</th>
+<th align="center">Original Probability</th>
+<th align="left">Updated Probability</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Hermantown</td>
+<td align="center">0.1987</td>
+<td align="left">0.3214</td>
+</tr>
+<tr class="even">
+<td align="left">Mahtomedi</td>
+<td align="center">0.1802</td>
+<td align="left">0.2671</td>
+</tr>
+<tr class="odd">
+<td align="left">Orono</td>
+<td align="center">0.1127</td>
+<td align="left">0.2415</td>
+</tr>
+<tr class="even">
+<td align="left">Alexandria</td>
+<td align="center">0.1086</td>
+<td align="left">0.1700</td>
+</tr>
+<tr class="odd">
+<td align="left">Monticello</td>
+<td align="center">0.1127</td>
+<td align="left">0.0000</td>
+</tr>
+<tr class="even">
+<td align="left">Thief River Falls</td>
+<td align="center">0.0939</td>
+<td align="left">0.0000</td>
+</tr>
+<tr class="odd">
+<td align="left">Mankato East</td>
+<td align="center">0.0812</td>
+<td align="left">0.0000</td>
+</tr>
+<tr class="even">
+<td align="left">Litchfield/Dassel-Cokato</td>
+<td align="center">0.0635</td>
+<td align="left">0.0000</td>
+</tr>
+</tbody>
+</table>
+<p>Based on these simulations, Hermantown is still the favorite, and Mahtomedi and Orono also have a chance of winning the Class A tournament.</p>
+</div>
+<div id="class-aa-tournament" class="section level2">
+<h2>Class AA Tournament</h2>
+<table>
+<caption><span id="tab:unnamed-chunk-4">Table 3: </span>Elo ratings and rankings for the eight Class AA teams that qualified for the state tournament.</caption>
+<thead>
+<tr class="header">
+<th align="left">Team</th>
+<th align="center">Old Elo</th>
+<th align="center">Updated Elo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Edina</td>
+<td align="center">1718.589</td>
+<td align="center">1741.221</td>
+</tr>
+<tr class="even">
+<td align="left">Minnetonka</td>
+<td align="center">1716.570</td>
+<td align="center">1711.781</td>
+</tr>
+<tr class="odd">
+<td align="left">St. Thomas Academy</td>
+<td align="center">1691.315</td>
+<td align="center">1710.036</td>
+</tr>
+<tr class="even">
+<td align="left">Duluth East</td>
+<td align="center">1693.757</td>
+<td align="center">1692.917</td>
+</tr>
+<tr class="odd">
+<td align="left">STMA</td>
+<td align="center">1655.561</td>
+<td align="center">1643.501</td>
+</tr>
+<tr class="even">
+<td align="left">Centennial</td>
+<td align="center">1625.291</td>
+<td align="center">1618.199</td>
+</tr>
+<tr class="odd">
+<td align="left">Lakeville North</td>
+<td align="center">1578.414</td>
+<td align="center">1569.408</td>
+</tr>
+<tr class="even">
+<td align="left">Hill-Murray</td>
+<td align="center">1557.501</td>
+<td align="center">1549.936</td>
+</tr>
+</tbody>
+</table>
+<pre class="r"><code># Enter teams in rank order
+team_1 = &quot;Minnetonka&quot;
+team_2 = &quot;Edina&quot;
+team_3 = &quot;Duluth East&quot;
+team_4 = &quot;Centennial&quot;
+
+
+# Set up empty vector to store winner in
+champion = rep(NA, 10000)
+
+
+for(i in 1:10000){
+  
+  ### SIMULATE THE SEMIFINALS
+  
+  # Predict Game 1 winner: team_1 vs. team_4
+  p_game_1 = predict(elo_reg_season, data.frame(home = team_1, visitor = team_4))
+  w_game_1 = ifelse(runif(1, min = 0, max = 1) &lt;= p_game_1, team_1, team_4)
+  
+  # Predict Game 2 winner: team_2 vs. team_3
+  p_game_2 = predict(elo_reg_season, data.frame(home = team_2, visitor = team_3))
+  w_game_2 = ifelse(runif(1, min = 0, max = 1) &lt;= p_game_2, team_2, team_3)
+  
+  
+  ### SIMULATE THE FINALS
+  
+  # Predict Game 3 winner: winner Game 1 vs. winner Game 2
+  p_game_3 = predict(elo_reg_season, data.frame(home = w_game_1, visitor = w_game_2))
+  w_game_3 = ifelse(runif(1, min = 0, max = 1) &lt;= p_game_3, w_game_1, w_game_2)
+  
+  
+  champion[i] = w_game_3
+  
+}</code></pre>
+<table>
+<caption><span id="tab:unnamed-chunk-5">Table 4: </span>Probability that each of the eight Class AA teams will win the state tournament.</caption>
+<thead>
+<tr class="header">
+<th align="left">Team</th>
+<th align="center">Original Probability</th>
+<th align="left">Updated Probability</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Edina</td>
+<td align="center">0.2083</td>
+<td align="left">0.3113</td>
+</tr>
+<tr class="even">
+<td align="left">Minnetonka</td>
+<td align="center">0.1852</td>
+<td align="left">0.2901</td>
+</tr>
+<tr class="odd">
+<td align="left">Duluth East</td>
+<td align="center">0.1495</td>
+<td align="left">0.2487</td>
+</tr>
+<tr class="even">
+<td align="left">Centennial</td>
+<td align="center">0.0701</td>
+<td align="left">0.1499</td>
+</tr>
+<tr class="odd">
+<td align="left">St. Thomas Academy</td>
+<td align="center">0.2098</td>
+<td align="left">0.0000</td>
+</tr>
+<tr class="even">
+<td align="left">STMA</td>
+<td align="center">0.1016</td>
+<td align="left">0.0000</td>
+</tr>
+<tr class="odd">
+<td align="left">Lakeville North</td>
+<td align="center">0.0416</td>
+<td align="left">0.0000</td>
+</tr>
+<tr class="even">
+<td align="left">Hill-Murray</td>
+<td align="center">0.0339</td>
+<td align="left">0.0000</td>
+</tr>
+</tbody>
+</table>
+<p>St. Thomas Aademy’s loss to Centennial really shook things up. Edina and Minnetonka are now the favorites in the Class AA tournament, with Duluth East a not so distant third.</p>
+</div>

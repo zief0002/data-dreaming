@@ -1,0 +1,118 @@
+---
+title: R Markdown Theme Gallery
+author: Andrew Zieffler
+date: '2018-04-12'
+slug: r-markdown-theme-gallery
+categories: []
+tags:
+  - R
+  - Markdown
+---
+
+R Markdown is a great way to integrate R code into a document. An example of the `default` theme used in R Markdown HTML documents is shown below.
+
+![](/img/rmarkdown-themes/default.png)
+
+## Pre-Packaged Themes
+
+There are several other canned themes you can use rather than the `default` theme. There are 12 additional themes that you can use without installing any other packages: "cerulean", "cosmo", "flatly", "journal", "lumen", "paper", "readable", "sandstone", "simplex", "spacelab", "united", and "yeti". You can read the [R Markdown documentation](https://rmarkdown.rstudio.com/html_document_format.html#appearance_and_style) for detail about how to change your theme from the `default`. Below are screenshots for each of them.
+
+#### `cerulean` Theme
+
+![](/img/rmarkdown-themes/cerulean.png)
+
+#### `cosmo` Theme
+
+![](/img/rmarkdown-themes/cosmo.png)
+
+#### `flatly` Theme
+
+![](/img/rmarkdown-themes/flatly.png)
+
+#### `journal` Theme
+
+![](/img/rmarkdown-themes/journal.png)
+
+#### `lumen` Theme
+
+![](/img/rmarkdown-themes/lumen.png)
+
+#### `paper` Theme
+
+![](/img/rmarkdown-themes/paper.png)
+
+#### `readable` Theme
+
+![](/img/rmarkdown-themes/readable.png)
+
+#### `sandstone` Theme
+
+![](/img/rmarkdown-themes/sandstone.png)
+
+#### `simplex` Theme
+
+![](/img/rmarkdown-themes/simplex.png)
+
+#### `spacelab` Theme
+
+![](/img/rmarkdown-themes/spacelab.png)
+
+#### `united` Theme
+
+![](/img/rmarkdown-themes/united.png)
+
+#### `yeti` Theme
+
+![](/img/rmarkdown-themes/yeti.png)
+
+## Even More Themes
+
+There are several add-on R packages that you can install to implement even more R Markdown HTML themes. For example [`prettydoc`](https://yixuan.cos.name/prettydoc/), [`rmdformats`](https://github.com/juba/rmdformats), [`hrbrthemes`](https://github.com/hrbrmstr/hrbrthemes), [`tufte`](https://github.com/rstudio/tufte), and [`tint`](http://dirk.eddelbuettel.com/code/tint.html). Below I show screenshots of the themes from these packages as well.
+
+#### `ipsum` Theme (from `hrbrthemes` Package)
+
+![](/img/rmarkdown-themes/hrbrthemes-ipsum.png)
+
+#### `architect` Theme (from `prettydoc` Package)
+
+![](/img/rmarkdown-themes/prettydoc-architect.png)
+
+#### `cayman` Theme (from `prettydoc` Package)
+
+![](/img/rmarkdown-themes/prettydoc-cayman.png)
+
+#### `hpstr` Theme (from `prettydoc` Package)
+
+![](/img/rmarkdown-themes/prettydoc-hpstr.png)
+
+#### `leonids` Theme (from `prettydoc` Package)
+
+![](/img/rmarkdown-themes/prettydoc-leonids.png)
+
+#### `tactile` Theme (from `prettydoc` Package)
+
+![](/img/rmarkdown-themes/prettydoc-tactile.png)
+
+#### `html_clean` Theme (from `rmdformats` Package)
+
+![](/img/rmarkdown-themes/rmdformats-html_clean.png)
+
+#### `html_docco` Theme (from `rmdformats` Package)
+
+![](/img/rmarkdown-themes/rmdformats-html_docco.png)
+
+#### `material` Theme (from `rmdformats` Package)
+
+![](/img/rmarkdown-themes/rmdformats-material.png)
+
+#### `readthedown` Theme (from `rmdformats` Package)
+
+![](/img/rmarkdown-themes/rmdformats-readthedown.png)
+
+#### `tintHtml` Theme (from `tint` Package)
+
+![](/img/rmarkdown-themes/tint-tintHtml.png)
+
+#### `tufte_html` Theme (from `tufte` Package)
+
+![](/img/rmarkdown-themes/tufte-tufte_html.png)

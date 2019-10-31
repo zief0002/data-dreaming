@@ -1,0 +1,80 @@
+/* Change colors of links */
+
+a {
+  color: #04678d;
+}
+
+a:hover {
+  color: #04678d;
+  text-decoration: underline;
+  transition: color 0.6s ease;
+}
+
+a:hover,
+a:focus {
+  color: #04678d;
+}
+
+.fa-ul a {
+  color: #fff;
+}
+
+
+p{
+  line-height: 24.75px;
+}
+
+/* Change color of buttons */
+
+.btn-outline-primary{
+  color: #04678d;
+  border-color: #04678d;;
+}
+
+
+/* Change colors of blog navigation at bottom of pages */
+
+.pagination > li > a
+{
+    background-color: white;
+    color: #04678d;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    color: #5a5a5a;
+    background-color: #eee;
+    border-color: #ddd;
+}
+
+.pagination > .active > a
+{
+    background-color: #04678d !important;
+    border: solid 1px #04678d !important;
+}
+
+.pagination > .active > a:hover
+{
+    background-color: #04678d !important;
+    border: solid 1px #04678d !important;
+}
+
+/* Hanging indent class for publications */
+
+.hanging-indent {
+  padding-left: 22px ;
+  text-indent: -22px ;
+} 
+
+
+
+/* Class to top-align text on publication page 
+
+.vcenter {
+    display: inline-block;
+    vertical-align: top;
+    float: none;
+}*/

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R on ANDREW ZIEFFLER</title>
+    <link>/tags/r/</link>
+    <description>Recent content in R on ANDREW ZIEFFLER</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en_US</language>
+    <lastBuildDate>Tue, 22 Oct 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Television</title>
+      <link>/posts/television/</link>
+      <pubDate>Tue, 22 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/television/</guid>
+      <description>In 2017, my wife and I were fed up with the cost of cable television and were considering “cutting the cord”. In addition to cable, we also had Hulu, Netflix, and Amazon Prime, so our hypothesis was that we probably didn’t need cable. Before making the decision to cut cable, I wanted some data to help ensure that I would not be eliminating many of the TV shows that I watched.</description>
+    </item>
+    
+    <item>
+      <title>What to do about p-values?</title>
+      <link>/posts/what-to-do-about-p-values/</link>
+      <pubDate>Wed, 26 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/what-to-do-about-p-values/</guid>
+      <description>In March, the ASA published a special issue of The American Statistician (TAS) related to statistical inference in the 21st century. In the initial article, Moving to a World Beyond “p &amp;lt; 0.05”, Wassersein, Schirm, and Lazar (2019) write for the ASA saying,
+ “The ASA Statement on P-Values and Statistical Significance stopped just short of recommending that declarations of “statistical significance” be abandoned. We take that step here. We conclude, based on our review of the articles in this special issue and the broader literature, that it is time to stop using the term “statistically significant” entirely.</description>
+    </item>
+    
+    <item>
+      <title>2019 StatPREP Workshops</title>
+      <link>/posts/2019-statprep-workshops/</link>
+      <pubDate>Mon, 17 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2019-statprep-workshops/</guid>
+      <description>I just finished helping out with two StatPREP workshops in Columbia, Maryland and Fort Worth, Texas, respectively. StatPREP is an initiative of the Mathematical Association of America (MAA), in conjunction with American Mathematical Association of Two-Year Colleges (AMATYC) and the American Statistical Association (ASA), to introduce data and computing into introductory statistics courses&amp;mdash;specifically in community college classrooms.
+ Summer 2019 StatPREP participants and workshop leaders at Howard Community College  Each summer, workshops are held in four locations, and each location hosts a workshop for two consecutive years.</description>
+    </item>
+    
+    <item>
+      <title>Higher Education in Minnesota</title>
+      <link>/posts/higher-education-in-minnesota/</link>
+      <pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/higher-education-in-minnesota/</guid>
+      <description>I was recently perusing a book from 1960, Minnesota Heritage: A Panoramic Narrative of the Historical Development of the North Star State and came across the following map showing the locations of the colleges and universities in the state at the time.
+ Figure 1: Minnesota Colleges and Universities in 1960  
+The text referring to the map made an inference about the accessibility to higher education,
+ At a glance the map shows, these facilities for higher education are quite uneveny distributed.</description>
+    </item>
+    
+    <item>
+      <title>Computing Talk at SSC 2018</title>
+      <link>/posts/ssc-computing-talk/</link>
+      <pubDate>Sun, 03 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ssc-computing-talk/</guid>
+      <description>I am giving a talk at the 46th Annual Meeting of the Statistical Society of Canada in Montreal on June 05, 2018. The talk is part of an invited session on Teaching Statistics to Graduate Students in the Health and Social Sciences. Information, including the slides, is available below.
+Title: Statistical Computing: Non-Ignorable Missingness in the Graduate-Level Social Science Curriculum
+Abstract: In 2010, Nolan and Temple Lang pointed out that &#34;</description>
+    </item>
+    
+    <item>
+      <title>R Markdown Theme Gallery</title>
+      <link>/posts/r-markdown-theme-gallery/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/r-markdown-theme-gallery/</guid>
+      <description>R Markdown is a great way to integrate R code into a document. An example of the default theme used in R Markdown HTML documents is shown below.
+Pre-Packaged Themes There are several other canned themes you can use rather than the default theme. There are 12 additional themes that you can use without installing any other packages: “cerulean”, “cosmo”, “flatly”, “journal”, “lumen”, “paper”, “readable”, “sandstone”, “simplex”, “spacelab”, “united”, and “yeti”.</description>
+    </item>
+    
+    <item>
+      <title>Spring Weather in Minneapolis</title>
+      <link>/posts/spring-weather-in-minneapolis/</link>
+      <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/spring-weather-in-minneapolis/</guid>
+      <description>It feels like this spring has been especially terrible weather-wise. We have gotten a lot of snow and it has been cold. To evaluate whether this is the case or whether I have hindsight bias, I pulled some historical weather data for the month of April from Weather Underground.
+library(dplyr) library(forcats) library(ggplot2) library(ggridges) library(readr) library(viridis) # Read in data april = read_csv(&amp;quot;~/Documents/github/Public-Stuff/data/april-weather.csv&amp;quot;) # Filter dates april = april %&amp;gt;% filter(date &amp;lt;= 11) I grabbed data back to 2008 (avialable at https://raw.</description>
+    </item>
+    
+    <item>
+      <title>Minnesota State High School Boys Hockey Predictions (Post Hoc Analysis)</title>
+      <link>/posts/2018-03-15-boys-hockey-post-hoc/</link>
+      <pubDate>Thu, 15 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2018-03-15-boys-hockey-post-hoc/</guid>
+      <description>In two previous posts, post 1 and post 2, I used Monte Carlo simulation to predict the winner of the 2018 Minnesota State High School Boys Hockey tournament. Now that the tournament is over, I wanted to analyze how the model did and also think about ways to improve the predictions should I want to re-run such a simulation in the future.
+Accuracy of the Predictions So, how well did the simulation do in predicting the state tournament champion?</description>
+    </item>
+    
+    <item>
+      <title>Minnesota State High School Boys Hockey Predictions (Updated Quarterfinals)</title>
+      <link>/posts/2018-03-08-boys-hockey/</link>
+      <pubDate>Thu, 08 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2018-03-08-boys-hockey/</guid>
+      <description>In a previous post, I used Monte Carlo simulation to predict the winner of the 2018 Minnesota State High School Boys Hockey tournament. Now that the quarterfinal games have been played, I thought I would update my predictions. The process for this is to:
+ Update the Elo ratings based on the quarterfinal games; Re-simulate the tournament  I simulated the Class A state tournament 10,000 times using the same process as described in my previous post.</description>
+    </item>
+    
+    <item>
+      <title>Minnesota State High School Boys Hockey Predictions</title>
+      <link>/posts/2018-03-03-boys-hockey/</link>
+      <pubDate>Sat, 03 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2018-03-03-boys-hockey/</guid>
+      <description>The state high school boys hockey tournament, scheduled for March 7–10, is one of the premiere sporting events in the state of Minnesota. According to Wikipedia, this event has drawn over 100,000 spectators 22 times in its history, eclipsing 135,000 spectoators in 2015. Many national caliber players played high school hockey in Minnesota, several taking part in the state tournament. Names like Neal Broten, Herb Brooks, and T. J. Oshie are alumni of state tournaments past.</description>
+    </item>
+    
+  </channel>
+</rss>

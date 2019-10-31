@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications on ANDREW ZIEFFLER</title>
+    <link>/publication/</link>
+    <description>Recent content in Publications on ANDREW ZIEFFLER</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en_US</language>
+    <lastBuildDate>Fri, 01 Jun 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/publication/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Every Rose has It&#39;s Thorn: Secondary Teachers&#39; Reasoning about Statistical Models</title>
+      <link>/publication/2018-zdm/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2018-zdm/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Example on ANDREW ZIEFFLER</title>
+    <link>/tags/example/</link>
+    <description>Recent content in Example on ANDREW ZIEFFLER</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en_US</language>
+    <lastBuildDate>Sat, 10 Nov 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/example/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Post 05</title>
+      <link>/posts/post05/</link>
+      <pubDate>Sat, 10 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/post05/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et quam congue, tristique ipsum eget, rhoncus enim. Curabitur imperdiet, lacus vel condimentum vestibulum, est ipsum mattis tortor, ultricies finibus justo nunc sit amet nunc. Donec condimentum elit in tellus commodo lacinia. Morbi fringilla fermentum est eget semper. Curabitur ac congue ipsum. Aenean ac nulla ornare, pulvinar tellus eu, convallis felis. Donec eu ipsum elit.
+Fusce et finibus nunc. Praesent non nisl ex.</description>
+    </item>
+    
+    <item>
+      <title>Post 02</title>
+      <link>/posts/post02/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/post02/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam laoreet nec justo at maximus. Vivamus at neque quis tellus feugiat imperdiet nec a augue. Integer nec nisi ultricies, vulputate leo ac, tristique quam. Suspendisse aliquet nec arcu et dictum. Ut in convallis felis. Fusce id congue tellus. Ut urna massa, varius a finibus a, pretium id felis. Praesent aliquet neque vel nisl luctus, ac lobortis urna porttitor. Sed ac ultricies mi.</description>
+    </item>
+    
+  </channel>
+</rss>

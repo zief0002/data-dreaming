@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Markdown on ANDREW ZIEFFLER</title>
+    <link>/tags/markdown/</link>
+    <description>Recent content in Markdown on ANDREW ZIEFFLER</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en_US</language>
+    <lastBuildDate>Thu, 12 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>R Markdown Theme Gallery</title>
+      <link>/posts/r-markdown-theme-gallery/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/r-markdown-theme-gallery/</guid>
+      <description>R Markdown is a great way to integrate R code into a document. An example of the default theme used in R Markdown HTML documents is shown below.
+Pre-Packaged Themes There are several other canned themes you can use rather than the default theme. There are 12 additional themes that you can use without installing any other packages: “cerulean”, “cosmo”, “flatly”, “journal”, “lumen”, “paper”, “readable”, “sandstone”, “simplex”, “spacelab”, “united”, and “yeti”.</description>
+    </item>
+    
+  </channel>
+</rss>

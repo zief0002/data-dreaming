@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Grant on ANDREW ZIEFFLER</title>
+    <link>/tags/grant/</link>
+    <description>Recent content in Grant on ANDREW ZIEFFLER</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en_US</language>
+    <lastBuildDate>Mon, 05 Mar 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/grant/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>e-ATLAS Project</title>
+      <link>/projects/eatlas-project/</link>
+      <pubDate>Mon, 05 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/eatlas-project/</guid>
+      <description>&lt;em&gt;Evaluation and Assessment of Teaching and Learning About Statistics&lt;/em&gt; (e-ATLAS) was an NSF-funded project from 2011&amp;ndash;2013 that developed high-quality instruments to help evaluate the effectiveness of past and on-going efforts to reform the teaching and learning of introductory statistics at the tertiary level (DUE-1044812 &amp;amp; 1043141).</description>
+    </item>
+    
+    <item>
+      <title>AIMS Project</title>
+      <link>/projects/aims-project/</link>
+      <pubDate>Wed, 28 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/aims-project/</guid>
+      <description>&lt;em&gt;Adapting and Implementing Innovative Material in Statistics&lt;/em&gt; (AIMS) was an NSF-funded project from 2006&amp;ndash;2010 that developed lesson plans and activities based on innovative materials that have been produced for introductory statistics courses (DUE-0535912).</description>
+    </item>
+    
+    <item>
+      <title>BioSQuaRE</title>
+      <link>/projects/2018-02-21-biosquare/</link>
+      <pubDate>Wed, 28 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/2018-02-21-biosquare/</guid>
+      <description>BioSQuaRE is an instrument, created via an HHMI grant, to assess the quantitative readiness of students planning on majoring in biology or the life sciences.</description>
+    </item>
+    
+    <item>
+      <title>CATALST Project</title>
+      <link>/projects/catalst-project/</link>
+      <pubDate>Wed, 28 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/catalst-project/</guid>
+      <description>&lt;em&gt;Change Agents for Teaching and Learning Statistics&lt;/em&gt; (CATALST) was an NSF-funded project from 2008&amp;ndash;2012 that developed materials for teaching a radically different introductory statistics course based on randomization and bootstrap methods to provide students a deep understanding of statistical inference (DUE-0814433).</description>
+    </item>
+    
+  </channel>
+</rss>

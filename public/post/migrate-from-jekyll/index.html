@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en_US">
+<head>
+    <meta charset="utf-8" />
+    <title>Migrate to Hugo from Jekyll | ANDREW ZIEFFLER</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta name="author" content="Andrew Zieffler">
+    <meta name="dc.copyright" content="Karl Mustermann">
+    <meta name="description" content="Andrew Zieffler&#39;s Website">
+    <meta name="keywords" content="example, site, theme, tikva">
+
+    
+    <link href="/css/bootswatch/signa.min.css" rel="stylesheet">
+    
+    <link href="/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/custom.css" rel="stylesheet">
+
+
+
+<script type="text/javascript">
+    var azbalacHeaderImage = [{"url":"\/img\/typewriter.png",
+    "height": '200',
+    "width": '1400'},"","",""];
+</script>
+<script src="/js/jquery-3.3.1.min.js"></script>
+<script src="/js/functions.js"></script><style>body {background-color: #fff;}.footer-container { background-color: #29281f; }.footer-container { color: #f9fcf9; }</style>
+
+
+
+<link id="typography-header-title-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel%3A800"><style id="typography-title" type="text/css">#site-header-text a {
+        font-family: Cinzel;
+    }#site-header-text a {
+        font-size: 2.7rem; 
+    }</style>
+
+<link id="typography-header-subtitle-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel%3A600"><style id="typography-subtitle" type="text/css">#site-description {
+        font-family: Cinzel;
+    }#site-description {
+        font-size: 1.35rem; 
+    }</style>
+
+<link id="typography-body-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora%3A400"><style id="typography-body" type="text/css">body {
+        font-family: Lora;
+    }body {
+        font-size: 15px; 
+    }</style>
+
+<link id="typography-navbar-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora"><style id="typography-navbar" type="text/css">nav#navbarMain {
+        font-family: Lora;
+    }nav#navbarMain {
+        font-size: 15px; 
+    }
+    nav#navbarMain ul.dropdown-menu {
+        font-size: 15px;
+    }</style>
+
+<link id="typography-headline-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel%3A400"><style id="typography-headline" type="text/css">h1, h2, h3, h4, h5, h6 {
+                font-family: Cinzel; 
+            }</style>
+
+
+
+    
+    <script type="text/javascript">
+        var azbalacSettingHeaderColor = { 'bg': '#000000',
+            'transp': '0'
+            };
+
+    </script>
+    <style type="text/css">
+        #site-header-text a, #site-description {
+                background: "#000000";  
+            background:  rgba(0,0,0,0.00);
+            
+        }
+    </style>
+    
+    
+    <style type="text/css">
+        #site-header-box-title {
+            margin-bottom: -10px;
+        }
+    </style>
+    
+    
+    <style type="text/css">
+        #site-header-container-overlay {
+        
+            left: 20px;
+        
+        
+            top: 20px;
+        
+        }
+    </style>
+    
+
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+</head>
+
+
+<body>
+
+<div id="header" role="banner" style="">
+
+    <div class="container">
+        <header class="masthead">
+            <div>
+                <div id="site-header-container-above" class="row align-items-center">
+                    
+                </div>
+            </div>
+
+
+            
+
+            <div id="site-header-above"><a href="/" rel="home"><img id="site-header-image" src="/img/typewriter.png" width="1" height="1" data-width="1400" data-height="200" alt="Typewriter">
+                </a>
+
+                <div id="site-header-container-overlay" class="position-absolute  fixed-top ">
+                    <div id="site-header-box-title" class=" d-flex justify-content-start ">
+                        <h1 class="azbalac-title" id="site-header-text"><a class="header-url" style="color: #ffffff;" href="/">ANDREW ZIEFFLER</a></h1>
+                    </div>
+                    
+                    <div id="site-header-box-subtitle" class=" d-flex justify-content-start ">   
+                        <h2 class="azbalac-subtitle" id="site-description" style="color: #ffffff;">Academic. Data lover. Statistics enthusiast.</h2>
+                    </div>
+                </div>
+                
+             
+            </div>
+
+
+    <nav id="navbarMain" class="navbar navbar-expand-sm justify-content-between mb-3 navbar-dark bg-primary" style="background-color: #003263 !important;" role="navigation">
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+      
+            
+            <div class="sticky-top navbar-collapse collapse  " id="navbarSupportedContent"> 
+                <ul class="navbar-nav">
+
+  
+  <li class="nav-item ">
+    <a class="nav-link" href="/">
+      
+      Home
+    </a>
+  </li>
+  <span class="mx-2"></span>
+  
+
+  
+  <li class="nav-item ">
+    <a class="nav-link" href="/about/">
+      
+      About
+    </a>
+  </li>
+  <span class="mx-2"></span>
+  
+
+  
+  <li class="nav-item ">
+    <a class="nav-link" href="/publications/">
+      
+      Publications
+    </a>
+  </li>
+  <span class="mx-2"></span>
+  
+
+  
+  <li class="nav-item ">
+    <a class="nav-link" href="/posts/">
+      
+      Blog
+    </a>
+  </li>
+  <span class="mx-2"></span>
+  
+
+  
+  <li class="nav-item ">
+    <a class="nav-link" href="/projects/">
+      
+      Projects
+    </a>
+  </li>
+  <span class="mx-2"></span>
+  
+
+  
+  <li class="nav-item ">
+    <a class="nav-link" href="#teaching">
+      
+      Teaching
+    </a>
+  </li>
+  <span class="mx-2"></span>
+  
+
+  
+  <li class="nav-item ">
+    <a class="nav-link" href="#blogroll">
+      
+      Blogroll
+    </a>
+  </li>
+  <span class="mx-2"></span>
+  
+</ul>
+             
+            </div>
+        
+            
+    </nav> 
+
+
+
+      </header>
+    </div> 
+</div>
+
+
+    <div id="main">
+        <div class="container">
+            <div class="row"><div class="col-md" id="content">
+
+
+
+
+
+<h1>Migrate to Hugo from Jekyll</h1>
+
+    <div class="post-meta"><span class="byline-icon fa fa-clock-o" aria-hidden="true"></span> <span class="screen-reader-text">Date: </span><time datetime="2014-03-10T00:00:00Z">2014.10.03</time> - 
+     </div>
+
+
+  
+
+<h2 id="move-static-content-to-static">Move static content to <code>static</code></h2>
+
+<p>Jekyll has a rule that any directory not starting with <code>_</code> will be copied as-is to the <code>_site</code> output. Hugo keeps all static content under <code>static</code>. You should therefore move it all there.
+With Jekyll, something that looked like</p>
+
+<pre><code>▾ &lt;root&gt;/
+    ▾ images/
+        logo.png
+</code></pre>
+
+<p>should become</p>
+
+<pre><code>▾ &lt;root&gt;/
+    ▾ static/
+        ▾ images/
+            logo.png
+</code></pre>
+
+<p>Additionally, you&rsquo;ll want any files that should reside at the root (such as <code>CNAME</code>) to be moved to <code>static</code>.</p>
+
+<h2 id="create-your-hugo-configuration-file">Create your Hugo configuration file</h2>
+
+<p>Hugo can read your configuration as JSON, YAML or TOML. Hugo supports parameters custom configuration too. Refer to the <a href="/overview/configuration/">Hugo configuration documentation</a> for details.</p>
+
+<h2 id="set-your-configuration-publish-folder-to-site">Set your configuration publish folder to <code>_site</code></h2>
+
+<p>The default is for Jekyll to publish to <code>_site</code> and for Hugo to publish to <code>public</code>. If, like me, you have <a href="http://blog.blindgaenger.net/generate_github_pages_in_a_submodule.html"><code>_site</code> mapped to a git submodule on the <code>gh-pages</code> branch</a>, you&rsquo;ll want to do one of two alternatives:</p>
+
+<ol>
+<li><p>Change your submodule to point to map <code>gh-pages</code> to public instead of <code>_site</code> (recommended).</p>
+
+<pre><code>git submodule deinit _site
+git rm _site
+git submodule add -b gh-pages git@github.com:your-username/your-repo.git public
+</code></pre></li>
+
+<li><p>Or, change the Hugo configuration to use <code>_site</code> instead of <code>public</code>.</p>
+
+<pre><code>{
+    ..
+    &quot;publishdir&quot;: &quot;_site&quot;,
+    ..
+}
+</code></pre></li>
+</ol>
+
+<h2 id="convert-jekyll-templates-to-hugo-templates">Convert Jekyll templates to Hugo templates</h2>
+
+<p>That&rsquo;s the bulk of the work right here. The documentation is your friend. You should refer to <a href="http://jekyllrb.com/docs/templates/">Jekyll&rsquo;s template documentation</a> if you need to refresh your memory on how you built your blog and <a href="/layout/templates/">Hugo&rsquo;s template</a> to learn Hugo&rsquo;s way.</p>
+
+<p>As a single reference data point, converting my templates for <a href="http://heyitsalex.net/">heyitsalex.net</a> took me no more than a few hours.</p>
+
+<h2 id="convert-jekyll-plugins-to-hugo-shortcodes">Convert Jekyll plugins to Hugo shortcodes</h2>
+
+<p>Jekyll has <a href="http://jekyllrb.com/docs/plugins/">plugins</a>; Hugo has <a href="/doc/shortcodes/">shortcodes</a>. It&rsquo;s fairly trivial to do a port.</p>
+
+<h3 id="implementation">Implementation</h3>
+
+<p>As an example, I was using a custom <a href="https://github.com/alexandre-normand/alexandre-normand/blob/74bb12036a71334fdb7dba84e073382fc06908ec/_plugins/image_tag.rb"><code>image_tag</code></a> plugin to generate figures with caption when running Jekyll. As I read about shortcodes, I found Hugo had a nice built-in shortcode that does exactly the same thing.</p>
+
+<p>Jekyll&rsquo;s plugin:</p>
+
+<pre><code>module Jekyll
+  class ImageTag &lt; Liquid::Tag
+    @url = nil
+    @caption = nil
+    @class = nil
+    @link = nil
+    // Patterns
+    IMAGE_URL_WITH_CLASS_AND_CAPTION =
+    IMAGE_URL_WITH_CLASS_AND_CAPTION_AND_LINK = /(\w+)(\s+)((https?:\/\/|\/)(\S+))(\s+)&quot;(.*?)&quot;(\s+)-&gt;((https?:\/\/|\/)(\S+))(\s*)/i
+    IMAGE_URL_WITH_CAPTION = /((https?:\/\/|\/)(\S+))(\s+)&quot;(.*?)&quot;/i
+    IMAGE_URL_WITH_CLASS = /(\w+)(\s+)((https?:\/\/|\/)(\S+))/i
+    IMAGE_URL = /((https?:\/\/|\/)(\S+))/i
+    def initialize(tag_name, markup, tokens)
+      super
+      if markup =~ IMAGE_URL_WITH_CLASS_AND_CAPTION_AND_LINK
+        @class   = $1
+        @url     = $3
+        @caption = $7
+        @link = $9
+      elsif markup =~ IMAGE_URL_WITH_CLASS_AND_CAPTION
+        @class   = $1
+        @url     = $3
+        @caption = $7
+      elsif markup =~ IMAGE_URL_WITH_CAPTION
+        @url     = $1
+        @caption = $5
+      elsif markup =~ IMAGE_URL_WITH_CLASS
+        @class = $1
+        @url   = $3
+      elsif markup =~ IMAGE_URL
+        @url = $1
+      end
+    end
+    def render(context)
+      if @class
+        source = &quot;&lt;figure class='#{@class}'&gt;&quot;
+      else
+        source = &quot;&lt;figure&gt;&quot;
+      end
+      if @link
+        source += &quot;&lt;a href=\&quot;#{@link}\&quot;&gt;&quot;
+      end
+      source += &quot;&lt;img src=\&quot;#{@url}\&quot;&gt;&quot;
+      if @link
+        source += &quot;&lt;/a&gt;&quot;
+      end
+      source += &quot;&lt;figcaption&gt;#{@caption}&lt;/figcaption&gt;&quot; if @caption
+      source += &quot;&lt;/figure&gt;&quot;
+      source
+    end
+  end
+end
+Liquid::Template.register_tag('image', Jekyll::ImageTag)
+</code></pre>
+
+<p>is written as this Hugo shortcode:</p>
+
+<pre><code>&lt;!-- image --&gt;
+&lt;figure {{ with .Get &quot;class&quot; }}class=&quot;{{.}}&quot;{{ end }}&gt;
+    {{ with .Get &quot;link&quot;}}&lt;a href=&quot;{{.}}&quot;&gt;{{ end }}
+        &lt;img src=&quot;{{ .Get &quot;src&quot; }}&quot; {{ if or (.Get &quot;alt&quot;) (.Get &quot;caption&quot;) }}alt=&quot;{{ with .Get &quot;alt&quot;}}{{.}}{{else}}{{ .Get &quot;caption&quot; }}{{ end }}&quot;{{ end }} /&gt;
+    {{ if .Get &quot;link&quot;}}&lt;/a&gt;{{ end }}
+    {{ if or (or (.Get &quot;title&quot;) (.Get &quot;caption&quot;)) (.Get &quot;attr&quot;)}}
+    &lt;figcaption&gt;{{ if isset .Params &quot;title&quot; }}
+        {{ .Get &quot;title&quot; }}{{ end }}
+        {{ if or (.Get &quot;caption&quot;) (.Get &quot;attr&quot;)}}&lt;p&gt;
+        {{ .Get &quot;caption&quot; }}
+        {{ with .Get &quot;attrlink&quot;}}&lt;a href=&quot;{{.}}&quot;&gt; {{ end }}
+            {{ .Get &quot;attr&quot; }}
+        {{ if .Get &quot;attrlink&quot;}}&lt;/a&gt; {{ end }}
+        &lt;/p&gt; {{ end }}
+    &lt;/figcaption&gt;
+    {{ end }}
+&lt;/figure&gt;
+&lt;!-- image --&gt;
+</code></pre>
+
+<h3 id="usage">Usage</h3>
+
+<p>I simply changed:</p>
+
+<pre><code>{% image full http://farm5.staticflickr.com/4136/4829260124_57712e570a_o_d.jpg &quot;One of my favorite touristy-type photos. I secretly waited for the good light while we were &quot;having fun&quot; and took this. Only regret: a stupid pole in the top-left corner of the frame I had to clumsily get rid of at post-processing.&quot; -&gt;http://www.flickr.com/photos/alexnormand/4829260124/in/set-72157624547713078/ %}
+</code></pre>
+
+<p>to this (this example uses a slightly extended version named <code>fig</code>, different than the built-in <code>figure</code>):</p>
+
+<pre><code>{{% fig class=&quot;full&quot; src=&quot;http://farm5.staticflickr.com/4136/4829260124_57712e570a_o_d.jpg&quot; title=&quot;One of my favorite touristy-type photos. I secretly waited for the good light while we were having fun and took this. Only regret: a stupid pole in the top-left corner of the frame I had to clumsily get rid of at post-processing.&quot; link=&quot;http://www.flickr.com/photos/alexnormand/4829260124/in/set-72157624547713078/&quot; %}}
+</code></pre>
+
+<p>As a bonus, the shortcode named parameters are, arguably, more readable.</p>
+
+<h2 id="finishing-touches">Finishing touches</h2>
+
+<h3 id="fix-content">Fix content</h3>
+
+<p>Depending on the amount of customization that was done with each post with Jekyll, this step will require more or less effort. There are no hard and fast rules here except that <code>hugo server --watch</code> is your friend. Test your changes and fix errors as needed.</p>
+
+<h3 id="clean-up">Clean up</h3>
+
+<p>You&rsquo;ll want to remove the Jekyll configuration at this point. If you have anything else that isn&rsquo;t used, delete it.</p>
+
+<h2 id="a-practical-example-in-a-diff">A practical example in a diff</h2>
+
+<p><a href="http://heyitsalex.net/">Hey, it&rsquo;s Alex</a> was migrated in less than a <em>father-with-kids day</em> from Jekyll to Hugo. You can see all the changes (and screw-ups) by looking at this <a href="https://github.com/alexandre-normand/alexandre-normand/compare/869d69435bd2665c3fbf5b5c78d4c22759d7613a...b7f6605b1265e83b4b81495423294208cc74d610">diff</a>.</p>
+
+
+                </div>
+                    <aside class="col-md-3 tikva-sidebar">
+  
+
+
+    
+
+        <div class="col">
+    <div class="p-3 mb-3 bg-light rounded">
+    <h4>About</h4>
+   
+    <p>      
+    <p class="mb-0">Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+  
+</p>
+   
+    </div>
+</div>
+
+    
+
+        <div class="col">
+    <div class="p-3 mb-3 bg-light rounded">
+    <h4>Example content</h4>
+   
+    <p>    <p>You can place everything you want in this area. Just add HTML or Markdown files into a folder named &ldquo;sections/sidebar&rdquo; in your content folder and declare the folder as &ldquo;headless&rdquo;. This is an example of modifying the style with an individual &ldquo;sidebar_item.html&rdquo; partial.</p>
+</p>
+   
+    </div>
+</div>
+
+    
+
+</aside>
+</div>
+        </div>
+    </div>
+
+    
+        <div class="footer-container" style="">
+    <div class="container">
+        <footer>
+
+            <div class="row">
+            
+            
+                
+                    <div class="col">
+    <div>
+This is a placeholder for a content file of the footer. You can use Markdown or HTML here. Just place your content files into a folder "sections/footer" in your content directory, make the page bundle "headless" and enable the footer in the site config file.
+</div>
+
+</div>
+                
+                    <div class="col">
+    <p>More content.</p>
+
+</div>
+                
+                    <div class="col">
+    <p>Again more content. And an example of creating links in the footer area.
+<br/>
+<a href="/about/">About</a></p>
+
+</div>
+                
+            
+
+            </div>
+        </footer>
+    </div>
+</div>
+    
+    
+        
+<div class="subfooter-container">
+
+    <div class="container">
+        <div class="footer">
+            <div class="row wrapper padding">
+                <div class="col-xs-12 col-md-12">
+
+            
+            
+                
+                        <p>Powered by <a href="https://gohugo.io">Hugo</a>. Theme <a href="https://github.com/geschke/hugo-tikva">Tikva</a> by <a href="https://www.kuerbis.org">Ralf Geschke</a>. As you can see, this is an example of the area below the footer. You can change this.</p>
+
+
+                
+            
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <div id="media-width-detection-element"></div>
+<script src="/js/popper.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

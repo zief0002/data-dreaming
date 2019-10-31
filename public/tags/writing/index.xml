@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Writing on ANDREW ZIEFFLER</title>
+    <link>/tags/writing/</link>
+    <description>Recent content in Writing on ANDREW ZIEFFLER</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en_US</language>
+    <lastBuildDate>Wed, 24 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/writing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Dissertation Writing</title>
+      <link>/posts/dissertation-writing/</link>
+      <pubDate>Wed, 24 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/dissertation-writing/</guid>
+      <description>Many times I see students get paralyzed by the idea of writing dissertation (or paper). Anne Lamott gives this advice to struggling writers:
+Thirty years ago, my older brother, who was ten years old at the time, was trying to get a report on birds written that he’d had three months to write. [It] was due the next day. We were out at our family cabin in Bolinas, and he was at the kitchen table close to tears, surrounded by binder paper and pencils and unopened books on birds immobilized by the hugeness of the task ahead.</description>
+    </item>
+    
+  </channel>
+</rss>

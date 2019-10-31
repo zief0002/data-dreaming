@@ -1,0 +1,24 @@
+{{- if .Site.Params.Theme.Footer.Enabled -}}
+    <div class="footer-container" style="">
+    <div class="container">
+        <footer>
+
+            <div class="row">
+            {{ $footerItems := .Site.GetPage "/sections/footer" }}
+            {{ if $footerItems }}
+                {{ range sort $footerItems.Resources "Name" }}
+                    {{ partial "footer_column.html" . }}
+                {{ end }}
+            {{ else if .Site.Params.Theme.Footer.demoColumn }}    
+                {{ range .Site.Params.Theme.Footer.demoColumn }}
+                    <div class="col">
+                        {{ .text | safeHTML }}
+                    </div>
+                {{ end }}
+            {{ end }}
+
+            </div>
+        </footer>
+    </div>
+</div>
+{{- end -}}

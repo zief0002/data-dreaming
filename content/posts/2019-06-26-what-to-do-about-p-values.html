@@ -1,0 +1,172 @@
+---
+title: What to do about p-values?
+author: Andy
+date: '2019-06-26'
+slug: what-to-do-about-p-values
+categories: []
+tags:
+  - Teaching
+  - Statistics Education
+  - R
+header:
+  caption: ''
+  image: ''
+  preview: yes
+---
+
+
+
+<p>In March, the ASA published a special issue of <em>The American Statistician</em> (TAS) related to statistical inference in the 21st century. In the initial article, <em>Moving to a World Beyond “p &lt; 0.05”</em>, Wassersein, Schirm, and Lazar (2019) write for the ASA saying,</p>
+<blockquote>
+<p>“The <em>ASA Statement on P-Values and Statistical Significance</em> stopped just short of recommending that declarations of “statistical significance” be abandoned. We take that step here. We conclude, based on our review of the articles in this special issue and the broader literature, that it is time to stop using the term “statistically significant” entirely. Nor should variants such as “significantly different,” “p &lt; 0.05,” and “nonsignificant” survive, whether expressed in words, by asterisks in a table, or in some other way. (p. 2)"</p>
+</blockquote>
+<p>Since reading this, I have been thinking about how to address these suggestions (mandates?) in our statistics curriculum. The suggestions offered in the article are nice, but a bit big-picture for applied scientists, things like:</p>
+<ul>
+<li>Accept uncertainty</li>
+<li>Be thoughtful</li>
+<li>Be open</li>
+<li>Be modest</li>
+</ul>
+<p>Ron Wasserstein in his talk at USCOTS wasn’t much more helpful in what to do, but gave a gem of a quote when he said,</p>
+<blockquote>
+<p>“Small p-values are like a right-swipe in Tinder. It means you have an interest. It doesn’t mean you’re ready to book the wedding venue.”</p>
+</blockquote>
+<figure>
+<img src="/post/2019-06-26-what-to-do-about-p-values_files/200996_web.jpg" alt="" width="70%"/>
+<figcaption style="text-align:center;">
+Ron Wasserstein’s suggestion on how to think about p-values.
+</figcaption>
+</figure>
+<p>But how does all of this translate in a statistical methods course (built around the general linear model) for graduate students in the social sciences? That is what I have been thinking about since March, and so far I have a few, albeit very few, ideas abut how to do this. Here are some things I plan on changing/incorporating into the course.</p>
+<div id="interpreting-results-from-hypothesis-tests" class="section level3">
+<h3>Interpreting Results from Hypothesis Tests</h3>
+<p>First off, I will be actively discouraging the use of anything related to “<span class="math inline">\(p&lt;.05\)</span>” or the use of the word “significance”. I have done this in the past, but this year I am really goiing to go after it. The question is what to do instead? I am going to try using language such as “consistent with” or “compatible with” in these interpretations. For example,</p>
+<blockquote>
+<p>The p-value of .003 suggests that the empirical data are inconsistent with the hypothesis that the regression coefficient differs from zero only because of sampling error. This, along with the positive sample slope provide evidence that time spent on homework likely has a positive association with GPA.</p>
+</blockquote>
+<p>This type of interpretation is not that different than I have had students use in the past. I think the bigger difference is for results with larger p-values. Here the emphasis is</p>
+<blockquote>
+<p>The p-value of .13 does not provide evidence against the hypothesis that the regression coefficient differs from zero only because of sampling error. While the empirical data are consistent with this hypothesis, it may also be the case that there is a positive relationship between time spent on homework and GPA (as evidenced by the positve sample slope) but the data do not contain enough statistical information to ascertain this relationship.</p>
+</blockquote>
+<p>The big diffeence is I want to eliminate the “reject” or “fail to reject” language I have used in the past. In the second case, I also want students to illuminate the idea that data are consistent with multiple hypothesized values.</p>
+</div>
+<div id="confidence-intervals-as-compatibility-intervals" class="section level3">
+<h3>Confidence Intervals as Compatibility Intervals</h3>
+<p>When teaching about confidence intervals, I am thinking about focusing on them as “compatibility intervals” as suggested by Amrhein, Greenland, and McShane (2019). Here are four points I plan on stressing:</p>
+<ul>
+<li>Just because the interval gives the values most compatible with the data, given the assumptions, it doesn’t mean values outside it are incompatible; they are just less compatible.</li>
+<li>Not all values inside are equally compatible with the data, given the assumptions. The point estimate is the most compatible, and values near it are more compatible than those near the limits.</li>
+<li>Like the 0.05 threshold from which it came, the default 95% used to compute intervals is itself an arbitrary convention.</li>
+<li>Last, and most important of all, be humble: compatibility assessments hinge on the correctness of the statistical assumptions used to compute the interval. In practice, these assumptions are at best subject to considerable uncertainty.</li>
+</ul>
+<p>To help with these ideas I am going to have students use visual representations of these that make the uncertainty more apparant. In the past I have had students create coefficient plots, but these tended to use lines to show the CIs for each of the regression coefficients. This year I am going to use <a href="https://github.com/wilkelab/ungeviz">Claus Wilke’s ungeviz package</a> to create these plots. This package employs color density to indicate uncertainty; darker more dense color is associated with more certainty and lighter less dense color is associated with less certainty.</p>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-1"></span>
+<img src="/post/2019-06-26-what-to-do-about-p-values_files/figure-html/unnamed-chunk-1-1.png" alt="Coefficient plots for a multiple regression model using time spent on homework and level of parent education to predict GPA. The plot on the left shows the type of coefficient plot I used to have students create, and the plot on the right uses color density to show the uncertainty." width="90%" />
+<p class="caption">
+Figure 1: Coefficient plots for a multiple regression model using time spent on homework and level of parent education to predict GPA. The plot on the left shows the type of coefficient plot I used to have students create, and the plot on the right uses color density to show the uncertainty.
+</p>
+</div>
+<p>The syntax is straightforward. After fitting a linear model, obtain the coefficient-level output using <code>tidy()</code> and then use Wilke’s <code>stat_confidence_density()</code> function. I found his package documentation quite good and easy to implement. Here is the syntax I used. (The <code>keith-gpa.csv</code> data used is available <a href="http://zief0002.github.io/epsy-8251/#data">here</a>.)</p>
+<pre class="r"><code># Fit model
+lm.1 = lm(gpa ~ 1 + homework + parent_ed, data = keith)
+
+# Coefficient plot
+broom::tidy(lm.1) %&gt;%
+  filter(term != &quot;(Intercept)&quot;) %&gt;%
+  ggplot(aes(x = estimate, y = term)) +
+    stat_confidence_density(aes(moe = std.error, fill = stat(ndensity)), height = 0.15, confidence = 0.68) +
+    geom_point(aes(x = estimate), size = 2) +
+    xlim(-1, 3) +
+    theme_bw() +
+    scale_fill_gradient(low = &quot;#eff3ff&quot;, high = &quot;#6baed6&quot;) +
+    theme(
+      panel.grid.major = element_blank(),
+      panel.grid.minor = element_blank()
+      ) +
+    scale_y_discrete(name = &quot;Coefficients&quot;, labels = c(&quot;Intercept&quot;, &quot;Time spent\non homework&quot;)) +
+    xlab(&quot;Estimate&quot;)</code></pre>
+</div>
+<div id="regression-smoothers" class="section level3">
+<h3>Regression Smoothers</h3>
+<p>I also want students to consider uncertainty in plots of their regression lines. In the past I have used <code>geom_smooth()</code> with the argument <code>se=TRUE</code> (default). However, this just draws the confidence enevelope as lines, which has the same issues as the earlier coefficient plot. To voercome this, I used ideas from <a href="https://www.nicebread.de/visually-weighted-watercolor-plots-new-variants-please-vote/">Felix Schonbrodt</a> to bootstrap potential regression lines and overlay them on a plot so that I could implement color density to illustrate uncertainty. I wrote these into a function <code>stat_watercolor_smooth()</code> in my <a href="https://github.com/zief0002/educate">educate package available via github</a>. Note that I am NOT an R programmer; at best a script kiddie, so I do not promise these are curated nor great code.</p>
+<p>For example, here is a line fitted using a simple linear regression.</p>
+<pre class="r"><code>library(educate)
+
+ggplot(data = keith, aes(x = homework, y = gpa)) +
+  stat_watercolor_smooth(k = 1000, method = &quot;lm&quot;) +
+  geom_smooth(method = &quot;lm&quot;, se = FALSE, size = 0.5, color = &quot;black&quot;) +
+  theme_bw() +
+  xlab(&quot;Time spent on homework (in hours)&quot;) +
+  ylab(&quot;GPA (on a 100-pt scale)&quot;)</code></pre>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-3"></span>
+<img src="/post/2019-06-26-what-to-do-about-p-values_files/figure-html/unnamed-chunk-3-1.png" alt="Regression line fitted using the empirical data (black) and uncertainty in its location based on the location of 1000 bootstrapped lines" width="672" />
+<p class="caption">
+Figure 2: Regression line fitted using the empirical data (black) and uncertainty in its location based on the location of 1000 bootstrapped lines
+</p>
+</div>
+<p>By omitting the <code>method="lm"</code> arguement a loess smoother will be fitted, similar to <code>geom_smooth()</code>. This can be useful for evaluating the linearity assumption in regression.</p>
+<pre class="r"><code>broom::augment(lm.1) %&gt;%
+  ggplot(aes(x =  .fitted, y = .resid)) +
+    geom_point() +
+    stat_watercolor_smooth(k = 1000) +
+    geom_hline(yintercept = 0, size = 0.5, color = &quot;black&quot;) +
+    theme_bw() +
+    xlab(&quot;Model fitted values&quot;) +
+    ylab(&quot;Model residuals&quot;)</code></pre>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-4"></span>
+<img src="/post/2019-06-26-what-to-do-about-p-values_files/figure-html/unnamed-chunk-4-1.png" alt="Plot of the model residuals versus the fitted values. The blue lines show 1000 bootstrapped loess smoothers for the data. The line at y=0 is also displayed (black)." width="672" />
+<p class="caption">
+Figure 3: Plot of the model residuals versus the fitted values. The blue lines show 1000 bootstrapped loess smoothers for the data. The line at y=0 is also displayed (black).
+</p>
+</div>
+<p>The uncertainty displayed in the plot suggests that empirical values are not inconsistent with the assumption of linearity (i.e., the uncertainty in the conditional mean values encompasses 0).</p>
+</div>
+<div id="density-plots-and-uncertainty" class="section level3">
+<h3>Density Plots and Uncertainty</h3>
+<p>I use density plots in these methods courses and have used the <code>sm.density()</code> package for many years due to its ability to produce confidence envelopes for particular models. One drawback is that this package uses base R graphics. So this summer I wrote some syntax to implement some of these features using ggplot. These functions are available in my <a href="https://github.com/zief0002/educate">educate package via github</a>.</p>
+<p>I used the same idea of In this package I bootstrap to create a spaghetti plot of hypothetical densities (which produce a “confidence enevelope”) and then use color density to show uncertainty.</p>
+<pre class="r"><code>library(educate)
+
+ggplot(data = keith, aes(x = gpa)) +
+  stat_watercolor_density(k = 1000) +
+  stat_density(size = 0.5, geom = &quot;line&quot;) +
+  theme_bw() +
+  xlab(&quot;GPA (on a 100-pt scale)&quot;) +
+  ylab(&quot;Probability density&quot;)</code></pre>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-5"></span>
+<img src="/post/2019-06-26-what-to-do-about-p-values_files/figure-html/unnamed-chunk-5-1.png" alt="Probability density plot of the GPA variable. The plot also displays the uncertainty of the density via 1000 bootstrapped densities." width="672" />
+<p class="caption">
+Figure 4: Probability density plot of the GPA variable. The plot also displays the uncertainty of the density via 1000 bootstrapped densities.
+</p>
+</div>
+<p>We can also use this to evaluate normality assumptions. This is quite useful for examining model assumptions. For example, here I plot the density of the marginal residuals from the previously fitted linear model.</p>
+<pre class="r"><code>broom::augment(lm.1) %&gt;%
+ggplot(aes(x = .resid)) +
+  stat_watercolor_density(k = 1000, model = &quot;normal&quot;) +
+  stat_density(size = 0.5, geom = &quot;line&quot;) +
+  theme_bw() +
+  xlab(&quot;Model residuals&quot;) +
+  ylab(&quot;Probability density&quot;)</code></pre>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-6"></span>
+<img src="/post/2019-06-26-what-to-do-about-p-values_files/figure-html/unnamed-chunk-6-1.png" alt="Probability density plot of the model residuals. The plot also displays 1000 bootstrapped densities drawn from a normal distribution." width="672" />
+<p class="caption">
+Figure 5: Probability density plot of the model residuals. The plot also displays 1000 bootstrapped densities drawn from a normal distribution.
+</p>
+</div>
+<p>Here the empirial density associated with the model residuals is not inconsistent with the assumption of normality (at least marginally).</p>
+</div>
+<div id="conclusion" class="section level3">
+<h3>Conclusion</h3>
+<p>These are my inital ideas. I am really curious to talk with other statistics educators to hear how they are addressing the <em>p</em>-value post TAS publication.</p>
+<p><br /><br /></p>
+</div>
+<div id="reference" class="section level3">
+<h3>Reference</h3>
+<p style="text-indent: -22px; margin-left: 22px;">
+Amrhein, V., Greenland, S., &amp; McShane, B. (2019). Comment: Retire statistical significance. <em>Nature, 567</em>, 305–307.
+</p>
+<p style="text-indent: -22px; margin-left: 22px;">
+Wasserstein, R. L., Schirm, A. L., &amp; Lazar, N. A. (2019). Moving to a world Beyond “p &lt; 0.05.” <em>The American Statistician, 73</em>(sup1), 1–19. <a href="http://doi.org/10.1080/00031305.2019.1583913" class="uri">http://doi.org/10.1080/00031305.2019.1583913</a>
+</p>
+<p>I have been in a</p>
+</div>
