@@ -1,4 +1,4 @@
-baseurl = "http://www.datadreaming.org/"
+baseurl = "https://www.datadreaming.org/"
 title = "Andrew Zieffler"
 theme = "hugo-theme-cleanwhite"
 languageCode = "en-us"
