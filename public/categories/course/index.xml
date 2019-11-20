@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>course on ANDREW ZIEFFLER</title>
+    <title>course on Andrew Zieffler</title>
     <link>/categories/course/</link>
-    <description>Recent content in course on ANDREW ZIEFFLER</description>
+    <description>Recent content in course on Andrew Zieffler</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en_US</language>
+    <language>en-us</language>
     <lastBuildDate>Mon, 26 Feb 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/course/index.xml" rel="self" type="application/rss+xml" />
@@ -13,10 +13,10 @@
     
     <item>
       <title>EPsy 3264: Basic and Applied Statistics</title>
-      <link>/posts/epsy-3264-basic-and-applied-statistics/</link>
+      <link>/post/epsy-3264-basic-and-applied-statistics/</link>
       <pubDate>Mon, 26 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>/posts/epsy-3264-basic-and-applied-statistics/</guid>
+      <guid>/post/epsy-3264-basic-and-applied-statistics/</guid>
       <description>EPsy 3264 is a 3-credit course designed to engage students using a modeling and simulation approach to inference. This course fulfills the Mathematical Thinking component of the Liberal Education requirements at the University of Minnesota. Statistics is more than just an application of mathematics or a methodology used in some other discipline. Statistics is a principled way of thinking about the world. In particular, it is a principled approach to data collection, prediction, and scientific inference.</description>
     </item>
     

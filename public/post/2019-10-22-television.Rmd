@@ -1,0 +1,201 @@
+---
+title: Television
+author: Andy
+date: '2019-10-22'
+slug: television
+categories: []
+tags:
+  - Miscellaneous
+  - R
+header:
+  caption: ''
+  image: ''
+  preview: yes
+showtoc: false  
+---
+
+In 2017, my wife and I were fed up with the cost of cable television and were considering "cutting the cord". In addition to cable, we also had Hulu, Netflix, and Amazon Prime, so our hypothesis was that we probably didn't need cable. Before making the decision to cut cable, I wanted some data to help ensure that I would not be eliminating many of the TV shows that I watched. So, I started recording every episode of every TV show that I watched in a Google Sheet.
+
+```{r message=FALSE}
+# Load libraries
+library(dplyr)
+library(readr)
+library(janitor)
+library(plotly)
+library(tidyr)
+
+# Import data
+tv = read_csv("~/Dropbox/data/andy_tv.csv") %>%
+  drop_na()
+
+# View data
+head(tv)
+```
+
+I then used Plotly to create a hierarchical donut plot of the shows and media I used to view those shows. (Note. At the time I only had my 2017 data, but now, since I have several years worth of data I need to filter to get the 2017 data.)
+
+```{r}
+# Filter 2017 data
+tv_2017 = tv %>% filter(Year == 2017)
+
+# Compute time per show for better plotting
+tv17 = tv_2017 %>% 
+  group_by(Media, Show, Network) %>% 
+  summarize(Time = sum(Time)) %>% 
+  ungroup() %>%
+  select(Show, Media, Time) 
+
+head(tv17)
+```
+
+I then looked for duplicate TV programs across media so that I could combine them. For example, I was watching Vikings at the time on Cable, but it was also available on Hulu.
+
+```{r}
+# Find duplicates
+#tv17 %>% get_dupes(Show)
+
+# Combine duplicates
+tv17[tv17$Show == "Lucifer" & tv17$Media == "Cable", ]$Show = "Lucifer "
+tv17[tv17$Show == "Madam Secretary" & tv17$Media == "Cable", ]$Show = "Madam Secretary "
+tv17[tv17$Show == "Vikings" & tv17$Media == "Hulu", ]$Show = "Vikings "
+```
+
+Lastly, I needed to obtain the the time for each media outlet and the total time across all outlets to correctly plot the heirarchy in the donut plot.
+
+```{r}
+# Obtain time by media outlet
+second = tv17 %>% 
+  group_by(Media) %>% 
+  summarize(Time = sum(Time)) %>%
+  ungroup() %>%
+  mutate(Show = Media, Media = "2017")  %>%
+  select(Show, Media, Time) 
+
+# Obtain total time
+first = data.frame(
+  Show = "2017", 
+  Media = "",
+  Time = sum(second$Time)
+)
+
+# Combine the hierarchies
+tv_17 = rbind(first, second, tv17)
+```
+
+Finally I could use the `plot_ly()` function from the **plotly** library to create the donut plot.
+
+```{r warning=FALSE, fig.align='center', fig.cap='TV shows Andy watched in 2017.'}
+plot_ly(tv_17) %>%
+  add_trace(
+    labels = ~Show,
+    hoverinfo = 'text',
+    hovertext = ~paste("<b>", Show, '</b><br /><br />Time Watching: ', round(Time/60, 1), ' Hours'),
+    parents = ~Media,
+    values = ~Time,
+    type = 'sunburst',
+    branchvalues = 'total'
+  ) %>%
+  layout(
+    sunburstcolorway = c(
+      "#cc2a36","#edc951","#4f372d", "#00a0b0"
+    )
+  )
+```
+
+It turns out that most of what I was watching was through the streaming services and not cable. Those shows that I was watching on cable are also either on premium channels (e.g., HBO and Showtime) which are available as separate add-ons to most streaming services, or were shows that were also available on Hulu.
+
+I realized that after the fact, the one important thing I didn't collect data on was live sports. This, it turns out, is quite important. Both my wife and I love college football and watching these games without having to leave the house every weekend means that we do need to have some sort of live TV option. Ultimately, we switched to Hulu Live which turned out to be a huge cost savings relative to cable. We chose this streaming service because of the sports channel options without needing an additional sports package; the big decider was that Hulu Live had BTN. (Reality check: Watching live sports on Hulu Live is not without its pain. It buffers more than I would like, especially during evernts that are more highly viewed. This seems to be especially true with any of the Fox stations (FSN, FS1, Fox) which televises many of the MLB, NFL, and NHL games I watch.)
+
+## Current TV Habits and More Cutting
+
+I have continued to collect data on the TV shows I watch. I still haven't collected data about the live sports I watch, but that is restricted to particular stations such as ESPN, ESPN2, FSN, FS1, FS2 (occasionally), and BTN. My sense is that the a la carte options we have long dreamed of, are in some ways here. Unfortunately, it is not quite the correct vision. Most a la carte options are still tied to particular channels or suites of channels rather than individual programs. And it is still cheaper to purchase those channels via a streaming service than to buy the episodes of the shows I like. 
+
+More options open up for streaming TV (Apple TV, Disney) everyday. In addition to Hulu Live, Youtube TV, Sling, and Playstation Vue (the options when we looked in 2017), there are many more: Apple TV, Disney, fubo, CBS, etc. The main differentiator seems to be channel selection, so it seems relevant to look at the network that produce and air the shows I like. Below I create a similar donut chart for my TV data, this time by network, since 2017.
+
+
+```{r echo=FALSE, fig.show='hold', warning=FALSE, fig.cap='TV shows Andy watched in 2018 and 2019 (as of October 30).'}
+
+# 2018
+tv_2018 = tv %>% filter(Year == 2018)
+
+tv18 = tv_2018 %>% 
+  group_by(Network, Show) %>% 
+  summarize(Time = sum(Time)) %>% 
+  ungroup() %>%
+  select(Show, Network, Time) 
+
+second = tv18 %>% 
+  group_by(Network) %>% 
+  summarize(Time = sum(Time)) %>%
+  ungroup() %>%
+  mutate(Show = Network, Network = "2018")  %>%
+  select(Show, Network, Time) 
+
+first = data.frame(
+  Show = "2018", 
+  Network = "",
+  Time = sum(second$Time)
+)
+
+tv_18 = rbind(first, second, tv18)
+
+
+# 2019
+tv_2019 = tv %>% filter(Year == 2019)
+
+tv19 = tv_2019 %>% 
+  group_by(Network, Show) %>% 
+  summarize(Time = sum(Time)) %>% 
+  ungroup() %>%
+  select(Show, Network, Time) 
+
+second = tv19 %>% 
+  group_by(Network) %>% 
+  summarize(Time = sum(Time)) %>%
+  ungroup() %>%
+  mutate(Show = Network, Network = "2019")  %>%
+  select(Show, Network, Time) 
+
+first = data.frame(
+  Show = "2019", 
+  Network = "",
+  Time = sum(second$Time)
+)
+
+tv_19 = rbind(first, second, tv19)
+
+# Create plots
+
+p1 = plot_ly(tv_18) %>%
+  add_trace(
+    labels = ~Show,
+    hoverinfo = 'text',
+    hovertext = ~paste("<b>", Show, '</b><br /><br />Time Watching: ', round(Time/60, 1), ' Hours'),
+    parents = ~Network,
+    values = ~Time,
+    type = 'sunburst',
+    branchvalues = 'total'
+  )
+
+p2 = plot_ly(tv_19) %>%
+  add_trace(
+    labels = ~Show,
+    hoverinfo = 'text',
+    hovertext = ~paste("<b>", Show, '</b><br /><br />Time Watching: ', round(Time/60, 1), ' Hours'),
+    parents = ~Network,
+    values = ~Time,
+    type = 'sunburst',
+    branchvalues = 'total'
+  )
+
+# PLot side-by-side
+#subplot(p1, p2, nrows = 1)
+htmltools::tagList(list(p1, p2))
+```
+
+In looking at these plots, I must say that I watch more network TV than I thought I did (especially on CBS, which anecdotally I thought produced garbage). Although, many of the network shows were older shows that I watched on Netflix and Amazon Prime. The bevy of foreign networks each was primarily associated with a single show and more often than not were aired on Netflix. I am also starting to wonder about the cost-effectiveness for keeping HBO and Showtime, although my wife watches a lot of shows on those channels, so it is probably worth it.
+
+Many of the network programs are available with regular Hulu, and outside of sports we could probably dump Hulu Live. But, to paraphrase the great comedian Steve Martin, sports is like the sun and a day without sun is like...well...night.
+
+
+

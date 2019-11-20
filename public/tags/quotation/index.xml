@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Quotation on ANDREW ZIEFFLER</title>
+    <title>Quotation on Andrew Zieffler</title>
     <link>/tags/quotation/</link>
-    <description>Recent content in Quotation on ANDREW ZIEFFLER</description>
+    <description>Recent content in Quotation on Andrew Zieffler</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en_US</language>
+    <language>en-us</language>
     <lastBuildDate>Wed, 24 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/quotation/index.xml" rel="self" type="application/rss+xml" />
@@ -13,29 +13,29 @@
     
     <item>
       <title>Dissertation Writing</title>
-      <link>/posts/dissertation-writing/</link>
+      <link>/post/dissertation-writing/</link>
       <pubDate>Wed, 24 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/posts/dissertation-writing/</guid>
+      <guid>/post/dissertation-writing/</guid>
       <description>Many times I see students get paralyzed by the idea of writing dissertation (or paper). Anne Lamott gives this advice to struggling writers:
 Thirty years ago, my older brother, who was ten years old at the time, was trying to get a report on birds written that he’d had three months to write. [It] was due the next day. We were out at our family cabin in Bolinas, and he was at the kitchen table close to tears, surrounded by binder paper and pencils and unopened books on birds immobilized by the hugeness of the task ahead.</description>
     </item>
     
     <item>
       <title>Richard Hamming on the Teaching of Mathematics</title>
-      <link>/posts/richard-hamming-on-calculus/</link>
+      <link>/post/richard-hamming-on-calculus/</link>
       <pubDate>Mon, 03 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/posts/richard-hamming-on-calculus/</guid>
+      <guid>/post/richard-hamming-on-calculus/</guid>
       <description>The way mathematics is currently taught it is exceedingly dull. In the calculus book we are currently using on my campus, I found no single problem whose answer I felt the student would care about! The problems in the text have the dignity of solving a crossword puzzle &amp;mdash; hard to be sure, but the result is of no significance in life. Richard Hamming, Calculus and Discrete Mathematics</description>
     </item>
     
     <item>
       <title>CV: Sale Items vs. Research Plan</title>
-      <link>/posts/2019-05-06-cv-quotation/</link>
+      <link>/post/2019-05-06-cv-quotation/</link>
       <pubDate>Thu, 02 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/posts/2019-05-06-cv-quotation/</guid>
+      <guid>/post/2019-05-06-cv-quotation/</guid>
       <description>Karen Kelsky writes about the importance of identifying a research plan and building your CV around this plan in her book The Professor is In: The Essential Guide to Turning Your Ph.D. into a Job.
  A reader once wrote to explain: During my years as a tenure track assistant professor, I went about publishing and doing research the way I do the grocery shopping: concentrating on the sale items like conferences, book reviews, on-line collaborations, i.</description>
     </item>

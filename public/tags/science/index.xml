@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Science on ANDREW ZIEFFLER</title>
+    <title>Science on Andrew Zieffler</title>
     <link>/tags/science/</link>
-    <description>Recent content in Science on ANDREW ZIEFFLER</description>
+    <description>Recent content in Science on Andrew Zieffler</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en_US</language>
+    <language>en-us</language>
     <lastBuildDate>Fri, 26 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/science/index.xml" rel="self" type="application/rss+xml" />
@@ -13,10 +13,10 @@
     
     <item>
       <title>Deprecating Statistical Significance: Toward Better Science</title>
-      <link>/posts/2019-04-26-slhs-prosem/</link>
+      <link>/post/2019-04-26-slhs-prosem/</link>
       <pubDate>Fri, 26 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/posts/2019-04-26-slhs-prosem/</guid>
+      <guid>/post/2019-04-26-slhs-prosem/</guid>
       <description>On Friday April 26, 2019 I gave an invited talk to the Department of Speech-Language-Hearing Sciences in their Pro-Sem series. These are really neat as they are organized by the graduate students. This is the third one of these I have given over the years and each is a treat.
 In this talk I spoke about the ASA’s recent call for the deprecation of “statistical significance” and all its related variants (e.</description>
     </item>

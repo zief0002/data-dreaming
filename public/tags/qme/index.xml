@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>QME on ANDREW ZIEFFLER</title>
+    <title>QME on Andrew Zieffler</title>
     <link>/tags/qme/</link>
-    <description>Recent content in QME on ANDREW ZIEFFLER</description>
+    <description>Recent content in QME on Andrew Zieffler</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en_US</language>
+    <language>en-us</language>
     <lastBuildDate>Thu, 09 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/qme/index.xml" rel="self" type="application/rss+xml" />
@@ -13,30 +13,30 @@
     
     <item>
       <title>Congratulations Ethan!</title>
-      <link>/posts/congratulations-ethan/</link>
+      <link>/post/congratulations-ethan/</link>
       <pubDate>Thu, 09 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/posts/congratulations-ethan/</guid>
+      <guid>/post/congratulations-ethan/</guid>
       <description>Ethan Brown, one of our Statistics Education students successfully defended his dissertation today! His dissertation research looked at how a sequence of structured activities impact students’ understanding about the Empirical Law of Large Numbers and sampling uncertainty. Ethan presented some of his preliminary analyses of this work at ICOTS 10 in Kyoto, Japan last year and received a commendation for that work [read his paper here.
 Ethan at the public part of his Final Oral Examination.</description>
     </item>
     
     <item>
       <title>Student Awards! So Proud!</title>
-      <link>/posts/2019-05-02-student-awards/</link>
+      <link>/post/2019-05-02-student-awards/</link>
       <pubDate>Thu, 02 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/posts/2019-05-02-student-awards/</guid>
+      <guid>/post/2019-05-02-student-awards/</guid>
       <description>On April 26, 2019, two of my Statistics Education graduate students, Chelsey Legacy and Vimal Rao, were given awards during the annual Psychological Foundations and QME Awards and Recognition Ceremony.
 Chelsey Legacy (first row; right) was awarded the Graduate Student Teaching Award for her incredible work in the EPsy 3264 classroom. Vimal Rao (second row; second from right) was awarded the Graduate Student Leadership Award for his work in building community.</description>
     </item>
     
     <item>
       <title>CV Tips</title>
-      <link>/posts/2019-05-01-cv-tips/</link>
+      <link>/post/2019-05-01-cv-tips/</link>
       <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/posts/2019-05-01-cv-tips/</guid>
+      <guid>/post/2019-05-01-cv-tips/</guid>
       <description>My colleague Joseph Rios and I helped organize a monthly reading and seminar series, QME and Friends Read, for interested graduate students in our program. In March, we hosted a seminar on the Curriculum Vitae, or CV. In preparing for that seminar, I looked through many faculty and student CVs. I also read many blog posts, and scholarly work about putting together a CV. Based on all of this and my own expereiences and advice given to me, I decided to put together a post (maybe multiple posts) that includes some suggestions for compiling a CV.</description>
     </item>
     

@@ -1,0 +1,100 @@
+---
+title: Spring Weather in Minneapolis
+author: Andrew Zieffler
+date: '2018-04-11'
+slug: spring-weather-in-minneapolis
+categories: []
+tags:
+  - R
+showtoc: false
+---
+
+
+
+<p>It feels like this spring has been especially terrible weather-wise. We have gotten a lot of snow and it has been cold. To evaluate whether this is the case or whether I have hindsight bias, I pulled some historical weather data for the month of April from <a href="">Weather Underground</a>.</p>
+<pre class="r"><code>library(dplyr)
+library(forcats)
+library(ggplot2)
+library(ggridges)
+library(readr)
+library(viridis)
+
+# Read in data
+april = read_csv(&quot;~/Documents/github/Public-Stuff/data/april-weather.csv&quot;)
+
+# Filter dates
+april = april %&gt;%
+  filter(date &lt;= 11)</code></pre>
+<p>I grabbed data back to 2008 (avialable at <a href="https://raw.githubusercontent.com/zief0002/Public-Stuff/master/data/april-weather.csv" class="uri">https://raw.githubusercontent.com/zief0002/Public-Stuff/master/data/april-weather.csv</a>). To be fair about the comparisons I was making, I filtered the data
+so that I only had the first eleven days of April for each year represented in the data. (April is a month in Minnesota that has a lot of variation from the first to last day of the month.) I then counted the number of those days each year that it snowed, as well as, the number of days over 40℉, 50℉, and 60℉.</p>
+<pre class="r"><code>april %&gt;%
+  group_by(year) %&gt;%
+  summarize(
+    days_with_snow = length(grep(pattern = &quot;Snow&quot;, x = events)),
+    days_over_40 = sum(temp_high &gt; 40),
+    days_over_50 = sum(temp_high &gt; 50),
+    days_over_60 = sum(temp_high &gt; 60)
+  )</code></pre>
+<pre><code>## # A tibble: 11 x 5
+##     year days_with_snow days_over_40 days_over_50 days_over_60
+##    &lt;dbl&gt;          &lt;int&gt;        &lt;int&gt;        &lt;int&gt;        &lt;int&gt;
+##  1  2008              4            7            3            2
+##  2  2009              3           10            4            0
+##  3  2010              0           11           11            7
+##  4  2011              2           11            9            4
+##  5  2012              0           11            9            6
+##  6  2013              4            7            2            0
+##  7  2014              3            8            6            4
+##  8  2015              2           11            6            3
+##  9  2016              3            8            2            1
+## 10  2017              2           11           11            4
+## 11  2018              5            1            0            0</code></pre>
+<p>This suggested that my snow hypothesis (we have had more snow this year) may be erroneous. But, we have had a couple large snows; maybe we had more snow on the days we actually had snow. To evaluate this, I computed the total amount of precipitation for the years it actually snowed during the first eleven days of April.</p>
+<pre class="r"><code># Get the case numbers for the days that &quot;Snow&quot; is in the event column
+snow_days = grep(pattern = &quot;Snow&quot;, x = april$events)
+
+# Compute the total amount of precipitation on the days with snow
+april %&gt;%
+  filter(row_number() %in% snow_days) %&gt;%
+  group_by(year) %&gt;%
+  summarize(
+    total_snow = sum(precip, na.rm = TRUE)
+    )</code></pre>
+<pre><code>## # A tibble: 9 x 2
+##    year total_snow
+##   &lt;dbl&gt;      &lt;dbl&gt;
+## 1  2008       0.96
+## 2  2009       0.47
+## 3  2011       0.08
+## 4  2013       1.39
+## 5  2014       0.81
+## 6  2015       0.71
+## 7  2016       0.06
+## 8  2017       0.18
+## 9  2018       0.82</code></pre>
+<p>While more snow than the last couple years, 2018 doesn’t stand out as a banner April for the amount of snow. We will attribute this erroneous hypothesis to snow-blindness.</p>
+<p>However, my “April = 🌡” hypothesis seems spot on. In 2018, so far, we have only had one day where the daily high temperatur was over 40℉. In the 10 years previous, almost all of the first eleven days of April hit over 40℉. This is compounded by the fact that the one day it went over 40℉, the temperature rose to a balmy 41℉!</p>
+<p>Lastly, I looked at the distribution of the average daily temperatures since 2008. This was inspired by a post I saw <a href="https://cran.r-project.org/web/packages/ggridges/vignettes/gallery.html">here</a> and <a href="http://austinwehrwein.com/data-visualization/it-brings-me-ggjoy/">here</a>.</p>
+<pre class="r"><code># Ridge plot of the distribution of average daily temperatures by year
+ggplot(april, aes(x = temp_avg, y = fct_rev(factor(year)), fill = ..x..)) +
+  geom_density_ridges_gradient(scale = 3, rel_min_height = 0.01, gradient_lwd = 1.) +
+  scale_x_continuous(expand = c(0.01, 0)) +
+  scale_y_discrete(expand = c(0.01, 0)) +
+  scale_fill_viridis(
+    name = expression(paste(&#39;Temp. (&#39;,~degree,&#39;F)&#39;,sep=&#39;&#39;)), 
+    option = &quot;C&quot;
+  ) +
+  labs(
+    title = &#39;April Temperatures in Minneapolis&#39;,
+    subtitle = &#39;Mean temperatures for the first 11 days in April&#39;,
+    x = expression(paste(&#39;Average Daily Temperature (&#39;,~degree,&#39;F)&#39;,sep=&#39;&#39;))
+  ) +
+  theme_ridges(
+    font_size = 13, 
+    grid = TRUE
+  ) + 
+  theme(
+    axis.title.y = element_blank()
+  )</code></pre>
+<p><img src="/post/2018-04-11-spring-weather-in-minneapolis_files/figure-html/unnamed-chunk-4-1.png" width="960" /></p>
+<p>This also suggests that we are experiencing a less than tropical April in Minneapolis.</p>

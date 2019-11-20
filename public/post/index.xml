@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on ANDREW ZIEFFLER</title>
+    <title>My Blog on Andrew Zieffler</title>
     <link>/post/</link>
-    <description>Recent content in Posts on ANDREW ZIEFFLER</description>
+    <description>Recent content in My Blog on Andrew Zieffler</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en_US</language>
-    <lastBuildDate>Thu, 10 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 14 Nov 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Television</title>
+      <link>/post/television/</link>
+      <pubDate>Tue, 22 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/television/</guid>
+      <description>In 2017, my wife and I were fed up with the cost of cable television and were considering “cutting the cord”. In addition to cable, we also had Hulu, Netflix, and Amazon Prime, so our hypothesis was that we probably didn’t need cable. Before making the decision to cut cable, I wanted some data to help ensure that I would not be eliminating many of the TV shows that I watched.</description>
+    </item>
     
     <item>
       <title>Illustrating the Gender Gap in Fiction</title>
@@ -157,9 +166,8 @@ In this talk I spoke about the ASA’s recent call for the deprecation of “sta
       
       <guid>/post/2018-08-27-inbox-zero/</guid>
       <description>On Saturday August 25, 2018 at 8:08 PM I finally hit Inbox Zero!
-Inbox Zero
- I did it by immediately copying the snippets of email I wanted into Evernote notes (my notetaking system). I also attended to to-dos more immediately, or added them to a note of “To-Dos”.
-I doubt I will stay at zero emails in my inbox, but I have been at fewer than 10 emails all summer.</description>
+I did it by immediately copying the snippets of email I wanted into Evernote notes (my notetaking system). I also attended to to-dos more immediately, or added them to a note of “To-Dos”.
+I doubt I will stay at zero emails in my inbox, but I have been at fewer than 10 emails all summer. Hoping to keep things at this level as the semester gears up.</description>
     </item>
     
     <item>

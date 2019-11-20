@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>CV on ANDREW ZIEFFLER</title>
+    <title>CV on Andrew Zieffler</title>
     <link>/tags/cv/</link>
-    <description>Recent content in CV on ANDREW ZIEFFLER</description>
+    <description>Recent content in CV on Andrew Zieffler</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en_US</language>
+    <language>en-us</language>
     <lastBuildDate>Thu, 02 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/cv/index.xml" rel="self" type="application/rss+xml" />
@@ -13,20 +13,20 @@
     
     <item>
       <title>CV: Sale Items vs. Research Plan</title>
-      <link>/posts/2019-05-06-cv-quotation/</link>
+      <link>/post/2019-05-06-cv-quotation/</link>
       <pubDate>Thu, 02 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/posts/2019-05-06-cv-quotation/</guid>
+      <guid>/post/2019-05-06-cv-quotation/</guid>
       <description>Karen Kelsky writes about the importance of identifying a research plan and building your CV around this plan in her book The Professor is In: The Essential Guide to Turning Your Ph.D. into a Job.
  A reader once wrote to explain: During my years as a tenure track assistant professor, I went about publishing and doing research the way I do the grocery shopping: concentrating on the sale items like conferences, book reviews, on-line collaborations, i.</description>
     </item>
     
     <item>
       <title>CV Tips</title>
-      <link>/posts/2019-05-01-cv-tips/</link>
+      <link>/post/2019-05-01-cv-tips/</link>
       <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/posts/2019-05-01-cv-tips/</guid>
+      <guid>/post/2019-05-01-cv-tips/</guid>
       <description>My colleague Joseph Rios and I helped organize a monthly reading and seminar series, QME and Friends Read, for interested graduate students in our program. In March, we hosted a seminar on the Curriculum Vitae, or CV. In preparing for that seminar, I looked through many faculty and student CVs. I also read many blog posts, and scholarly work about putting together a CV. Based on all of this and my own expereiences and advice given to me, I decided to put together a post (maybe multiple posts) that includes some suggestions for compiling a CV.</description>
     </item>
     
