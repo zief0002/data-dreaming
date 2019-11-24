@@ -6,15 +6,24 @@
     <description>Recent content in Tags on Andrew Zieffler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 24 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Computing</title>
+      <link>/tags/computing/</link>
+      <pubDate>Sun, 24 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/computing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Miscellaneous</title>
       <link>/tags/miscellaneous/</link>
-      <pubDate>Tue, 22 Oct 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 24 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/miscellaneous/</guid>
       <description></description>
@@ -62,15 +71,6 @@
       <pubDate>Wed, 26 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/teaching/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Computing</title>
-      <link>/tags/computing/</link>
-      <pubDate>Mon, 17 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/computing/</guid>
       <description></description>
     </item>
     
