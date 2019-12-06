@@ -6,10 +6,20 @@
     <description>Recent content in Science on Andrew Zieffler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 26 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/science/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ReproducibiliTEA Journal Club</title>
+      <link>/post/reproducibilitea-reading-group/</link>
+      <pubDate>Fri, 06 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/reproducibilitea-reading-group/</guid>
+      <description>This semester I took part in the University of Minnesota’s ReproducibiliTEA Journal Club [[website(https://reproducibility.umn.edu/node/161)]]. Reprodicibility is “a grassroots journal club initiative that helps young researchers create local Open Science journal clubs at their universities to discuss diverse issues, papers and ideas about improving science, reproducibility and the Open Science movement.” (Read more at https://reproducibilitea.org/).
+ UMN ReproducibiliTEA Chapter (Fall 2019)   The University of Minnesota chapter was sponsored by the Minnesota Center for Philosophy of Science (which meant we had food, coffee, and of course, tea each meeting) and followed the model from clubs in UK and Europe described on OSF.</description>
+    </item>
     
     <item>
       <title>Deprecating Statistical Significance: Toward Better Science</title>

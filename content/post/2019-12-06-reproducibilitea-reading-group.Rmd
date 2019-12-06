@@ -1,0 +1,41 @@
+---
+title: ReproducibiliTEA Journal Club
+author: Andy
+date: '2019-12-06'
+slug: reproducibilitea-reading-group
+categories: []
+tags:
+  - Science
+  - Research
+subtitle: ''
+description: ''
+image: ''
+showtoc: false
+---
+
+This semester I took part in the University of Minnesota's ReproducibiliTEA Journal Club [[website(https://reproducibility.umn.edu/node/161)]]. Reprodicibility is "a grassroots journal club initiative that helps young researchers create local Open Science journal clubs at their universities to discuss diverse issues, papers and ideas about improving science, reproducibility and the Open Science movement." (Read more at https://reproducibilitea.org/).
+
+
+<figure>
+<img src="/post/2019-12-06-reproducibilitea-reading-group_files/Screen Shot 2019-12-06 at 11.14.03 AM.png" alt="" width="70%"/>
+<figcaption style="text-align:center;">UMN ReproducibiliTEA Chapter (Fall 2019) </figcaption>
+</figure>
+
+
+
+The University of Minnesota chapter was sponsored by the [Minnesota Center for Philosophy of Science](https://cla.umn.edu/mcps) (which meant we had food, coffee, and of course, tea each meeting) and followed the model from clubs in UK and Europe [described on OSF](https://osf.io/cfby7/). We met once a month and read a wonderful set of articles this semester.
+
+- **September 19:** Fidler, F., &amp; Wilcox, J. (2018). [Reproducibility of scientific results](https://plato.stanford.edu/entries/scientific-reproducibility/). In E. N. Zalta (ed.), *The Stanford Encyclopedia of Philosophy* (Winter edition).
+
+- **September 19:** Ioannidis, J. P. (2005). [Why most published research findings are false](https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.0020124). *PLoS medicine, 2*(8), e124. doi: 10.1371/journal.pmed.0020124
+
+- **October 17:** Smaldino, P. E., &amp; McElreath, R. (2016). [The natural selection of bad science](https://royalsocietypublishing.org/doi/full/10.1098/rsos.160384). *Royal Society Open Science, 3*(9), 160384. doi: 10.1098/rsos.160384
+
+- **October 31:** Nosek, B. A., &amp; Bar-Anan, Y. (2012). [Scientific utopia: I. Opening scientific communication](https://www.tandfonline.com/doi/abs/10.1080/1047840X.2012.692215). *Psychological Inquiry, 23*(3), 217-243. doi: 10.1080/1047840X.2012.692215
+
+- **November 14:** John, L. K., Loewenstein, G., &amp; Prelec, D. (2012). [Measuring the prevalence of questionable research practices with incentives for truth telling](https://journals.sagepub.com/doi/abs/10.1177/0956797611430953). *Psychological science, 23*(5), 524&ndash;532. doi: 10.1177/0956797611430953
+
+- **December 5:** Munaf&ograve;, M. R., et al. (2017). [A manifesto for reproducible science](https://www.nature.com/articles/s41562-016-0021). *Nature Human Behaviour, 1*(1), 0021. doi: 10.1038/s41562-016-0021
+
+The participants were all fantastic and I learned a great deal. We are hoping to meet spring semester as well. Feel free to join us. For more information, or to join the email list, contact Amy Riegelman (<aspringe@umn.edu>) or Alan Love (<aclove@umn.edu>).
+
