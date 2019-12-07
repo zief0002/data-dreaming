@@ -1,0 +1,51 @@
+---
+title: Helping the Earth
+author: Andy
+date: '2019-12-11'
+slug: helping-the-earth
+categories: []
+tags:
+  - Miscellaneous
+subtitle: ''
+description: ''
+image: ''
+showtoc: false
+---
+
+Over the last few years I have tried to be a better steward of Planet Earth. There are a few specific actions that I have committed to that have actually had an impact on my life on a day-to-day basis. I share them with you in case you want to try them as well.
+
+## Catalog Choice
+
+[Catalog Choice](https://catalogchoice.org/) is a non-profit organizatin whose mission is "to stop junk mail for good". In their own words,
+
+> Catalog Choice sends merchants your catalog opt-out request on your behalf, but please note that we have no control over how and when merchants will process your opt-out request. We’re constantly trying to work with merchants to encourage them to comply with your opt-out requests.
+
+Since signing up and entering in the unwanted catalogs, we no longer receive those annoying catalogs that we never opted in for. This is fantastic, as we used to just immediately toss them into the recyclying. But not getting them in the first place is better. I highly recommend this.
+
+## Adopt-a-Drain
+
+I adopted a drain at https://adopt-a-drain.org/ about a year ago. The idea is:
+
+> Volunteer fifteen minutes, twice a month, for cleaner waterways and healthier communities. Storm drains flow directly to local lakes, rivers, and wetlands, acting as a conduit for trash and organic pollutants. Adopt a Drain asks residents to adopt a storm drain in their neighborhood and keep it clear of leaves, trash, and other debris to reduce water pollution.
+
+It is easy, and kind of fun. After adopting a drain, you can set up a profile for it, and even give it a name (like a Cabbage Patch Kid). My drain is named Mandelbrot.
+
+<figure>
+<img src="/post/2019-12-11-helping-the-earth_files/Screen Shot 2019-12-06 at 8.08.02 PM.png" alt="" width="90%"/>
+<figcaption style="text-align:center;">My drain's profile on adopt-drain.org</figcaption>
+</figure>
+
+## Planted My Lawn with Native Prairie
+
+This has been the most enjoyable and therapeutic of all my stewardship endeavors. I started adding plants to our yard as soon as we purchased our house (in 2007). This was in part to beautify the rather drab suburban lawn we inherited, but also in part to cut down on the amount of lawn to mow.
+
+A couple of years ago, I committed to tilling up a good chunk of our yard and planting native prairie seed. We bought our seed from a local company, [Prairie Restoration](http://www.prairieresto.com/), and the transformation was incredible. Within the first year we were seeing an increased butterfly, insect, and bird population. It is completely worth it.
+
+<figure>
+<img src="https://instagram.ffcm1-1.fna.fbcdn.net/v/t51.2885-15/e35/s1080x1080/70974713_164716958011989_3937013452350199924_n.jpg?_nc_ht=instagram.ffcm1-1.fna.fbcdn.net&_nc_cat=109&oh=afd2e6c66caf4eb33eb76b047619c5e1&oe=5E71EE88" alt="" width="30%" style="float: left; width: 30%; margin-right: 1%;"/>
+<img src="https://instagram.ffcm1-1.fna.fbcdn.net/v/t51.2885-15/e35/s1080x1080/65766181_111437360159823_5556060247607386418_n.jpg?_nc_ht=instagram.ffcm1-1.fna.fbcdn.net&_nc_cat=103&oh=dc89d8f98abbd1a32197e2575d9c36a5&oe=5E6C474B" width="30%" style="float: left; width: 30%; margin-right: 1%;"/>
+<img src="https://instagram.ffcm1-2.fna.fbcdn.net/v/t51.2885-15/e35/36561253_228934331060749_3649753334287433728_n.jpg?_nc_ht=instagram.ffcm1-2.fna.fbcdn.net&_nc_cat=101&oh=382f845474759ac2ad55643550e6c744&oe=5E72629B" width="30%" style="float: left; width: 30%; margin-right: 1%;"/>
+<figcaption style="text-align:center;">Pics of our yard.</figcaption>
+</figure>
+
+
