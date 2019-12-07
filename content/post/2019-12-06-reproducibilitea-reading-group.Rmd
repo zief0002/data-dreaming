@@ -13,11 +13,11 @@ image: ''
 showtoc: false
 ---
 
-This semester I took part in the University of Minnesota's ReproducibiliTEA Journal Club [[website(https://reproducibility.umn.edu/node/161)]]. Reprodicibility is "a grassroots journal club initiative that helps young researchers create local Open Science journal clubs at their universities to discuss diverse issues, papers and ideas about improving science, reproducibility and the Open Science movement." (Read more at https://reproducibilitea.org/).
+This semester I took part in the [University of Minnesota's ReproducibiliTEA Journal Club](https://reproducibility.umn.edu/node/161). Reprodicibility is "a grassroots journal club initiative that helps young researchers create local Open Science journal clubs at their universities to discuss diverse issues, papers and ideas about improving science, reproducibility and the Open Science movement." (Read more at https://reproducibilitea.org/).
 
 
 <figure>
-<img src="/post/2019-12-06-reproducibilitea-reading-group_files/Screen Shot 2019-12-06 at 11.14.03 AM.png" alt="" width="70%"/>
+<img src="/post/2019-12-06-reproducibilitea-reading-group_files/Screen Shot 2019-12-06 at 11.14.03 AM.png" alt="" width="90%"/>
 <figcaption style="text-align:center;">UMN ReproducibiliTEA Chapter (Fall 2019) </figcaption>
 </figure>
 

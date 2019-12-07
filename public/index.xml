@@ -6,10 +6,20 @@
     <description>Recent content on Andrew Zieffler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Teaching Statistics Reading/Discussion Group</title>
+      <link>/post/teaching-statistics-reading-discussion-group/</link>
+      <pubDate>Mon, 09 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/teaching-statistics-reading-discussion-group/</guid>
+      <description>Laura Le is organizing a reading/discussion group at the University of Minnesota in spring 2020 for anyone interested in teaching statistics. The group will meet Mondays from 4:00pm–5:00pm (location TBD). Here is the tentative plan for what this interest group will entail:
+ Prior to the meeting, read/skim one article related to the topic of the week. During the meeting, discuss the topic/article for the first 30 minutes and video chat with a prominent statistics educator on that topic for the last 30 minutes.</description>
+    </item>
     
     <item>
       <title>ReproducibiliTEA Journal Club</title>
@@ -17,7 +27,7 @@
       <pubDate>Fri, 06 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>/post/reproducibilitea-reading-group/</guid>
-      <description>This semester I took part in the University of Minnesota’s ReproducibiliTEA Journal Club [[website(https://reproducibility.umn.edu/node/161)]]. Reprodicibility is “a grassroots journal club initiative that helps young researchers create local Open Science journal clubs at their universities to discuss diverse issues, papers and ideas about improving science, reproducibility and the Open Science movement.” (Read more at https://reproducibilitea.org/).
+      <description>This semester I took part in the University of Minnesota’s ReproducibiliTEA Journal Club. Reprodicibility is “a grassroots journal club initiative that helps young researchers create local Open Science journal clubs at their universities to discuss diverse issues, papers and ideas about improving science, reproducibility and the Open Science movement.” (Read more at https://reproducibilitea.org/).
  UMN ReproducibiliTEA Chapter (Fall 2019)   The University of Minnesota chapter was sponsored by the Minnesota Center for Philosophy of Science (which meant we had food, coffee, and of course, tea each meeting) and followed the model from clubs in UK and Europe described on OSF.</description>
     </item>
     

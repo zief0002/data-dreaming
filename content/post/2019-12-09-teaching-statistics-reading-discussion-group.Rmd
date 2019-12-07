@@ -1,0 +1,21 @@
+---
+title: Teaching Statistics Reading/Discussion Group
+author: Andy
+date: '2019-12-09'
+slug: teaching-statistics-reading-discussion-group
+categories: []
+tags:
+  - CATALST
+  - Teaching
+  - Statistics Education
+subtitle: ''
+description: ''
+image: ''
+showtoc: false
+---
+
+Laura Le is organizing a reading/discussion group at the University of Minnesota in spring 2020 for anyone interested in teaching statistics. The group will meet Mondays from 4:00pm&ndash;5:00pm (location TBD). Here is the tentative plan for what this interest group will entail: 
+
+> Prior to the meeting, read/skim one article related to the topic of the week. During the meeting, discuss the topic/article for the first 30 minutes and video chat with a prominent statistics educator on that topic for the last 30 minutes.  
+
+Feel free to come to some, or all, of the meetings. Email Laura (<free0312@umn.edu>) for more information.

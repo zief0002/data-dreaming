@@ -6,10 +6,20 @@
     <description>Recent content in Statistics Education on Andrew Zieffler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/statistics-education/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Teaching Statistics Reading/Discussion Group</title>
+      <link>/post/teaching-statistics-reading-discussion-group/</link>
+      <pubDate>Mon, 09 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/teaching-statistics-reading-discussion-group/</guid>
+      <description>Laura Le is organizing a reading/discussion group at the University of Minnesota in spring 2020 for anyone interested in teaching statistics. The group will meet Mondays from 4:00pm–5:00pm (location TBD). Here is the tentative plan for what this interest group will entail:
+ Prior to the meeting, read/skim one article related to the topic of the week. During the meeting, discuss the topic/article for the first 30 minutes and video chat with a prominent statistics educator on that topic for the last 30 minutes.</description>
+    </item>
     
     <item>
       <title>What to do about p-values?</title>
