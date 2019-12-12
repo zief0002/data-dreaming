@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Andrew Zieffler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,27 @@
     <item>
       <title>Miscellaneous</title>
       <link>/tags/miscellaneous/</link>
-      <pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/miscellaneous/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Research</title>
+      <link>/tags/research/</link>
+      <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/research/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Writing</title>
+      <link>/tags/writing/</link>
+      <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/writing/</guid>
       <description></description>
     </item>
     
@@ -44,15 +62,6 @@
       <pubDate>Mon, 09 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/teaching/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Research</title>
-      <link>/tags/research/</link>
-      <pubDate>Fri, 06 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/research/</guid>
       <description></description>
     </item>
     
@@ -89,15 +98,6 @@
       <pubDate>Wed, 24 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/quotation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Writing</title>
-      <link>/tags/writing/</link>
-      <pubDate>Wed, 24 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/writing/</guid>
       <description></description>
     </item>
     

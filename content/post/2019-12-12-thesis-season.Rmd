@@ -1,0 +1,31 @@
+---
+title: Thesis Season
+author: Andy
+date: '2019-12-12'
+slug: thesis-season
+categories: []
+tags:
+  - Research
+  - Writing
+  - Miscellaneous
+subtitle: ''
+description: ''
+image: ''
+showtoc: false
+---
+
+It is the time of the semester when it seems every graduate student wants to make progress on their milestones, and several oral prelim exams and thesis defenses get crammed into a 1&ndash;2 week period. In the spirit of what I call "Thesis Season", here are some good reads to keep this all in perspective.
+
+Luke Burns wrote an inspired piece for McSweeney's entitled [FAQ:
+The "Snake Fight" Portion of Your Thesis Defense](https://www.mcsweeneys.net/articles/faq-the-snake-fight-portion-of-your-thesis-defense). To give you a quick preview,
+
+> Q: Do I have to kill the snake? A: University guidelines state that you have to "defeat" the snake. There are many ways to accomplish this. Lots of students choose to wrestle the snake. Some construct decoys and elaborate traps to confuse and then ensnare the snake. One student brought a flute and played a song to lull the snake to sleep. Then he threw the snake out a window.
+
+
+It is worth the read. Thanks to Jeff Bye for bring this to my attention.
+
+This type of thesis defense strategy was also [proposed by xkcd](https://xkcd.com/1403/) savant Randall Monroe.
+
+![xkcd thesis defense](https://imgs.xkcd.com/comics/thesis_defense.png)
+
+Happy Thesis Season!
