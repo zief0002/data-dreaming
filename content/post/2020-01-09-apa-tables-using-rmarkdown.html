@@ -1,0 +1,150 @@
+---
+title: APA Tables Using RMarkdown
+author: Andy
+date: '2020-01-09'
+slug: apa-tables-using-rmarkdown
+categories: []
+tags:
+  - Markdown
+  - R
+  - Writing
+subtitle: ''
+description: ''
+image: ''
+showtoc: false
+---
+
+
+
+<p>Often it is useful to format table output to make it look good or to adhere a particular style (e.g., APA). There are several packages that help in this endeavor when working in an Rmarkdown document. When I create tables using RMarkdown, the primary packages I use are:</p>
+<ul>
+<li>The <code>kable()</code> function from the <strong>knitr</strong> package; and</li>
+<li>Functions from the <strong>kableExtra</strong> package.</li>
+</ul>
+<p>There are many packages for formatting tables, among others, include the <a href="https://davidgohel.github.io/flextable/">flextable package</a>, the <a href="https://gt.rstudio.com/">gt package</a>, the <a href="https://hughjonesd.github.io/huxtable/">huxtable package</a>, and the <a href="https://gdemin.github.io/expss/">expss package</a>. I have tried all of these and many more. I settled on <strong>knitr</strong> because of its robustness and ease of use—along with <strong>kableExtra</strong>, it can create almost any table I can imagine using a general set of syntax.</p>
+<p>I also use LaTeX and PDF output when I need to really format using the APA style. My experience with HTML and APA is that I can get really close, but there are one or two elements that I can’t seem to get formatted correctly, which varies depending on the package I try. The closest I get with HTML (without using bookdown) seems to be the <strong>flextable</strong> package. It may also be worth mentioning the <a href="https://crsh.github.io/papaja_man/">papaja package</a> package. This can set up an entire RMarkdown document to adhere to APA formatting, but is beyond the scope of what I typically need.</p>
+<p>To illustrate my process for table creation using LaTeX, I will attempt to re-create the following table from the 7th edition of the APA Publication Manual.</p>
+<figure>
+<img src="/post/2020-01-09-apa-tables-using-rmarkdown_files/IMG_2896.JPG" alt="" width="70%" />
+<figcaption style="text-align:center;">
+Table 7.6 from the 7th edition of the APA Publication Manual (p. 213).
+</figcaption>
+</figure>
+<div id="my-process" class="section level1">
+<h1>My Process</h1>
+<p>To begin I will load a few packages.</p>
+<pre class="r"><code># Load libraries
+library(knitr)
+library(kableExtra)
+library(tidyverse)</code></pre>
+<p>The workhorse function from the <strong>knitr</strong> package for table creation is the <code>kable()</code> function, and the primary input to the <code>kable()</code> function is a data frame. Below I will set up a data frame to mimic the content from our goal table.</p>
+<pre class="r"><code>tab_01 = data.frame(
+  scale = c(&quot;BAS-T&quot;, &quot;SR&quot;, &quot;BDI&quot;, &quot;ASRM&quot;, &quot;M-SRM&quot;),
+  high = c(&quot;46.17 (2.87)&quot;, &quot;17.94 (1.88)&quot;, &quot;7.11 (6.50)&quot;, 
+           &quot;6.46 (4.01)&quot;, &quot;11.05 (3.36)&quot;),
+  moderate = c(&quot;37.99 (1.32)&quot;, &quot;11.52 (1.84)&quot;, &quot;6.18 (6.09)&quot;, 
+               &quot;5.63 (3.69)&quot;, &quot;11.76 (2.75)&quot;),
+  p = c(&quot;&lt;.001&quot;, &quot;&lt;.001&quot;, &quot;.254&quot;, &quot;.109&quot;, &quot;.078&quot;)
+)</code></pre>
+<p>Although I simply entered the data values, this data frame could also be created as the ouput of one or more functions.</p>
+<p>We can now use the <code>kable()</code> function to rename the columns, round numeric values (which we don’t have since I entered the numbers as quoted text), set alignment for each column, set a caption, etc.</p>
+<pre class="r"><code>kable(
+  tab_01,
+  format = &quot;latex&quot;,
+  booktabs = TRUE,
+  col.names = c(&quot;Scale&quot;, &quot;High BAS group&quot;, &quot;Moderate BAS group&quot;, &quot;p&quot;),
+  align = c(&quot;l&quot;, &quot;c&quot;, &quot;c&quot;, &quot;c&quot;),
+  caption = &quot;Means and Standard Deviations of Scores on Baseline Measures&quot;
+  )</code></pre>
+<p><img src="/post/2020-01-09-apa-tables-using-rmarkdown_files/Screen%20Shot%202020-01-10%20at%2012.03.51%20PM.png" style="width:60.0%" /></p>
+<p>Note that if you try this and actual LaTeX syntax is outputted rather than the table, you may need to include the knitr option <code>results='asis'</code> in your code chunk. This will force the syntax to render.</p>
+<pre><code>```{r results=&#39;asis&#39;}
+kable(
+  tab_01,
+  format = &quot;latex&quot;,
+  booktabs = TRUE,
+  col.names = c(&quot;Scale&quot;, &quot;High BAS group&quot;, &quot;Moderate BAS group&quot;, &quot;p&quot;),
+  align = c(&quot;l&quot;, &quot;c&quot;, &quot;c&quot;, &quot;c&quot;),
+  caption = &quot;Means and Standard Deviations of Scores on Baseline Measures&quot;
+  )
+```</code></pre>
+<p>This gets us 90% of the way there. There are a few things to do to make this ready for primetime. First we will italicize the “p” in the header row. To do this we need to use some LaTeX commands. So that it compiles correctly we will also add the argument <code>escape=FALSE</code> into the <code>kable()</code> function.</p>
+<pre class="r"><code>kable(
+  tab_01,
+  format = &quot;latex&quot;,
+  booktabs = TRUE,
+  escape = FALSE,
+  col.names = c(&quot;Scale&quot;, &quot;High BAS group&quot;, &quot;Moderate BAS group&quot;, &quot;\\textit{p}&quot;),
+  align = c(&quot;l&quot;, &quot;c&quot;, &quot;c&quot;, &quot;c&quot;),
+  caption = &quot;Means and Standard Deviations of Scores on Baseline Measures&quot;
+  )</code></pre>
+<p><img src="/post/2020-01-09-apa-tables-using-rmarkdown_files/Screen%20Shot%202020-01-10%20at%2012.09.52%20PM.png" style="width:60.0%" /></p>
+<p>To further format the table we will use functionality from the <strong>kableExtra</strong> package. To do this we pipe the <code>kable()</code> output into the functions from the <strong>kableExtra</strong> package. Here I center all of the column headings using the <code>rowspec()</code> function and also style the table to be full page width.</p>
+<pre class="r"><code>kable(
+  tab_01,
+  format = &quot;latex&quot;,
+  booktabs = TRUE,
+  escape = FALSE,
+  col.names = c(&quot;Scale&quot;, &quot;High BAS group&quot;, &quot;Moderate BAS group&quot;, &quot;\\textit{p}&quot;),
+  align = c(&quot;l&quot;, &quot;c&quot;, &quot;c&quot;, &quot;c&quot;),
+  caption = &quot;Means and Standard Deviations of Scores on Baseline Measures&quot;
+  ) %&gt;%
+  row_spec(row = 0, align = &quot;c&quot;) %&gt;%
+  kable_styling(full_width = TRUE)</code></pre>
+<p><img src="/post/2020-01-09-apa-tables-using-rmarkdown_files/Screen%20Shot%202020-01-10%20at%2012.15.14%20PM.png" style="width:100.0%" /></p>
+<p>Next we will add the footnote using the <code>footnote()</code> function from <strong>kableExtra</strong>. The different arguments I use here are:</p>
+<ul>
+<li><code>general_title=</code> Allows you to change the default footnote title from <em>Note:</em> to <em>Note.</em></li>
+<li><code>general=</code> The actual text of the footnote</li>
+<li><code>threeparttable=TRUE</code> will force the width of caption and footnotes be the width of the original table. It’s useful when you have long paragraph of footnotes.</li>
+<li><code>footnote_as_chunk=TRUE</code> sets the footnote to printed in a chunk (without line break after <em>Note.</em>).</li>
+</ul>
+<p>To make the <code>threeparttable=</code> argument work we also need to add <code>longtable=TRUE</code> into the <code>kable()</code> function.</p>
+<pre class="r"><code>kable(
+  tab_01,
+  format = &quot;latex&quot;,
+  booktabs = TRUE,
+  escape = FALSE,
+  longtable = TRUE,
+  col.names = c(&quot;Scale&quot;, &quot;High BAS group&quot;, &quot;Moderate BAS group&quot;, &quot;\\textit{p}&quot;),
+  align = c(&quot;l&quot;, &quot;c&quot;, &quot;c&quot;, &quot;c&quot;),
+  caption = &quot;Means and Standard Deviations of Scores on Baseline Measures&quot;
+  ) %&gt;%
+  row_spec(row = 0, align = &quot;c&quot;) %&gt;%
+  kable_styling(full_width = TRUE) %&gt;%
+  footnote(
+    general_title = &quot;Note.&quot;,
+    general = &quot;Standard deviations are presented in parentheses. BAS = Behavioral Activation System; BAS-T = Behavioral Activation System-Total sores from the Behavioral Inhibition System/Behavioral Activation System Scales; SR = Sensitivity to Reward scores from the Sensitivity to Punishment and Sensitivity to Reward Questionnaire; BDI = Beck Depression Inventory scores; ASRM = Altman Self-Rating Mania Scale scores; M-SRM = Modified Social Rhythm Metric Regularity scores.&quot;,
+    threeparttable = TRUE,
+    footnote_as_chunk = TRUE
+    )</code></pre>
+<p><img src="/post/2020-01-09-apa-tables-using-rmarkdown_files/Screen%20Shot%202020-01-10%20at%2012.20.38%20PM.png" style="width:100.0%" /></p>
+<p>Lastly we need to adjust the captioning. This requires us to use the <strong>caption</strong> package from LaTeX. (Note: This is not an R package!) We load the <strong>caption</strong> package in the YAML of our RMarkdown document. If you are using <strong>tinytex</strong> this package will install automatically if you do not have it. Otherwise, you may need to install this LaTeX package. We add the <code>header-include:</code> field into our YAML and then use the <code>\usepackage{}</code> LaTeX function to load the <strong>caption</strong> package. Here is what this will look like:</p>
+<pre><code>---
+title: &quot;Untitled&quot;
+author: &quot;Andrew Zieffler&quot;
+date: &quot;1/10/2020&quot;
+output: pdf_document
+header-includes:
+   - \usepackage{caption}
+---   </code></pre>
+<p>The <strong>caption</strong> package includes the <code>captionsetup{}</code> function. To format the caption using the APA formatting we need:</p>
+<ul>
+<li>Table caption in italics</li>
+<li>Table numbering in boldface</li>
+<li>Line separating the table number and caption</li>
+</ul>
+<p>This can be included in the YAML as well:</p>
+<pre><code>---
+title: &quot;Untitled&quot;
+author: &quot;Andrew Zieffler&quot;
+date: &quot;1/10/2020&quot;
+output: pdf_document
+header-includes:
+   - \usepackage{caption}
+   - \captionsetup[table]{textfont={it}, labelfont={bf}, singlelinecheck=false, labelsep=newline}
+---</code></pre>
+<p>For more options <a href="http://ctan.math.washington.edu/tex-archive/macros/latex/contrib/caption/caption-eng.pdf">see here</a>. You can also set u your figure captioning in a similar way; use <code>figure</code> instead of `table’ between the square brackets.</p>
+<p><img src="/post/2020-01-09-apa-tables-using-rmarkdown_files/Screen%20Shot%202020-01-10%20at%2012.30.23%20PM.png" style="width:100.0%" /></p>
+<p>Shazaam! We have a nice looking table that is formatted to APA style.</p>
+</div>

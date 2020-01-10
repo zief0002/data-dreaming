@@ -6,10 +6,20 @@
     <description>Recent content in R on Andrew Zieffler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jan 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>APA Tables Using RMarkdown</title>
+      <link>/post/apa-tables-using-rmarkdown/</link>
+      <pubDate>Thu, 09 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/apa-tables-using-rmarkdown/</guid>
+      <description>Often it is useful to format table output to make it look good or to adhere a particular style (e.g., APA). There are several packages that help in this endeavor when working in an Rmarkdown document. When I create tables using RMarkdown, the primary packages I use are:
+ The kable() function from the knitr package; and Functions from the kableExtra package.  There are many packages for formatting tables, among others, include the flextable package, the gt package, the huxtable package, and the expss package.</description>
+    </item>
     
     <item>
       <title>Television</title>
