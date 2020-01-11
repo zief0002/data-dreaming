@@ -1,0 +1,193 @@
+---
+title: 'APA Tables using R Markdown: Part 2'
+author: Andy
+date: '2020-01-11'
+slug: apa-tables-using-r-markdown-part-2
+categories: []
+tags:
+  - Markdown
+  - R
+  - Writing
+subtitle: ''
+description: ''
+image: ''
+showtoc: false
+---
+
+
+
+<p>This is the second part of a short blog series I am writing to re-create some of the sample tables found in the 7th edition <em>APA Publication Manual</em>. In this post I will attempt to re-create Table 7.8 (p. 214). To do so, I will incorporate many ideas that I covered in the <a href="apa-tables-using-r-markdown">first of these posts</a>.</p>
+<figure>
+<img src="/post/2020-01-11-apa-tables-using-r-markdown-part-2_files/IMG_2897.JPG" alt="" width="70%" />
+<figcaption style="text-align:center;">
+Table 7.8 from the 7th edition of the APA Publication Manual (p. 214).
+</figcaption>
+</figure>
+<div id="my-process" class="section level1">
+<h1>My Process</h1>
+<p>I will again render to PDF and set up the YAML to import the <strong>caption</strong> package (LaTeX) and set up the APA caption formatting.</p>
+<pre><code>---
+title: &quot;Untitled&quot;
+author: &quot;Andrew Zieffler&quot;
+date: &quot;1/11/2020&quot;
+output: pdf_document
+header-includes:
+   - \usepackage{caption}
+   - \captionsetup[table]{textfont={it}, labelfont={bf}, singlelinecheck=false, labelsep=newline}
+---</code></pre>
+<p>In the RMarkdown body, I will load a few packages and also create the data frame that includes the table data.</p>
+<pre class="r"><code># Load libraries
+library(knitr)
+library(kableExtra)
+library(tidyverse)
+
+# Create table
+tab_02 = data.frame(
+  parameter = c(
+    &quot;Maximum asymptote, proportion&quot;, 
+    &quot;Crossover, in ms&quot;, 
+    &quot;Slope, as change in proportion per ms&quot;
+    ),
+  m1 = c(.843, 759, .001),
+  s1 = c(.135, 87, .0002),
+  m2 = c(.877, 694, .002),
+  s2 = c(.082, 42, .0002),
+  t = c(0.951, 2.877, 2.635),
+  p = c(.347, .006, .012),
+  d = c(0.302, 0.840, 2.078)
+)</code></pre>
+<p>I will then pipe this into the <code>kable()</code> function to set the column names, column alignment, and table caption. The column headings we will want to use are associated with those in the lowest header row of Table 7.8. We will add the higher header row later.</p>
+<p>I also employ similar <strong>kableExtra</strong> function from those introduced in Part 1 to make the table the full page width and include the footnote. The only addition is the use of <code>escape=FALSE</code> as an additional argument in the <code>footnote()</code> function to use LaTeX syntax (namely the <code>$</code>) to typeset the mathematics in the footnote.</p>
+<pre class="r"><code>kable(
+  tab_02,
+  format = &quot;latex&quot;,
+  booktabs = TRUE,
+  escape = FALSE,
+  longtable = TRUE,
+  col.names = c(&quot;&quot;, &quot;M&quot;, &quot;SD&quot;, &quot;M&quot;, &quot;SD&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;),
+  align = c(&quot;l&quot;, &quot;c&quot;, &quot;c&quot;, &quot;c&quot;, &quot;c&quot;, &quot;c&quot;, &quot;c&quot;, &quot;c&quot;),
+  caption = &quot;Results of Curve-Fitting Analysis Examining the Time Course of Fixations to the Target&quot;
+  ) %&gt;%
+  kable_styling(full_width = TRUE) %&gt;%
+  footnote(
+    general_title = &quot;Note.&quot;,
+    general = &quot;For each participant, the logistic function was fit to target fixations separately. The maximum asymptote is the asymptotic degree of looking at the end of the time course fixations. The crossover is the point in time when the function crosses the midway point between peak and baseline. The slope represents the rate of change in the function measured at the crossover. Mean parameter values for each of the analyses are shown for the 9-year-olds ($n=24$) and the 16-year-olds ($n=18$), as well as the results of $t$ tests (assuming unequal variance) comparing the parameter estimates between the two ages.&quot;,
+    threeparttable = TRUE,
+    footnote_as_chunk = TRUE,
+    escape = FALSE
+    )</code></pre>
+<p><img src="/post/2020-01-11-apa-tables-using-r-markdown-part-2_files/Screen%20Shot%202020-01-11%20at%202.58.08%20PM.png" style="width:100.0%" /></p>
+<p>Again, this gets us about 90% of the way there. The first adjustment we will want to make is to make the first column wider. To do this we will use the <code>column_spec()</code> function from <strong>kableExtra</strong> to change the column width of the first column. For most of my work, I play around with this width until it looks good.</p>
+<pre class="r"><code>kable(
+  tab_02,
+  format = &quot;latex&quot;,
+  booktabs = TRUE,
+  escape = FALSE,
+  longtable = TRUE,
+  col.names = c(&quot;&quot;, &quot;M&quot;, &quot;SD&quot;, &quot;M&quot;, &quot;SD&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;),
+  align = c(&quot;l&quot;, &quot;c&quot;, &quot;c&quot;, &quot;c&quot;, &quot;c&quot;, &quot;c&quot;, &quot;c&quot;, &quot;c&quot;),
+  caption = &quot;Results of Curve-Fitting Analysis Examining the Time Course of Fixations to the Target&quot;
+  ) %&gt;%
+  kable_styling(full_width = TRUE) %&gt;%
+  footnote(
+    general_title = &quot;Note.&quot;,
+    general = &quot;For each participant, the logistic function was fit to target fixations separately. The maximum asymptote is the asymptotic degree of looking at the end of the time course fixations. The crossover is the point in time when the function crosses the midway point between peak and baseline. The slope represents the rate of change in the function measured at the crossover. Mean parameter values for each of the analyses are shown for the 9-year-olds ($n=24$) and the 16-year-olds ($n=18$), as well as the results of $t$ tests (assuming unequal variance) comparing the parameter estimates between the two ages.&quot;,
+    threeparttable = TRUE,
+    footnote_as_chunk = TRUE,
+    escape = FALSE
+    ) %&gt;%
+  column_spec(column = 1, width = &quot;2in&quot;)</code></pre>
+<p><img src="/post/2020-01-11-apa-tables-using-r-markdown-part-2_files/Screen%20Shot%202020-01-11%20at%202.55.35%20PM.png" style="width:100.0%" /></p>
+<p>The second thing we will adjust is that in the original table there is a slight indent in the text “Slope, as change in proportion per ms” to indicate that the text has overflowed onto the next line. To do this we have to include some LaTeX syntax into the actual data.</p>
+<p>We want insert a linebreak into the text after the word “proportion” and then indent the text slightly. The LaTeX syntax for a linebreak is two forward slashes <code>\\</code>, and that for indenting is <code>\hspace{1em}</code> where <code>\hspace{}</code> indicates a horizontal space and <code>1em</code> is the width of this space; in our case I use a width of one em.</p>
+<p>If we were using a LaTeX program this syntax would work fine, but in RMarkdown, the forward slash <code>\</code> is a special escape character. Thus, if we really want a forward slash we need to use two slashes, <code>\\</code>, the first escapes and the second is our actual slash. Thus for our syntax we need four forward slashes (to really get two) for the linebreak and then we need to again use two to make the horizontal space. This looks like this:</p>
+<pre><code>\\\\\\hspace{1em}</code></pre>
+<p>We will add this directly into the data frame exactly where we want the linebreak and indentation.</p>
+<pre class="r"><code># Create table with linebreak and indentation
+tab_02 = data.frame(
+  parameter = c(
+    &quot;Maximum asymptote, proportion&quot;, 
+    &quot;Crossover, in ms&quot;, 
+    &quot;Slope, as change in proportion \\\\\\hspace{1em}per ms&quot;
+    ),
+  m1 = c(.843, 759, .001),
+  s1 = c(.135, 87, .0002),
+  m2 = c(.877, 694, .002),
+  s2 = c(.082, 42, .0002),
+  t = c(0.951, 2.877, 2.635),
+  p = c(.347, .006, .012),
+  d = c(0.302, 0.840, 2.078)
+)</code></pre>
+<p>Then we can re-run the syntax to create our table.</p>
+<p><img src="/post/2020-01-11-apa-tables-using-r-markdown-part-2_files/Screen%20Shot%202020-01-11%20at%202.42.27%20PM.png" style="width:100.0%" /></p>
+<p>The last thing we need to do is add in the top header row. To do this we will employ the <code>add_header_above()</code> function from the <strong>kableExtra</strong> package. This function takes an argument <code>header=</code> that according to the <a href="https://rdrr.io/cran/kableExtra/man/add_header_above.html">documentation</a>, gives a “(named) character vector with the column span as values. For example, <code>c(" " = 1, "title" = 2)</code> can be used to create a new header row for a 3-column table with”title" spanning across column 2 and 3."</p>
+<p>We will also include <code>escape=FALSE</code> in this function to again use LaTeX syntax to format the text in this heading. (Note: Placing text inside a set of <code>$</code> will italicize it as it typesets it mathematically.) The new syntax for us is:</p>
+<pre class="r"><code>kable(
+  tab_02,
+  format = &quot;latex&quot;,
+  booktabs = TRUE,
+  escape = FALSE,
+  longtable = TRUE,
+  col.names = c(&quot;&quot;, &quot;M&quot;, &quot;SD&quot;, &quot;M&quot;, &quot;SD&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;),
+  align = c(&quot;l&quot;, &quot;c&quot;, &quot;c&quot;, &quot;c&quot;, &quot;c&quot;, &quot;c&quot;, &quot;c&quot;, &quot;c&quot;),
+  caption = &quot;Results of Curve-Fitting Analysis Examining the Time Course of Fixations to the Target&quot;
+  ) %&gt;%
+  kable_styling(full_width = TRUE) %&gt;%
+  footnote(
+    general_title = &quot;Note.&quot;,
+    general = &quot;For each participant, the logistic function was fit to target fixations separately. The maximum asymptote is the asymptotic degree of looking at the end of the time course fixations. The crossover is the point in time when the function crosses the midway point between peak and baseline. The slope represents the rate of change in the function measured at the crossover. Mean parameter values for each of the analyses are shown for the 9-year-olds ($n=24$) and the 16-year-olds ($n=18$), as well as the results of $t$ tests (assuming unequal variance) comparing the parameter estimates between the two ages.&quot;,
+    threeparttable = TRUE,
+    footnote_as_chunk = TRUE,
+    escape = FALSE
+    ) %&gt;%
+  column_spec(column = 1, width = &quot;2in&quot;) %&gt;%
+  add_header_above(
+    c(&quot;Logistic parameter&quot; = 1, &quot;9-year-olds&quot; = 2, &quot;16-year-olds&quot; = 2,
+      &quot;t(40)&quot; = 1, &quot;$p$&quot; = 1, &quot;Cohens $d$&quot; = 1),
+    escape = FALSE
+    )</code></pre>
+<p><img src="/post/2020-01-11-apa-tables-using-r-markdown-part-2_files/Screen%20Shot%202020-01-11%20at%203.07.32%20PM.png" style="width:100.0%" /></p>
+<p>By default the <code>add_header_above()</code> function adds a bottom border for each column that includes text. To mimic Table 7.8 we need to remove that border from a few of those columns. I know of no way to do this in the R syntax. So, what we need to do is examine the actual LaTeX syntax that is being produced when we create this table. If you run this syntax in the <strong>Console</strong>, it will produce the following LaTeX syntax (which is rendered into the formatted table in your RMarkdown document).</p>
+<pre><code>\begin{ThreePartTable}
+\begin{TableNotes}[para]
+\item \textit{Note.} 
+\item For each participant, the logistic function was fit to target fixations separately. The maximum asymptote is the asymptotic degree of looking at the end of the time course fixations. The crossover is the point in time when the function crosses the midway point between peak and baseline. The slope represents the rate of change in the function measured at the crossover. Mean parameter values for each of the analyses are shown for the 9-year-olds ($n=24$) and the 16-year-olds ($n=18$), as well as the results of $t$ tests (assuming unequal variance) comparing the parameter estimates between the two ages.
+\end{TableNotes}
+\begin{longtabu} to \linewidth {&gt;{\raggedright\arraybackslash}p{2in}&gt;{\centering}X&gt;{\centering}X&gt;{\centering}X&gt;{\centering}X&gt;{\centering}X&gt;{\centering}X&gt;{\centering}X}
+\caption{\label{tab:}Results of Curve-Fitting Analysis Examining the Time Course of Fixations to the Target}\\
+\toprule
+\multicolumn{1}{c}{Logistic parameter} &amp; \multicolumn{2}{c}{9-year-olds} &amp; \multicolumn{2}{c}{16-year-olds} &amp; \multicolumn{1}{c}{t(40)} &amp; \multicolumn{1}{c}{$p$} &amp; \multicolumn{1}{c}{Cohens $d$} \\
+\cmidrule(l{3pt}r{3pt}){1-1} \cmidrule(l{3pt}r{3pt}){2-3} \cmidrule(l{3pt}r{3pt}){4-5} \cmidrule(l{3pt}r{3pt}){6-6} \cmidrule(l{3pt}r{3pt}){7-7} \cmidrule(l{3pt}r{3pt}){8-8}
+ &amp; M &amp; SD &amp; M &amp; SD &amp;  &amp;  &amp; \\
+\midrule
+Maximum asymptote, proportion &amp; 0.843 &amp; 0.1350 &amp; 0.877 &amp; 0.0820 &amp; 0.951 &amp; 0.347 &amp; 0.302\\
+Crossover, in ms &amp; 759.000 &amp; 87.0000 &amp; 694.000 &amp; 42.0000 &amp; 2.877 &amp; 0.006 &amp; 0.840\\
+Slope, as change in proportion \hspace{1em}per ms &amp; 0.001 &amp; 0.0002 &amp; 0.002 &amp; 0.0002 &amp; 2.635 &amp; 0.012 &amp; 2.078\\
+\bottomrule
+\insertTableNotes
+\end{longtabu}
+\end{ThreePartTable}</code></pre>
+<p>We can copy-and-paste this syntax <strong>outside of a code chunk</strong> and it will also be rendered into a table. The RMarkdown document will read and render any LaTeX syntax so long as you are outputting to a PDF.</p>
+<p>The <code>\cmidrule{}</code> syntax is what is used to include the bottom borders (called “mid-rules” in the typesetter’s world). We can delete all of them except for <code>\cmidrule(l{3pt}r{3pt}){2-3}</code> and <code>\cmidrule(l{3pt}r{3pt}){4-5}</code>. These are drawing the mid-rules under the second/third and fourth/fifth columns, respectively.</p>
+<pre><code>\begin{ThreePartTable}
+\begin{TableNotes}[para]
+\item \textit{Note.} 
+\item For each participant, the logistic function was fit to target fixations separately. The maximum asymptote is the asymptotic degree of looking at the end of the time course fixations. The crossover is the point in time when the function crosses the midway point between peak and baseline. The slope represents the rate of change in the function measured at the crossover. Mean parameter values for each of the analyses are shown for the 9-year-olds ($n=24$) and the 16-year-olds ($n=18$), as well as the results of $t$ tests (assuming unequal variance) comparing the parameter estimates between the two ages.
+\end{TableNotes}
+\begin{longtabu} to \linewidth {&gt;{\raggedright\arraybackslash}p{2in}&gt;{\centering}X&gt;{\centering}X&gt;{\centering}X&gt;{\centering}X&gt;{\centering}X&gt;{\centering}X&gt;{\centering}X}
+\caption{\label{tab:}Results of Curve-Fitting Analysis Examining the Time Course of Fixations to the Target}\\
+\toprule
+\multicolumn{1}{c}{Logistic parameter} &amp; \multicolumn{2}{c}{9-year-olds} &amp; \multicolumn{2}{c}{16-year-olds} &amp; \multicolumn{1}{c}{t(40)} &amp; \multicolumn{1}{c}{$p$} &amp; \multicolumn{1}{c}{Cohens $d$} \\
+\cmidrule(l{3pt}r{3pt}){2-3} \cmidrule(l{3pt}r{3pt}){4-5}
+ &amp; M &amp; SD &amp; M &amp; SD &amp;  &amp;  &amp; \\
+\midrule
+Maximum asymptote, proportion &amp; 0.843 &amp; 0.1350 &amp; 0.877 &amp; 0.0820 &amp; 0.951 &amp; 0.347 &amp; 0.302\\
+Crossover, in ms &amp; 759.000 &amp; 87.0000 &amp; 694.000 &amp; 42.0000 &amp; 2.877 &amp; 0.006 &amp; 0.840\\
+Slope, as change in proportion \hspace{1em}per ms &amp; 0.001 &amp; 0.0002 &amp; 0.002 &amp; 0.0002 &amp; 2.635 &amp; 0.012 &amp; 2.078\\
+\bottomrule
+\insertTableNotes
+\end{longtabu}
+\end{ThreePartTable}</code></pre>
+<p>This gives us our final table.</p>
+<p><img src="/post/2020-01-11-apa-tables-using-r-markdown-part-2_files/Screen%20Shot%202020-01-11%20at%203.18.01%20PM.png" style="width:100.0%" /></p>
+</div>
