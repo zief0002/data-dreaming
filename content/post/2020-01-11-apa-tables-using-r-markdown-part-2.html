@@ -16,7 +16,7 @@ showtoc: false
 
 
 
-<p>This is the second part of a short blog series I am writing to re-create some of the sample tables found in the 7th edition <em>APA Publication Manual</em>. In this post I will attempt to re-create Table 7.8 (p. 214). To do so, I will incorporate many ideas that I covered in the <a href="apa-tables-using-r-markdown">first of these posts</a>.</p>
+<p>This is the second part of a short blog series I am writing to re-create some of the sample tables found in the 7th edition <em>APA Publication Manual</em>. In this post I will attempt to re-create Table 7.8 (p. 214). To do so, I will incorporate many ideas that I covered in the <a href="https://www.datadreaming.org/post/apa-tables-using-rmarkdown/">first of these posts</a>.</p>
 <figure>
 <img src="/post/2020-01-11-apa-tables-using-r-markdown-part-2_files/IMG_2897.JPG" alt="" width="70%" />
 <figcaption style="text-align:center;">
@@ -57,7 +57,7 @@ tab_02 = data.frame(
   d = c(0.302, 0.840, 2.078)
 )</code></pre>
 <p>I will then pipe this into the <code>kable()</code> function to set the column names, column alignment, and table caption. The column headings we will want to use are associated with those in the lowest header row of Table 7.8. We will add the higher header row later.</p>
-<p>I also employ similar <strong>kableExtra</strong> function from those introduced in Part 1 to make the table the full page width and include the footnote. The only addition is the use of <code>escape=FALSE</code> as an additional argument in the <code>footnote()</code> function to use LaTeX syntax (namely the <code>$</code>) to typeset the mathematics in the footnote.</p>
+<p>I also employ similar <strong>kableExtra</strong> function from those introduced in <a href="https://www.datadreaming.org/post/apa-tables-using-rmarkdown/">Part 1</a> to make the table the full page width and include the footnote. The only addition is the use of <code>escape=FALSE</code> as an additional argument in the <code>footnote()</code> function to use LaTeX syntax (namely the <code>$</code>) to typeset the mathematics in the footnote.</p>
 <pre class="r"><code>kable(
   tab_02,
   format = &quot;latex&quot;,

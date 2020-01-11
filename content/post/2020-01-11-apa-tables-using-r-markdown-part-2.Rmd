@@ -15,7 +15,7 @@ showtoc: false
 ---
 
 
-This is the second part of a short blog series I am writing to re-create some of the sample tables found in the 7th edition *APA Publication Manual*. In this post I will attempt to re-create Table 7.8 (p. 214). To do so, I will incorporate many ideas that I covered in the [first of these posts](apa-tables-using-r-markdown). 
+This is the second part of a short blog series I am writing to re-create some of the sample tables found in the 7th edition *APA Publication Manual*. In this post I will attempt to re-create Table 7.8 (p. 214). To do so, I will incorporate many ideas that I covered in the [first of these posts](https://www.datadreaming.org/post/apa-tables-using-rmarkdown/). 
 
 
 <figure>
@@ -68,7 +68,7 @@ tab_02 = data.frame(
 
 I will then pipe this into the `kable()` function to set the column names, column alignment, and table caption. The column headings we will want to use are associated with those in the lowest header row of Table 7.8. We will add the higher header row later.
 
-I also employ similar **kableExtra** function from those introduced in Part 1 to make the table the full page width and include the footnote. The only addition is the use of `escape=FALSE` as an additional argument in the `footnote()` function to use LaTeX syntax (namely the `$`) to typeset the mathematics in the footnote.
+I also employ similar **kableExtra** function from those introduced in [Part 1](https://www.datadreaming.org/post/apa-tables-using-rmarkdown/) to make the table the full page width and include the footnote. The only addition is the use of `escape=FALSE` as an additional argument in the `footnote()` function to use LaTeX syntax (namely the `$`) to typeset the mathematics in the footnote.
 
 
 
