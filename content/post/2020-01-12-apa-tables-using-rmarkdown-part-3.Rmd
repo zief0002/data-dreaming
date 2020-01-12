@@ -1,0 +1,200 @@
+---
+title: 'APA Tables using RMarkdown: Part 3'
+author: Andy
+date: '2020-01-12'
+slug: apa-tables-using-rmarkdown-part-3
+categories: []
+tags:
+  - Markdown
+  - R
+  - Writing
+subtitle: ''
+description: ''
+image: ''
+showtoc: false
+---
+
+
+This is the third part of a short blog series I am writing to re-create some of the sample tables found in the 7th edition *APA Publication Manual*. In this post I will attempt to mimic Table 7.10 (p. 215). To do so, I will incorporate many ideas that I covered in the [first](https://www.datadreaming.org/post/apa-tables-using-rmarkdown/) and [second](https://www.datadreaming.org/post/apa-tables-using-rmarkdown-part-2/) of these posts. 
+
+<figure>
+<img src="/post/2020-01-12-apa-tables-using-rmarkdown-part-3_files/IMG_2900.JPG" alt="" width="70%" />
+<figcaption style="text-align:center;">Table 7.10 from the 7th edition of the APA Publication Manual (p. 215).</figcaption>
+</figure>
+
+Rather than re-create this table using the data from Table 7.10, I will illustrate mimicing this table with summary information gleaned from a different dataset.
+
+
+# My Process
+
+I will again render to PDF and set up the YAML to import the **caption** package (LaTeX) and set up the APA caption formatting.
+
+```
+---
+title: "Untitled"
+author: "Andrew Zieffler"
+date: "1/12/2020"
+output: pdf_document
+header-includes:
+   - \usepackage{caption}
+   - \captionsetup[table]{textfont={it}, labelfont={bf}, singlelinecheck=false, labelsep=newline}
+---
+```
+
+
+In the RMarkdown body, I will load a few packages and also import a data set that I will use to create the summary values akin to those in Table 7.10.
+
+```{r message=FALSE, warning=FALSE}
+# Load libraries
+library(corrr)
+library(knitr)
+library(kableExtra)
+library(tidyverse)
+
+# Import data
+mn = read_csv("https://raw.githubusercontent.com/zief0002/epsy-8251/master/data/mn-schools.csv")
+
+# View data
+head(mn)
+```
+
+The data in were collected from http://www.collegeresults.org and contain 2011 institutional data for n=33 Minnesota colleges and universities. The codebook is available [here](http://zief0002.github.io/epsy-8251/codebooks/mn-schools.html).
+
+We need to compute the sample size, mean, and standard deviation for each of the four variables. I will compute these and store them in a data frame. We will also need the correlations between each set of variables. I will compute these and store them in a second data frame. Then I will combine these two into a single data frame to use with `kable()`.
+
+```{r message=FALSE}
+# Compute n, M, and SD
+tab_01 = data.frame(
+  n = c(
+    sum(!is.na(mn$grad)), 
+    sum(!is.na(mn$public)), 
+    sum(!is.na(mn$sat)),
+    sum(!is.na(mn$tuition))
+    ),
+  M = c(
+    mean(mn$grad, na.rm = TRUE), 
+    mean(mn$public, na.rm = TRUE), 
+    mean(mn$sat, na.rm = TRUE),
+    mean(mn$tuition, na.rm = TRUE)
+    ),
+  SD = c(
+    sd(mn$grad, na.rm = TRUE), 
+    sd(mn$public, na.rm = TRUE), 
+    sd(mn$sat, na.rm = TRUE),
+    sd(mn$tuition, na.rm = TRUE)
+    )
+)
+
+# Compute correlations
+tab_02 = mn %>%
+  select(grad, public, sat, tuition) %>%
+  correlate() %>%
+  shave(upper = TRUE) %>%
+  fashion(decimals = 2, na_print = "—") 
+
+# Combine information into single table
+tab_03 = cbind(tab_02[1], tab_01, tab_02[-1])
+
+# View table
+tab_03
+```
+
+The next thing I will do is to change the text in the `rowname` column to correspond to similar rownames in Table 7.10. Note the use of `$^a$` and `$^b$` to produce superscripts of "a" and "b" respectively. I will inlcude these in the footnote to define these variables.
+
+```{r}
+tab_03$rowname = c(
+  "1. Graduation rate", 
+  "2. Sector$^a$", 
+  "3. Median SAT score", 
+  "4. Tuition$^b$"
+  )
+```
+
+
+
+I will then pipe this into the `kable()` function to set the column names, column alignment, and table caption. The `digits=` argument is included to round the values in each column. (Since the first column is text we set this to `NA`.)
+
+I also employ similar **kableExtra** function from those introduced in [Part 1](https://www.datadreaming.org/post/apa-tables-using-rmarkdown/) and and [Part 2](https://www.datadreaming.org/post/apa-tables-using-rmarkdown-part-2/) to make the table the full page width, include the footnote, center the header names, and increase the width of the first column.
+
+```{r eval=FALSE}
+kable(
+  tab_03,
+  format = "latex",
+  booktabs = TRUE,
+  escape = FALSE,
+  longtable = TRUE,
+  col.names = c("Variable", "$n$", "$M$", "$SD$", "1", "2", "3", "4"),
+  align = c("l", "c", "c", "c", "c", "c", "c", "c"),
+  digits = c(NA, 0, 2, 2, 2, 2, 2, 2),
+  caption = "Descriptive Statistics and Correlations for Study Variables"
+  ) %>%
+  kable_styling(full_width = TRUE) %>%
+  footnote(
+    general_title = "Note.",
+    general = "$^a$0 = private schools and 1 = public schools. $^b$Tuition is measured in thousands of dollars.",
+    threeparttable = TRUE,
+    footnote_as_chunk = TRUE,
+    escape = FALSE
+    ) %>%
+  row_spec(row = 0, align = "c") %>%
+  column_spec(column = 1, width = "1.5in")
+```
+
+![](/post/2020-01-12-apa-tables-using-rmarkdown-part-3_files/Screen Shot 2020-01-12 at 12.12.43 PM.png){width=100%}
+
+To alleviate the off-diagonal hyphens in the correlation part of the table we need to set the "-" value to blank text. We can do this with indexing.
+
+```{r}
+tab_03[1, 6:8] = ""
+tab_03[2, 7:8] = ""
+tab_03[3, 8] = ""
+```
+
+Then we can re-run the `kable()` syntax.
+
+![](/post/2020-01-12-apa-tables-using-rmarkdown-part-3_files/Screen Shot 2020-01-12 at 12.17.19 PM.png){width=100%}
+
+
+# p-Values and Stars
+
+I would not personally add the significance stars to the correlations in the table. This is inconsistent with what the [American Statistical Association has outlined for good statistical practice](https://www.tandfonline.com/doi/full/10.1080/00031305.2019.1583913). 
+
+But, if you insist on poor statistical decisions (he says snarkily) you can also use indexing to add the stars. The problem is that this turns numbers to text strings, so every other value in that column will also be a text string, and the `digits=` argument will no longer be able to round things. 
+
+Here I use indexing to turn every value in the first column of correlations into text string. (The dash in the diagonal ) Then you could add the `NA` into the `digits=` argument of `kable()`. You would also need to add the appropriate text into the table note.
+
+
+```{r eval=FALSE}
+# Change correlation values in first column
+tab_03[2, 5] = "-.40$^{*}$"
+tab_03[3, 5] = ".89$^{***}$"
+tab_03[4, 5] = ".75$^{***}$"
+
+#Create table
+kable(
+  tab_03,
+  format = "latex",
+  booktabs = TRUE,
+  escape = FALSE,
+  longtable = TRUE,
+  col.names = c("Variable", "$n$", "$M$", "$SD$", "1", "2", "3", "4"),
+  align = c("l", "c", "c", "c", "c", "c", "c", "c"),
+  digits = c(NA, 0, 2, 2, 2, 2, 2, 2),
+  caption = "Descriptive Statistics and Correlations for Study Variables"
+  ) %>%
+  kable_styling(full_width = TRUE) %>%
+  footnote(
+    general_title = "Note.",
+    general = "$^a$0 = private schools and 1 = public schools. $^b$Tuition is measured in thousands of dollars.",
+    symbol = c("$p<.05.$", "$p<.01.$", "$p<.001.$"),
+    symbol_manual = c("$^{*}$", "$^{**}$", "$^{***}$"),
+    threeparttable = TRUE,
+    footnote_as_chunk = TRUE,
+    escape = FALSE
+    ) %>%
+  row_spec(row = 0, align = "c") %>%
+  column_spec(column = 1, width = "1.5in")
+```
+
+![](/post/2020-01-12-apa-tables-using-rmarkdown-part-3_files/Screen Shot 2020-01-12 at 12.41.40 PM.png){width=100%}
+

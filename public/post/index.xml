@@ -12,11 +12,21 @@
     
     
     <item>
-      <title>APA Tables using R Markdown: Part 2</title>
-      <link>/post/apa-tables-using-r-markdown-part-2/</link>
+      <title>APA Tables using RMarkdown: Part 3</title>
+      <link>/post/apa-tables-using-rmarkdown-part-3/</link>
+      <pubDate>Sun, 12 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/apa-tables-using-rmarkdown-part-3/</guid>
+      <description>This is the third part of a short blog series I am writing to re-create some of the sample tables found in the 7th edition APA Publication Manual. In this post I will attempt to mimic Table 7.10 (p. 215). To do so, I will incorporate many ideas that I covered in the first and second of these posts.
+ Table 7.10 from the 7th edition of the APA Publication Manual (p.</description>
+    </item>
+    
+    <item>
+      <title>APA Tables using RMarkdown: Part 2</title>
+      <link>/post/apa-tables-using-rmarkdown-part-2/</link>
       <pubDate>Sat, 11 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/apa-tables-using-r-markdown-part-2/</guid>
+      <guid>/post/apa-tables-using-rmarkdown-part-2/</guid>
       <description>This is the second part of a short blog series I am writing to re-create some of the sample tables found in the 7th edition APA Publication Manual. In this post I will attempt to re-create Table 7.8 (p. 214). To do so, I will incorporate many ideas that I covered in the first of these posts.
  Table 7.8 from the 7th edition of the APA Publication Manual (p.</description>
     </item>

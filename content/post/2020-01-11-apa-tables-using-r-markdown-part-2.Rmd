@@ -1,8 +1,8 @@
 ---
-title: 'APA Tables using R Markdown: Part 2'
+title: 'APA Tables using RMarkdown: Part 2'
 author: Andy
 date: '2020-01-11'
-slug: apa-tables-using-r-markdown-part-2
+slug: apa-tables-using-rmarkdown-part-2
 categories: []
 tags:
   - Markdown
