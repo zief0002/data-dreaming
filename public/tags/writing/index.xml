@@ -6,10 +6,20 @@
     <description>Recent content in Writing on Andrew Zieffler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Jan 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/writing/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>APA Tables using RMarkdown: Part 4</title>
+      <link>/post/apa-tables-using-rmarkdown-part-4/</link>
+      <pubDate>Mon, 13 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/apa-tables-using-rmarkdown-part-4/</guid>
+      <description>This is the fourth part of a short blog series I am writing to re-create some of the sample tables found in the 7th edition APA Publication Manual. In this post I will attempt to mimic Table 7.17 (p. 220). To do so, I will incorporate many ideas that I covered in the first, second, and third of these posts.
+ Table 7.17 from the 7th edition of the APA Publication Manual (p.</description>
+    </item>
     
     <item>
       <title>APA Tables using RMarkdown: Part 3</title>
