@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>APA Tables using RMarkdown: Part 5</title>
+      <link>/post/apa-tables-using-rmarkdown-part-5/</link>
+      <pubDate>Sat, 18 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/apa-tables-using-rmarkdown-part-5/</guid>
+      <description>This is the fifth part of a short blog series I am writing to re-create some of the sample tables found in the 7th edition APA Publication Manual. In this post I will attempt to show how to create a table to present the results of several fitted models. (This type of table is not among the example tables in the 7th edition APA Publication Manual.) To do so, I will incorporate many ideas that I covered in the first, second, third and fourth of these posts.</description>
+    </item>
+    
+    <item>
       <title>APA Tables using RMarkdown: Part 4</title>
       <link>/post/apa-tables-using-rmarkdown-part-4/</link>
       <pubDate>Mon, 13 Jan 2020 00:00:00 +0000</pubDate>

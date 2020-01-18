@@ -73,20 +73,20 @@ kable(
 ![](/post/2020-01-09-apa-tables-using-rmarkdown_files/Screen Shot 2020-01-10 at 12.03.51 PM.png){width=60%}
 
 
-Note that if you try this and actual LaTeX syntax is outputted rather  than the table, you may need to include the knitr option `results='asis'` in your code chunk. This will force the syntax to render.
+<!-- Note that if you try this and actual LaTeX syntax is outputted rather  than the table, you may need to include the knitr option `results='asis'` in your code chunk. This will force the syntax to render. -->
 
-````
-`r ''````{r results='asis'}
-kable(
-  tab_01,
-  format = "latex",
-  booktabs = TRUE,
-  col.names = c("Scale", "High BAS group", "Moderate BAS group", "p"),
-  align = c("l", "c", "c", "c"),
-  caption = "Means and Standard Deviations of Scores on Baseline Measures"
-  )
-```
-````
+<!-- ```` -->
+<!-- `r ''````{r results='asis'} -->
+<!-- kable( -->
+<!--   tab_01, -->
+<!--   format = "latex", -->
+<!--   booktabs = TRUE, -->
+<!--   col.names = c("Scale", "High BAS group", "Moderate BAS group", "p"), -->
+<!--   align = c("l", "c", "c", "c"), -->
+<!--   caption = "Means and Standard Deviations of Scores on Baseline Measures" -->
+<!--   ) -->
+<!-- ``` -->
+<!-- ```` -->
 
 
 This gets us 90% of the way there. There are a few things to do to make this ready for primetime. First we will italicize the "p" in the header row. To do this we need to use some LaTeX commands. So that it compiles correctly we will also add the argument `escape=FALSE` into the `kable()` function.

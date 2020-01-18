@@ -1,0 +1,255 @@
+---
+title: 'APA Tables using RMarkdown: Part 5'
+author: Andy
+date: '2020-01-18'
+slug: apa-tables-using-rmarkdown-part-5
+categories: []
+tags:
+  - Markdown
+  - R
+  - Writing
+subtitle: ''
+description: ''
+image: ''
+showtoc: false
+---
+
+
+
+<p>This is the fifth part of a short blog series I am writing to re-create some of the sample tables found in the 7th edition <em>APA Publication Manual</em>. In this post I will attempt to show how to create a table to present the results of several fitted models. (This type of table is not among the example tables in the 7th edition <em>APA Publication Manual</em>.) To do so, I will incorporate many ideas that I covered in the <a href="https://www.datadreaming.org/post/apa-tables-using-rmarkdown/">first</a>, <a href="https://www.datadreaming.org/post/apa-tables-using-rmarkdown-part-2/">second</a>, <a href="https://www.datadreaming.org/post/apa-tables-using-rmarkdown-part-3/">third</a> and <a href="https://www.datadreaming.org/post/apa-tables-using-rmarkdown-part-4/">fourth</a> of these posts.</p>
+<div id="my-process" class="section level1">
+<h1>My Process</h1>
+<p>I will again render to PDF and set up the YAML to import the <strong>caption</strong> package (LaTeX) and set up the APA caption formatting.</p>
+<pre><code>---
+title: &quot;Untitled&quot;
+author: &quot;Andrew Zieffler&quot;
+date: &quot;1/12/2020&quot;
+output: pdf_document
+header-includes:
+   - \usepackage{caption}
+   - \captionsetup[table]{textfont={it}, labelfont={bf}, singlelinecheck=false, labelsep=newline}
+---</code></pre>
+<p>In the RMarkdown body, I will load a few packages and also import a data set that I will use to fit the models.</p>
+<pre class="r"><code># Load libraries
+library(broom)
+library(knitr)
+library(kableExtra)
+library(tidyverse)
+
+# Import data
+mn = read_csv(&quot;https://raw.githubusercontent.com/zief0002/epsy-8251/master/data/mn-schools.csv&quot;)
+
+# View data
+head(mn)</code></pre>
+<pre><code>## # A tibble: 6 x 5
+##   name                               grad public   sat tuition
+##   &lt;chr&gt;                             &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt;
+## 1 Augsburg College                   65.2      0  1030    39.3
+## 2 Bemidji State University           42.3      1  1010    18.1
+## 3 Bethany Lutheran College           52.6      0  1065    30.5
+## 4 Bethel University, Saint Paul, MN  73.3      0  1145    39.4
+## 5 Carleton College                   92.6      0  1400    54.3
+## 6 College of Saint Benedict          81.1      0  1185    43.2</code></pre>
+<p>The data in were collected from <a href="http://www.collegeresults.org" class="uri">http://www.collegeresults.org</a> and contain 2011 institutional data for n=33 Minnesota colleges and universities. The codebook is available <a href="http://zief0002.github.io/epsy-8251/codebooks/mn-schools.html">here</a>.</p>
+<p>We need to compute the regression results from fitting an OLS model. Here I will predict variation in graduation rates using several potential competing models.</p>
+<pre class="r"><code># Fit models
+lm.1 = lm(grad ~ 1 + public + sat + tuition, data = mn)
+lm.2 = lm(grad ~ 1 + public + sat + tuition + public:sat, data = mn)
+lm.3 = lm(grad ~ 1 + public + sat + tuition + public:tuition, data = mn)</code></pre>
+<p>There are several packages that can be used to present the results of one or more fitted models. These include <a href="https://cran.r-project.org/web/packages/stargazer/vignettes/stargazer.pdf">stargazer</a>, <a href="https://github.com/leifeld/texreg">texreg</a>, and <a href="https://github.com/vincentarelbundock/modelsummary">modelsummary</a> among others. In this post I will focus on using the <strong>stargazer</strong> package, which I have found works well for fixed-effects models.</p>
+<p>After loading the <strong>stagazer</strong> package, the <code>stargazer()</code> function can be used to create a basic table of regression results. The <code>type=</code> argument defaults to <code>latex</code>, so if you are rendering to an HTML document, you need to change this to <code>type="html"</code>.</p>
+<pre class="r"><code># Load library
+library(stargazer)
+
+# Output model results in a table
+stargazer(lm.1, lm.2, lm.3, type = &quot;latex&quot;)</code></pre>
+<pre><code>## 
+## % Table created by stargazer v.5.2.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
+## % Date and time: Sat, Jan 18, 2020 - 11:36:42
+## \begin{table}[!htbp] \centering 
+##   \caption{} 
+##   \label{} 
+## \begin{tabular}{@{\extracolsep{5pt}}lccc} 
+## \\[-1.8ex]\hline 
+## \hline \\[-1.8ex] 
+##  &amp; \multicolumn{3}{c}{\textit{Dependent variable:}} \\ 
+## \cline{2-4} 
+## \\[-1.8ex] &amp; \multicolumn{3}{c}{grad} \\ 
+## \\[-1.8ex] &amp; (1) &amp; (2) &amp; (3)\\ 
+## \hline \\[-1.8ex] 
+##  public &amp; $-$0.647 &amp; 9.132 &amp; 8.554 \\ 
+##   &amp; (4.716) &amp; (32.466) &amp; (19.945) \\ 
+##   &amp; &amp; &amp; \\ 
+##  sat &amp; 0.104$^{***}$ &amp; 0.106$^{***}$ &amp; 0.106$^{***}$ \\ 
+##   &amp; (0.016) &amp; (0.018) &amp; (0.017) \\ 
+##   &amp; &amp; &amp; \\ 
+##  tuition &amp; 0.470$^{*}$ &amp; 0.451$^{*}$ &amp; 0.455$^{*}$ \\ 
+##   &amp; (0.242) &amp; (0.253) &amp; (0.247) \\ 
+##   &amp; &amp; &amp; \\ 
+##  public:sat &amp;  &amp; $-$0.009 &amp;  \\ 
+##   &amp;  &amp; (0.031) &amp;  \\ 
+##   &amp; &amp; &amp; \\ 
+##  public:tuition &amp;  &amp;  &amp; $-$0.487 \\ 
+##   &amp;  &amp;  &amp; (1.025) \\ 
+##   &amp; &amp; &amp; \\ 
+##  Constant &amp; $-$68.297$^{***}$ &amp; $-$70.205$^{***}$ &amp; $-$70.578$^{***}$ \\ 
+##   &amp; (12.564) &amp; (14.220) &amp; (13.610) \\ 
+##   &amp; &amp; &amp; \\ 
+## \hline \\[-1.8ex] 
+## Observations &amp; 33 &amp; 33 &amp; 33 \\ 
+## R$^{2}$ &amp; 0.861 &amp; 0.861 &amp; 0.862 \\ 
+## Adjusted R$^{2}$ &amp; 0.846 &amp; 0.841 &amp; 0.842 \\ 
+## Residual Std. Error &amp; 6.562 (df = 29) &amp; 6.667 (df = 28) &amp; 6.651 (df = 28) \\ 
+## F Statistic &amp; 59.732$^{***}$ (df = 3; 29) &amp; 43.421$^{***}$ (df = 4; 28) &amp; 43.660$^{***}$ (df = 4; 28) \\ 
+## \hline 
+## \hline \\[-1.8ex] 
+## \textit{Note:}  &amp; \multicolumn{3}{r}{$^{*}$p$&lt;$0.1; $^{**}$p$&lt;$0.05; $^{***}$p$&lt;$0.01} \\ 
+## \end{tabular} 
+## \end{table}</code></pre>
+<p>The function outputs raw LaTeX (or HTML), so to get it to form into a table you need to include <code>results='asis'</code> in your Rmarkdown chunk.</p>
+<pre><code>```{r message=FALSE, results=&#39;asis&#39;} 
+# Load library
+library(stargazer)
+
+# Output model results in a table
+stargazer(lm.1, lm.2, lm.3, type = &quot;latex&quot;)
+```</code></pre>
+<p><img src="/post/2020-01-18-apa-tables-using-rmarkdown-part-5_files/Screen%20Shot%202020-01-18%20at%2010.34.29%20AM.png" style="width:100.0%" /></p>
+<div id="customizing-the-stargazer-output" class="section level3">
+<h3>Customizing the Stargazer Output</h3>
+<p>There are several arguments in the <code>stargazer()</code> function to customize the table.</p>
+<pre class="r"><code>stargazer(
+  lm.1, lm.2, lm.3,
+  type = &quot;latex&quot;,
+  table.placement = &quot;H&quot;,
+  title = &quot;Three Regression Models Predicting Variation in Six-Year Graduation Rates&quot;,
+  column.labels = c(&quot;Model A&quot;, &quot;Model B&quot;, &quot;Model C&quot;),
+  colnames = FALSE,
+  model.numbers = FALSE,
+  dep.var.caption = &quot; &quot;,
+  dep.var.labels = &quot;Graduation Rate&quot;,
+  covariate.labels = c(&quot;Public$^a$&quot;, &quot;Median SAT score&quot;, &quot;Tuition&quot;, &quot;Public$^a$ x Median SAT score&quot;, &quot;Public$^a$ x Tuition&quot;),
+  star.cutoffs = NA,
+  keep.stat = c(&quot;rsq&quot;, &quot;f&quot;),
+  notes = &quot;$^a$0 = Private institution and 1 = Public institution.&quot;,
+  notes.align = &quot;l&quot;
+  )</code></pre>
+<p><img src="/post/2020-01-18-apa-tables-using-rmarkdown-part-5_files/Screen%20Shot%202020-01-18%20at%2010.46.24%20AM.png" style="width:100.0%" /></p>
+<p>This is close, but there are a few things I am not happy with. Namely,</p>
+<ul>
+<li>The table should be aligned with the caption rather than centered.</li>
+<li>The double lines produced at the top and bottom of the table.</li>
+<li>The label for the dependent variable, “Graduation Rate”, is redundant with the caption so could be omitted, as could the border produced above it.</li>
+<li>The note is separated from the <em>Note:</em> text and uses a colon rather than a period in this text. It also has the text “NA” since we set the <code>star.cutoff=</code> argument (which omits the dreaded significance stars) to <code>NA</code>.</li>
+</ul>
+<p>To fix these things we need to edit the LaTeX syntax that is produced by the <code>stargazer()</code> function. To do this, run the syntax in the console and then copy-and-paste the raw LaTeX into your RMarkdown document (outside of a code chunk). The LaTeX syntax from our table is:</p>
+<pre><code>\begin{table}[H] \centering 
+  \caption{Three Regression Models Predicting Variation in Six-Year Graduation Rates} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ &amp; \multicolumn{3}{c}{ } \\ 
+\cline{2-4} 
+\\[-1.8ex] &amp; \multicolumn{3}{c}{Graduation Rate} \\ 
+ &amp; Model A &amp; Model B &amp; Model C \\ 
+\hline \\[-1.8ex] 
+ Public$^a$ &amp; $-$0.647 &amp; 9.132 &amp; 8.554 \\ 
+  &amp; (4.716) &amp; (32.466) &amp; (19.945) \\ 
+  &amp; &amp; &amp; \\ 
+ Median SAT score &amp; 0.104 &amp; 0.106 &amp; 0.106 \\ 
+  &amp; (0.016) &amp; (0.018) &amp; (0.017) \\ 
+  &amp; &amp; &amp; \\ 
+ Tuition &amp; 0.470 &amp; 0.451 &amp; 0.455 \\ 
+  &amp; (0.242) &amp; (0.253) &amp; (0.247) \\ 
+  &amp; &amp; &amp; \\ 
+ Public$^a$ x Median SAT score &amp;  &amp; $-$0.009 &amp;  \\ 
+  &amp;  &amp; (0.031) &amp;  \\ 
+  &amp; &amp; &amp; \\ 
+ Public$^a$ x Tuition &amp;  &amp;  &amp; $-$0.487 \\ 
+  &amp;  &amp;  &amp; (1.025) \\ 
+  &amp; &amp; &amp; \\ 
+ Constant &amp; $-$68.297 &amp; $-$70.205 &amp; $-$70.578 \\ 
+  &amp; (12.564) &amp; (14.220) &amp; (13.610) \\ 
+  &amp; &amp; &amp; \\ 
+\hline \\[-1.8ex] 
+R$^{2}$ &amp; 0.861 &amp; 0.861 &amp; 0.862 \\ 
+F Statistic &amp; 59.732 (df = 3; 29) &amp; 43.421 (df = 4; 28) &amp; 43.660 (df = 4; 28) \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  &amp; \multicolumn{3}{l}{NA} \\ 
+ &amp; \multicolumn{3}{l}{$^a$0 = Private institution and 1 = Public institution.} \\ 
+\end{tabular} 
+\end{table}</code></pre>
+<p>The <code>\centering</code> synatax in the first line is what is causing the table itself to be centered. Delete this. The double lines at the top and bottom of the table are produced by the two consecutive <code>hline</code> commands. Remove one at the beginning and end of the table. In a similar way the syntax that corresponds to the “Graduation Rate” label and the <code>\cline{2-4}</code> preceeding it can be omitted.</p>
+<p>Changing the table note is a little more complicated. The primary syntax for this is the following:</p>
+<pre><code>\textit{Note:}  &amp; \multicolumn{3}{l}{NA} \\ 
+ &amp; \multicolumn{3}{l}{$^a$0 = Private institution and 1 = Public institution.} \\ </code></pre>
+<p>In the syntax that creates the LaTeX table, the ampersand (<code>&amp;</code>) indicates a new column and the double slash (<code>\\</code>) indicates the end of the row. So the italicized text <em>Note:</em> is put in the first cell of the row and then the text “NA” is placed in the next cell of the same row. The <code>multicolumn{3}{l}{}</code> actually combines the last 3 columns into a single cell and aligns the text (which is placed in the third set of curly braces) to the left. To make this all line up better, we are going to replace the note syntax with the following:</p>
+<pre><code>\multicolumn{4}{l}{\textit{Note.} $^a$0 = Private institution and 1 = Public institution.} \\ </code></pre>
+<p>This will combine all four columns of the table into a single cell and will align the text to the left of this cell. The resulting table will fix our issues. This is the syntax that is remaining:</p>
+<pre><code>\begin{table}[H] 
+  \caption{Three Regression Models Predicting Variation in Six-Year Graduation Rates} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lccc} 
+\\[-1.8ex]
+\hline \\[-1.8ex] 
+ &amp; \multicolumn{3}{c}{ } \\ 
+ &amp; Model A &amp; Model B &amp; Model C \\ 
+\hline \\[-1.8ex] 
+ Public$^a$ &amp; $-$0.647 &amp; 9.132 &amp; 8.554 \\ 
+  &amp; (4.716) &amp; (32.466) &amp; (19.945) \\ 
+  &amp; &amp; &amp; \\ 
+ Median SAT score &amp; 0.104 &amp; 0.106 &amp; 0.106 \\ 
+  &amp; (0.016) &amp; (0.018) &amp; (0.017) \\ 
+  &amp; &amp; &amp; \\ 
+ Tuition &amp; 0.470 &amp; 0.451 &amp; 0.455 \\ 
+  &amp; (0.242) &amp; (0.253) &amp; (0.247) \\ 
+  &amp; &amp; &amp; \\ 
+ Public$^a$ x Median SAT score &amp;  &amp; $-$0.009 &amp;  \\ 
+  &amp;  &amp; (0.031) &amp;  \\ 
+  &amp; &amp; &amp; \\ 
+ Public$^a$ x Tuition &amp;  &amp;  &amp; $-$0.487 \\ 
+  &amp;  &amp;  &amp; (1.025) \\ 
+  &amp; &amp; &amp; \\ 
+ Constant &amp; $-$68.297 &amp; $-$70.205 &amp; $-$70.578 \\ 
+  &amp; (12.564) &amp; (14.220) &amp; (13.610) \\ 
+  &amp; &amp; &amp; \\ 
+\hline \\[-1.8ex] 
+R$^{2}$ &amp; 0.861 &amp; 0.861 &amp; 0.862 \\ 
+F Statistic &amp; 59.732 (df = 3; 29) &amp; 43.421 (df = 4; 28) &amp; 43.660 (df = 4; 28) \\ 
+\hline \\[-1.8ex] 
+\multicolumn{4}{l}{\textit{Note.} $^a$0 = Private institution and 1 = Public institution.} \\ 
+\end{tabular} 
+\end{table}</code></pre>
+<p>The resulting table looks like the following.</p>
+<p><img src="/post/2020-01-18-apa-tables-using-rmarkdown-part-5_files/Screen%20Shot%202020-01-18%20at%2011.30.32%20AM.png" style="width:100.0%" /></p>
+</div>
+<div id="adding-additional-model-level-statistics-into-the-table" class="section level3">
+<h3>Adding Additional Model-Level Statistics into the Table</h3>
+<p>You may also wish to add other model-level summaries into the table. For example, below I will compute and add the corrected AIC into the table. To do this, use the <code>add.lines=</code> argument in the <code>stargazer()</code> function. This argument takes a list that gives the contents of each cell in the added row. In our example this would be a list including the text to produce in the first cell and then a corrected AIC value for each respective model in the remaining three cells. I also omit the <span class="math inline">\(F\)</span>-statistic in the <code>keep.stat=</code> argument.</p>
+<pre class="r"><code># Load library
+library(AICcmodavg)
+
+# Create table
+stargazer(
+  lm.1, lm.2, lm.3,
+  type = &quot;latex&quot;,
+  table.placement = &quot;H&quot;,
+  title = &quot;Three Regression Models Predicting Variation in Six-Year Graduation Rates&quot;,
+  column.labels = c(&quot;Model A&quot;, &quot;Model B&quot;, &quot;Model C&quot;),
+  colnames = FALSE,
+  model.numbers = FALSE,
+  dep.var.caption = &quot; &quot;,
+  dep.var.labels = &quot;Graduation Rate&quot;,
+  covariate.labels = c(&quot;Public$^a$&quot;, &quot;Median SAT score&quot;, &quot;Tuition&quot;, &quot;Public$^a$ x Median SAT score&quot;, &quot;Public$^a$ x Tuition&quot;),
+  star.cutoffs = NA,
+  keep.stat = c(&quot;rsq&quot;),
+  notes = &quot;$^a$0 = Private institution and 1 = Public institution.&quot;,
+  notes.align = &quot;l&quot;,
+  add.lines = list(c(&quot;Corrected AIC&quot;, round(AICc(lm.1), 1), round(AICc(lm.2), 1), round(AICc(lm.3), 1)))
+  )</code></pre>
+<p>After editing the LaTeX syntax to make the same changes as before, we get the following table:</p>
+<p><img src="/post/2020-01-18-apa-tables-using-rmarkdown-part-5_files/Screen%20Shot%202020-01-18%20at%2011.32.50%20AM.png" style="width:100.0%" /></p>
+</div>
+</div>

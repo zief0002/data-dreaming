@@ -269,17 +269,19 @@ library(tidyverse)</code></pre>
   caption = &quot;Means and Standard Deviations of Scores on Baseline Measures&quot;
   )</code></pre>
 <p><img src="/post/2020-01-09-apa-tables-using-rmarkdown_files/Screen%20Shot%202020-01-10%20at%2012.03.51%20PM.png" style="width:60.0%" /></p>
-<p>Note that if you try this and actual LaTeX syntax is outputted rather than the table, you may need to include the knitr option <code>results='asis'</code> in your code chunk. This will force the syntax to render.</p>
-<pre><code>```{r results=&#39;asis&#39;}
-kable(
-  tab_01,
-  format = &quot;latex&quot;,
-  booktabs = TRUE,
-  col.names = c(&quot;Scale&quot;, &quot;High BAS group&quot;, &quot;Moderate BAS group&quot;, &quot;p&quot;),
-  align = c(&quot;l&quot;, &quot;c&quot;, &quot;c&quot;, &quot;c&quot;),
-  caption = &quot;Means and Standard Deviations of Scores on Baseline Measures&quot;
-  )
-```</code></pre>
+<!-- Note that if you try this and actual LaTeX syntax is outputted rather  than the table, you may need to include the knitr option `results='asis'` in your code chunk. This will force the syntax to render. -->
+<!-- ```` -->
+<!-- ```{r results='asis'} -->
+<!-- kable( -->
+<!--   tab_01, -->
+<!--   format = "latex", -->
+<!--   booktabs = TRUE, -->
+<!--   col.names = c("Scale", "High BAS group", "Moderate BAS group", "p"), -->
+<!--   align = c("l", "c", "c", "c"), -->
+<!--   caption = "Means and Standard Deviations of Scores on Baseline Measures" -->
+<!--   ) -->
+<!-- ``` -->
+<!-- ```` -->
 <p>This gets us 90% of the way there. There are a few things to do to make this ready for primetime. First we will italicize the “p” in the header row. To do this we need to use some LaTeX commands. So that it compiles correctly we will also add the argument <code>escape=FALSE</code> into the <code>kable()</code> function.</p>
 <pre class="r"><code>kable(
   tab_01,
