@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Andrew Zieffler">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="//img/typewriter.png">
+    <meta property="twitter:image" content="//img/typewriter.png" />
+    
+
+    
+    <meta name="title" content="APA Style Table in RMarkdown (HTML Version)" />
+    <meta property="og:title" content="APA Style Table in RMarkdown (HTML Version)" />
+    <meta property="twitter:title" content="APA Style Table in RMarkdown (HTML Version)" />
+    
+
+    
+    <meta name="description" content="">
+    <meta property="og:description" content="" />
+    <meta property="twitter:description" content="" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>APA Style Table in RMarkdown (HTML Version)-Academic. Data lover. Statistics enthusiast.</title>
+
+    <link rel="canonical" href="/post/apa-style-table-in-rmarkdown-html-version/">
+
+    <link rel="stylesheet" href="/css/iDisqus.min.css"/>
+	
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    
+    <link rel="stylesheet" href="/css/syntax.css">
+    
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+    
+    
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/v4-shims.css">
+
+    
+    <link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/css/academicons.min.css">
+
+    
+    
+    <script src="/js/jquery.min.js"></script>
+    
+    
+    <script src="/js/bootstrap.min.js"></script>
+    
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/monokai-sublime.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    
+    <script src="/js/lightbox.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <script src="/js/main.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
+    
+
+</head>
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Andrew Zieffler</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                    
+		    
+                        <li><a href="/top/about/">ABOUT</a></li>
+                    
+                        <li><a href="/top/contact/">CONTACT</a></li>
+                    
+                        <li><a href="/top/publications/">PUBLICATIONS</a></li>
+                    
+                        <li><a href="/top/teaching/">TEACHING</a></li>
+                    
+                        <li><a href="/top/blogroll/">BLOGROLL</a></li>
+                    
+
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/typewriter.png')
+    }
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/markdown" title="Markdown">
+                            Markdown
+                        </a>
+                        
+                        <a class="tag" href="/tags/r" title="R">
+                            R
+                        </a>
+                        
+                        <a class="tag" href="/tags/writing" title="Writing">
+                            Writing
+                        </a>
+                        
+                    </div>
+                    <h1>APA Style Table in RMarkdown (HTML Version)</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        Posted by 
+                        
+                            Andy
+                         
+                        on 
+                        Sunday, February 9, 2020
+                        
+                        
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                
+
+
+<p>I will try to replicate the the following table from the 7th edition of the APA Publication Manual.</p>
+<figure>
+<img src="/post/2020-01-09-apa-tables-using-rmarkdown_files/IMG_2896.JPG" alt="" width="70%" />
+<figcaption style="text-align:center;">
+Table 7.6 from the 7th edition of the APA Publication Manual (p. 213).
+</figcaption>
+</figure>
+<div id="my-process" class="section level1">
+<h1>My Process</h1>
+<p>I begin by creating an RMarkdown document that is rendered to HTML.</p>
+<pre><code>---
+title: &quot;Untitled&quot;
+author: &quot;Andrew Zieffler&quot;
+date: &quot;1/12/2020&quot;
+output: html_document
+---</code></pre>
+<p>In the RMarkdown body, I will load a few packages and set up a data frame to mimic the content from our goal table.</p>
+<pre class="r"><code># Load libraries
+library(knitr)
+library(kableExtra)
+library(tidyverse)
+
+# Create table data
+tab_01 = data.frame(
+  scale = c(&quot;BAS-T&quot;, &quot;SR&quot;, &quot;BDI&quot;, &quot;ASRM&quot;, &quot;M-SRM&quot;),
+  high = c(&quot;46.17 (2.87)&quot;, &quot;17.94 (1.88)&quot;, &quot;7.11 (6.50)&quot;, 
+           &quot;6.46 (4.01)&quot;, &quot;11.05 (3.36)&quot;),
+  moderate = c(&quot;37.99 (1.32)&quot;, &quot;11.52 (1.84)&quot;, &quot;6.18 (6.09)&quot;, 
+               &quot;5.63 (3.69)&quot;, &quot;11.76 (2.75)&quot;),
+  p = c(&quot;&lt;.001&quot;, &quot;&lt;.001&quot;, &quot;.254&quot;, &quot;.109&quot;, &quot;.078&quot;)
+)</code></pre>
+<p>We can now use the <code>kable()</code> function to rename the columns, set alignment for each column, and set a caption. Two important things:</p>
+<ul>
+<li>The <code>format=</code> argument is now set to `html’</li>
+<li>The <code>col.names=</code> argument can include Markdown syntax in the quoted names. In this case, the <code>p</code> is surrounded by single asterisks, which will make it italics.</li>
+</ul>
+<pre class="r"><code>kable(
+  tab_01,
+  format = &quot;html&quot;,
+  col.names = c(&quot;Scale&quot;, &quot;High BAS group&quot;, &quot;Moderate BAS group&quot;, &quot;*p*&quot;),
+  align = c(&quot;l&quot;, &quot;c&quot;, &quot;c&quot;, &quot;c&quot;),
+  caption = &quot;Means and Standard Deviations of Scores on Baseline Measures&quot;
+  )</code></pre>
+<p><img src="/post/2020-02-09-apa-style-table-in-rmarkdown-html-version_files/part-01.png" /></p>
+<p>Now I will use functions from the <strong>kableExtra</strong> package to make this prettier.</p>
+<pre class="r"><code>kable(
+  tab_01,
+  format = &quot;html&quot;,
+  col.names = c(&quot;Scale&quot;, &quot;High BAS group&quot;, &quot;Moderate BAS group&quot;, &quot;*p*&quot;),
+  align = c(&quot;l&quot;, &quot;c&quot;, &quot;c&quot;, &quot;c&quot;),
+  caption = &quot;Means and Standard Deviations of Scores on Baseline Measures&quot;
+  ) %&gt;%
+  kable_styling(full_width = TRUE) %&gt;%
+  row_spec(row = 0, align = &quot;c&quot;) %&gt;%
+   footnote(
+    general_title = &quot;Note.&quot;,
+    general = &quot;Standard deviations are presented in parentheses. BAS = Behavioral Activation System; BAS-T = Behavioral Activation System-Total sores from the Behavioral Inhibition System/Behavioral Activation System Scales; SR = Sensitivity to Reward scores from the Sensitivity to Punishment and Sensitivity to Reward Questionnaire; BDI = Beck Depression Inventory scores; ASRM = Altman Self-Rating Mania Scale scores; M-SRM = Modified Social Rhythm Metric Regularity scores.&quot;,
+   footnote_as_chunk = TRUE
+    )</code></pre>
+<p><img src="/post/2020-02-09-apa-style-table-in-rmarkdown-html-version_files/part-02.png" style="width:100.0%" /></p>
+<div id="styling-the-table-using-css" class="section level2">
+<h2>Styling the Table Using CSS</h2>
+<p>This is pretty good, except for the borders (we have several horizontal lines that need to be deleted, and we need to draw borders above and below the header row and at the bottom of the table body) and the header row (which is bold). In an HTML document, we can change styles by including a <a href="https://www.w3schools.com/css/css_intro.asp">Cascading Style Sheet file</a> (CSS file).</p>
+<p>The first thing we need to do is create a CSS file and save it in the same folder/directory as your RMD document. To do this,</p>
+<ul>
+<li>Under the RStudio <code>File</code> menu, select <code>New File &gt; Text File</code></li>
+</ul>
+<p>Save this file as <code>table_style.css</code> in the exact same folder as your RMD file. The file extension <code>css</code> indicate that this is a CSS file.</p>
+<p>Next, we need to tell your RMarkdown file to look at this file for its styling rules. We do this in the YAML of your RMD document. Change your YAML as follows:</p>
+<pre><code>---
+title: &quot;Untitled&quot;
+author: &quot;Andrew Zieffler&quot;
+date: &quot;1/12/2020&quot;
+output: 
+  html_document:
+    css: table-style.css
+---</code></pre>
+<p>Now we can our styling rules to the CSS file. You can add the following syntax to <code>table-style.css</code>.</p>
+<pre><code>/** Change border color to black **/
+.table&gt;thead&gt;tr&gt;th {
+  border-color: black;
+}
+
+
+/** Remove borders within the table body **/
+.table&gt;tbody&gt;tr&gt;td {
+  border: none;
+}
+
+
+/** Add a top border to the table header row **/
+.table thead tr:first-child { 
+  border-top: 2px solid black;
+}
+
+
+/** Add a bottom border to the table body **/
+.table tbody tr:last-child {
+  border-bottom: 2px solid black;
+}
+
+
+/** Make the table header row a normal weight; not bold **/
+.table th{
+  font-weight: normal;
+}
+
+
+/** Make the caption italic and black **/
+.table caption{
+  font-style: italic;
+  color: black;
+}</code></pre>
+<p>Save this and then re-knit your RMD file. Your table should now look like the following:</p>
+<p><img src="/post/2020-02-09-apa-style-table-in-rmarkdown-html-version_files/part-03.png" style="width:100.0%" /></p>
+<p>Finally, to add the table numbering, we manually add Markdown formatted text above the code chunk that corresponds to our table name. This should be outside the code chunk!</p>
+<pre><code>**Table 1**</code></pre>
+<p>Which gives us the following:</p>
+<p><img src="/post/2020-02-09-apa-style-table-in-rmarkdown-html-version_files/part-04.png" style="width:100.0%" /></p>
+</div>
+</div>
+
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/apa-tables-using-rmarkdown-part-5/" data-toggle="tooltip" data-placement="top" title="APA Tables using RMarkdown: Part 5">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                </ul>
+
+                
+<div id="disqus-comment"></div>
+
+
+
+            </div>
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                   
+                    
+                    
+                    
+                    
+                    
+
+                    
+
+		    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; Andrew Zieffler 2020
+                    <br>
+                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+</body>
+</html>
