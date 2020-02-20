@@ -1,0 +1,45 @@
+---
+title: Some Plots I Made...
+author: Andy
+date: '2020-02-20'
+slug: some-plots-i-made
+categories: []
+tags:
+  - Miscellaneous
+subtitle: ''
+description: ''
+image: ''
+showtoc: false
+---
+
+
+I am spring cleaning my computer and have a couple PNG files of plots I made that I want to adios. So, I thought to myself, "self...why don't you put these on a blog post before you trash them forever." It sounded like a good idea at the time, so here they are. 
+
+![](/post/2020-02-20-some-plots-i-made_files/andys-halloween-movies-plot.png){width=70%}
+
+
+
+This second plot is a sunburst plot I created for the data visualization course. If I remember right, this was created using my annual TV watching data from 2017 and made using [RawGraphs](https://rawgraphs.io/). 
+
+
+![](/post/2020-02-20-some-plots-i-made_files/andy_tv_sunburst.png){width=70%}
+
+
+Here is a plot from a set of plots I created years ago to show whether NFL players were being traded to teams within the same conference or elsewhere. 
+
+![](/post/2020-02-20-some-plots-i-made_files/NFC-North-Trades.png){width=70%}
+
+
+This is a micromap I created showing tuition changes over a three-year span. This was inspired by content in the book [Visualizing Data Patterns with Micromaps](https://www.amazon.com/Visualizing-Patterns-Micromaps-Interdisciplinary-Statistics/dp/142007573X), which I read a few years ago. I wanted to try some of what they were doing, so I ultimately created each map using R and then put them all together onto a single graphic with Keynote. Probably could do this now with [Patchwork](https://github.com/thomasp85/patchwork).
+
+![](/post/2020-02-20-some-plots-i-made_files/tuition_micromap.png){width=100%}
+
+
+Finally, here is a residual plot I created for a set of regression notes where we were talking about model assumptions right near Halloween. 
+
+![](/post/2020-02-20-some-plots-i-made_files/ghost-plot.png){width=80%}
+
+
+
+
+
