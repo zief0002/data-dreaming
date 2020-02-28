@@ -6,10 +6,19 @@
     <description>Recent content in Science on Andrew Zieffler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 27 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/science/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Better Research Poster</title>
+      <link>/post/better-research-poster/</link>
+      <pubDate>Thu, 27 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/better-research-poster/</guid>
+      <description>Our department has an annual Graduate Student Research Day (GSRD) in which students present their research for the rest of the department. Although there are five speakers, one from each program in the department, the majority of students participate in a poster session. This year my student Chelsey Legacy put together a poster to present some of the data we collected from a fall administration of the Statistics Teaching Inventory.</description>
+    </item>
     
     <item>
       <title>ReproducibiliTEA Journal Club</title>
