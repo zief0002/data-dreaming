@@ -40,7 +40,7 @@ As someone who thinks about layout and design (I love typography and book design
 
 After deciding on the background color for the main finding, we used complimentary color palettes in the plots we created. This was tricky as the color palettes for the plots also need to reflect the measurement scale of the data For example, the colors used to display the likert scale data needed to reflect the ordinality of the responses; lighter hues used for less positive values and darker hues used for more positive values. We also needed to be sure that the palettes were color-blind friendly. We used this [simulator](https://www.color-blindness.com/coblis-color-blindness-simulator/) to test the palettes on the final images.
 
-Lastly, we generated a QR code from [this site](https://www.qr-code-generator.com/). 
+We generated a QR code from [this site](https://www.qr-code-generator.com/) that linked to the website where we posted the references and a PDF copy of the poster. One other important caveat for printing posters is that your images need to be pretty high resolution to avoid pixelation when they print. We [converted all of our images to at least 300dpi](https://help.artifactuprising.com/hc/en-us/articles/360028714312-Changing-the-DPI-) using Apple's Preview application. You could pretty much use any imaging application for this (e.g., ImageMagick, Inkscape, MS Paint).
 
 
 Below is the Keynote file I used to create our poster. Feel free to use or adapt it. I also exported this to PowerPoint, but the Lato font seems to generate slightly differently on the PPTX slide. 
@@ -51,8 +51,10 @@ Below is the Keynote file I used to create our poster. Feel free to use or adapt
 Here are some other resources that may be helpful:
 
 - Mike Morrison's [Better Scientific Poster repository](https://osf.io/ef53g/) on OSF
-- [Butterick's Practical Typography](https://practicaltypography.com/)
-- [QR Code Generator](https://www.qr-code-generator.com/)
-- [Color Blindness Simulator](https://www.color-blindness.com/coblis-color-blindness-simulator/)
+- [Butterick's Practical Typography](https://practicaltypography.com/): A free online book that presents some of the basic ideas of fonts and typography.
+- [QR Code Generator](https://www.qr-code-generator.com/): Create and format a QR code that links to whatever URL or file you want.
+- [Color Blindness Simulator](https://www.color-blindness.com/coblis-color-blindness-simulator/): Simulate what the colors in an image look like for people with many different types of color-blindness.
+- [Spoonflower](https://www.spoonflower.com/): This place will print your poster on fabric and ship it to you for a great price relative to many other places.
+
 
 
