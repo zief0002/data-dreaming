@@ -43,6 +43,8 @@ After deciding on the background color for the main finding, we used complimenta
 We generated a QR code from [this site](https://www.qr-code-generator.com/) that linked to the website where we posted the references and a PDF copy of the poster. One other important caveat for printing posters is that your images need to be pretty high resolution to avoid pixelation when they print. We [converted all of our images to at least 300dpi](https://help.artifactuprising.com/hc/en-us/articles/360028714312-Changing-the-DPI-) using Apple's Preview application. You could pretty much use any imaging application for this (e.g., ImageMagick, Inkscape, MS Paint).
 
 
+## Resources
+
 Below is the Keynote file I used to create our poster. Feel free to use or adapt it. I also exported this to PowerPoint, but the Lato font seems to generate slightly differently on the PPTX slide. 
 
 - [Keynote file for our poster](https://www.datadreaming.org/files/gsrd-2020-poster-2020-02-20.key)
