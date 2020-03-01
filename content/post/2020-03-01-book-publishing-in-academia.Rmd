@@ -1,0 +1,38 @@
+---
+title: Book Publishing in Academia
+author: Andy
+date: '2020-03-01'
+slug: book-publishing-in-academia
+categories: []
+tags:
+  - Miscellaneous
+  - Writing
+subtitle: ''
+description: ''
+image: ''
+showtoc: false  
+---
+
+In 2019, I read a book called *Patience &amp; Fortitude: A Roving Chronicle of Book People, Book Places, and Book Culture*. Aside from being incredibly entertaining and interesting, there was a passage that struck a chord with me that related to academic publishing. In this passage, [James Billington](https://en.wikipedia.org/wiki/James_H._Billington), Librarian of Congress from 1987&ndash;2015, was lamenting the degradation of the book through the "hyperspecialization and bureaucratization" found in the academic monograph.
+
+He predicts that in the future these "books" that are primarily filled with data and are geared toward a very specialist audience will (hopefully) be relegated to the electronic format and no longer published in book form. In his words:
+
+
+<link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet"> 
+
+<blockquote style = "font-family: 'Special Elite'; background: #fffdf5; color: #3f3f5a;">Book publishing now plays a role in the certification of academic guilds by struggling into publication things with very limited interest that are written in jargon for a very narrow audience. They are not written in a language that enriches and improves and extends the human condition, but are merely written in a kind of bad functional form of communication among experts. That stuff should go online because that's where it belongs. And I believe that is going to help the scholarly world, because right now there is a real divide in academia between those who get their books published, and those who don't.</blockquote>
+<cite style="font-style: normal;">James Billington, *Patience &amp; Fortitude*, p. 518</cite>
+
+
+Although Billington made this comment in the early 2000s, this resonated with me and the experiences I have had working with publishing companies. I am one of the lucky who have had their work published in book form. However, I have been outspoken about the outrageous prices (due to low publication runs and just over-pricing of this work in general) that are attached to this work. Since my experience working with Wiley in 2008, I have subsequently made all of my statistics writing (notes, textbooks, etc.) available for free online.
+
+The ease of self-publishing a book online is trivial today with free tools like [bookdown](https://bookdown.org/) and github. Critics might argue that this ease leads to more 'junk' being published and we should weight the work that is published by a publisher more. I disagree. Publishers are interested in making money. Period. Work they deem will make money is published. Work that won't is not. This is not how we should judge an academic portfolio. 
+
+If work is good, no matter what the avenue of publication, we should give academics credit. Our problem is that the old system of evaluation has not caught up to the way that many current academics (especially those positing and embracing ideas of Open Science) tend to make their work available. In my opinion, this is not only unfortunate, but a major problem. Science needs to be available to other academics, and to the general public. (This might be the one thing that I do agree with the Trump administration on!) It is time for the whole academy to start thinking about what scholarship is in today's world and how the framework for evaluation of academics can change to consider more open accessible avenues of publication.
+
+<br /><br />
+
+
+### Reference
+
+<p style="text-indent: -22px; margin-left: 22px;">Basebanes, N. A. (2001). <i>Patience &amp; Fortitude: A Roving Chronicle of Book People, Book Places, and Book Culture.*</i> HarperCollins.</p>
