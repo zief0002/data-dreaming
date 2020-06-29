@@ -57,6 +57,7 @@ Here are some other resources that may be helpful:
 - [QR Code Generator](https://www.qr-code-generator.com/): Create and format a QR code that links to whatever URL or file you want.
 - [Color Blindness Simulator](https://www.color-blindness.com/coblis-color-blindness-simulator/): Simulate what the colors in an image look like for people with many different types of color-blindness.
 - [Spoonflower](https://www.spoonflower.com/): This place will print your poster on fabric and ship it to you for a great price relative to many other places.
+- [List of Fee Fonts](https://www.websiteplanet.com/blog/best-free-fonts/): The fonts we used may not be acceptable for commerical use, and you may want to find more open/free fonts. This is but one of many. [Google Fonts](https://fonts.google.com/) also has many fonts available for commerical use. *Thank you to Brianna Miller for bringing this to my attention.*
 
 
 
