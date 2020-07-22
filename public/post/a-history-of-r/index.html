@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Andrew Zieffler">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="//img/typewriter.png">
+    <meta property="twitter:image" content="//img/typewriter.png" />
+    
+
+    
+    <meta name="title" content="A History of R" />
+    <meta property="og:title" content="A History of R" />
+    <meta property="twitter:title" content="A History of R" />
+    
+
+    
+    <meta name="description" content="">
+    <meta property="og:description" content="" />
+    <meta property="twitter:description" content="" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>A History of R-Academic. Data lover. Statistics enthusiast.</title>
+
+    <link rel="canonical" href="/post/a-history-of-r/">
+
+    <link rel="stylesheet" href="/css/iDisqus.min.css"/>
+	
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    
+    <link rel="stylesheet" href="/css/syntax.css">
+    
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+    
+    
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/v4-shims.css">
+
+    
+    <link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/css/academicons.min.css">
+
+    
+    
+    <script src="/js/jquery.min.js"></script>
+    
+    
+    <script src="/js/bootstrap.min.js"></script>
+    
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/monokai-sublime.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    
+    <script src="/js/lightbox.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <script src="/js/main.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
+    
+
+</head>
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Andrew Zieffler</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                    
+		    
+                        <li><a href="/top/about/">ABOUT</a></li>
+                    
+                        <li><a href="/top/contact/">CONTACT</a></li>
+                    
+                        <li><a href="/top/publications/">PUBLICATIONS</a></li>
+                    
+                        <li><a href="/top/teaching/">TEACHING</a></li>
+                    
+                        <li><a href="/top/blogroll/">BLOGROLL</a></li>
+                    
+
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/typewriter.png')
+    }
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/r" title="R">
+                            R
+                        </a>
+                        
+                        <a class="tag" href="/tags/presentation" title="Presentation">
+                            Presentation
+                        </a>
+                        
+                    </div>
+                    <h1>A History of R</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        Posted by 
+                        
+                            Andy
+                         
+                        on 
+                        Wednesday, July 22, 2020
+                        
+                        
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                
+
+
+<p>Tomorrow (July 23, 2020 ) I am speaking on the history of the R statistical software environment as part of a virtual panel for a <em>Lunch &amp; Learn</em>. I like how they used “featuring” in the announcement. It is like I am a hip-hop star! The title of my talk is, <a href="https://www.datadreaming.org/files/history-of-r-2020-07-15.pdf">A History of R (in 15 minutes…and mostly in pictures)</a>.</p>
+<p><img src="/post/2020-07-22-a-history-of-r_files/my-talk.png" style="width:70.0%" /></p>
+<div style="border:1px solid; margin-left:auto; margin-right:auto; padding-left:15px; padding-right:15px;">
+<p><img src="/post/2020-07-22-a-history-of-r_files/r-at-25.png" style="width:40.0%" /></p>
+<p><strong>R @ 25 Lunch &amp; Learn: Understanding the Landscape of the Popular Free/Open Source Statistics Software</strong><br /><em>Featuring Andrew Zieffler, Ph.D. (EPSY); Alicia Hofelich Mohr, Ph.D. (LATIS); Ethan C. Brown, Ph.D. (RMCC), and Jeffrey K. Bye, Ph.D. (EPSY/RMCC)</em></p>
+<p>Co-sponsored by <a href="https://rmcc.umn.edu/">RMCC</a> and <a href="http://latis.umn.edu/">LATIS</a></p>
+<p><em>Abstract:</em> The R statistical software environment has a large international community, powerful data-management and visualization tools, implements cutting-edge methods, and can be used to create beautiful web dashboards and customized reports. In this panel discussion to celebrate the 25th anniversary of R being licensed as open-source software, we will explore the growth of R from its humble beginnings as a project by two University of Auckland statistics professors to install S on a Macintosh computer to its current status as computational statistics lingua franca. We will also discuss how to navigate the large ecosystem of R packages including classic “base R”, the “tidyverse” and others. Finally, we will provide tips and resources on getting started learning R and also growing your R proficiency—including upcoming workshops and courses here at the U. This panel discussion is for everyone interested in learning more about R, but doesn’t assume any R experience.</p>
+</div>
+<p><br /></p>
+<div id="references-and-resources" class="section level2">
+<h2>References and Resources</h2>
+<p>First, my slides:</p>
+<ul>
+<li><a href="https://www.datadreaming.org/files/history-of-r-2020-07-15.pdf">PDF of the Slides</a></li>
+</ul>
+<p>The slides include a long list of references, many of which are videos of talks by the people who appear in my slides. And believe me, they can tell their story better than I can. Unfortunately when I flattened the PDF the links no longer work, so I re-print them here with links.</p>
+<p><strong>History of S and R [video]</strong></p>
+<ul>
+<li>Becker, R. (2016). <a href="https://blog.revolutionanalytics.com/2016/07/rick-becker-s-talk.html">Forty years of S</a>. Presentation at the UseR! conference. Stanford, CA.</li>
+<li>Chamber, J. M (2014). <a href="datascience.la/john-chambers-user-2014-keynote/">Interface Efficiency and Big Data</a>. Keynote address at the UseR! conference. Los Angeles, CA.</li>
+<li>Dalgaard, P. (2018). <a href="https://www.youtube.com/watch?v=z1vTSdRolgI&amp;t=909s">What’s in a name? 20 years of R release management</a>. UseR! Conference, Brisbane, Australia.</li>
+<li>Dalgaard, P. (2020). <a href="https://www.youtube.com/watch?v=Uey45MSg8Y4">A brief history of R and some thoughts about its future</a>. CelebRation 2020 conference, Copenhagen,
+Denmark.</li>
+<li>Peng, R. (2015). <a href="https://www.youtube.com/watch?v=STihTnVSZnI&amp;t=835s">Overview and history of R</a>.</li>
+<li>Revolutions. (2014). <a href="https://blog.revolutionanalytics.com/2014/01/john-chambers-recounts-the-history-of-s-and-r.html#:~:text=0,%20released%20on%20February%2029,visualize,%20and%20manipulate%20data%22.">John Chambers recounts the history of S and R</a>. An interview by Trevor Hastie.</li>
+</ul>
+<p><strong>History of S and R [papers/slides/resources]</strong></p>
+<ul>
+<li>Becker, R. A., &amp; Chambers, J. M. (1978). <a href="https://ieeexplore.ieee.org/document/810495">Design and implementation of the “S” system for interactive data analysis</a>. The IEEE Computer Society’s Second International Computer Software and Applications Conference, 1978. COMPSAC ’78., 626–629.</li>
+<li>Chambers, J. M. (2006). <a href="https://www.r-project.org/user-2006/Slides/Chambers.pdf">History of S and R (with some thoughts for the future)</a>. Presentation at the UseR! Conference, Vienna, Austria.</li>
+<li>D’Agostino McGowan, L. (2017). <a href="https://livefreeordichotomize.com/2017/09/28/r-release-names/">R release names</a>. Livefreeordichotomize blog.</li>
+<li>Gentleman, R. (2009). R and modern statistical computing. Talk.</li>
+<li>Gentleman, R., &amp; Ihaka, R. (2000). <a href="https://www.stat.auckland.ac.nz/~ihaka/downloads/lexical.pdf">Lexical scope and statistical computing</a>. <em>Journal of Computational and Graphical Statistics, 9</em>(3), 491–508.</li>
+<li>Ihaka, R. (1998). <a href="https://www.stat.auckland.ac.nz/~ihaka/downloads/Interface98.pdf">R: Past and future history</a>. Interface ’98.</li>
+<li>Ihaka, R. (2009). <a href="https://www.stat.auckland.ac.nz/~ihaka/downloads/Massey.pdf">The R Project: A brief history and thoughts about the future</a>. <em>Massey University Statistics Day.</em> Massey University, Palmerston North, New Zealand.</li>
+<li>Ihaka, R., &amp; Gentleman, R. (1996). <a href="http://biostat.mc.vanderbilt.edu/wiki/pub/Main/JeffreyHorner/JCGSR.pdf">R: A language for data analysis and graphics</a>. Journal of Computational and Graphical Statistics, 5(3), 299–314.</li>
+<li>The R Foundation. (n.d.). <a href="https://www.r-project.org/">The R Project for Statistical Computing</a>. [website]</li>
+</ul>
+</div>
+
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/spelling-lesson/" data-toggle="tooltip" data-placement="top" title="Spelling Lesson">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                </ul>
+
+                
+<div id="disqus-comment"></div>
+
+
+
+            </div>
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                   
+                    
+                    
+                    
+                    
+                    
+
+                    
+
+		    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; Andrew Zieffler 2020
+                    <br>
+                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+</body>
+</html>

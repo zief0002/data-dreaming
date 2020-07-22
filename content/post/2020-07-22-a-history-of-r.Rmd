@@ -1,0 +1,66 @@
+---
+title: A History of R
+author: Andy
+date: '2020-07-22'
+slug: a-history-of-r
+categories: []
+tags:
+  - R
+  - Presentation
+subtitle: ''
+description: ''
+image: ''
+showtoc: false
+---
+
+Tomorrow (July 23, 2020 ) I am speaking on the history of the R statistical software environment as part of a virtual panel for a *Lunch &amp; Learn*. I like how they used "featuring" in the announcement. It is like I am a hip-hop star! The title of my talk is, [A History of R (in 15 minutes...and mostly in pictures)](https://www.datadreaming.org/files/history-of-r-2020-07-15.pdf). 
+
+![](/post/2020-07-22-a-history-of-r_files/my-talk.png){width=70%}
+
+
+
+<div style="border:1px solid; margin-left:auto; margin-right:auto; padding-left:15px; padding-right:15px;">
+![](/post/2020-07-22-a-history-of-r_files/r-at-25.png){width=40%}
+
+**R @ 25 Lunch & Learn: Understanding the Landscape of the Popular Free/Open Source Statistics Software**<br />*Featuring Andrew Zieffler, Ph.D. (EPSY); Alicia Hofelich Mohr, Ph.D. (LATIS); Ethan C. Brown, Ph.D. (RMCC), and Jeffrey K. Bye, Ph.D. (EPSY/RMCC)*
+
+Co-sponsored by [RMCC](https://rmcc.umn.edu/) and [LATIS](http://latis.umn.edu/)
+
+
+*Abstract:* The R statistical software environment has a large international community, powerful data-management and visualization tools, implements cutting-edge methods, and can be used to create beautiful web dashboards and customized reports. In this panel discussion to celebrate the 25th anniversary of R being licensed as open-source software, we will explore the growth of R from its humble beginnings as a project by two University of Auckland statistics professors to install S on a Macintosh computer to its current status as computational statistics lingua franca. We will also discuss how to navigate the large ecosystem of R packages including classic "base R", the "tidyverse" and others. Finally, we will provide tips and resources on getting started learning R and also growing your R proficiency—including upcoming workshops and courses here at the U. This panel discussion is for everyone interested in learning more about R, but doesn't assume any R experience.
+</div>
+
+
+<br />
+
+## References and Resources
+
+First, my slides:
+
+- [PDF of the Slides](https://www.datadreaming.org/files/history-of-r-2020-07-15.pdf)
+
+The slides include a long list of references, many of which are videos of talks by the people who appear in my slides. And believe me, they can tell their story better than I can. Unfortunately when I flattened the PDF the links no longer work, so I re-print them here with links.
+
+**History of S and R [video]**
+
+- Becker, R. (2016). [Forty years of S](https://blog.revolutionanalytics.com/2016/07/rick-becker-s-talk.html). Presentation at the UseR! conference. Stanford, CA.
+- Chamber, J. M (2014). [Interface Efficiency and Big Data](datascience.la/john-chambers-user-2014-keynote/). Keynote address at the UseR! conference. Los Angeles, CA.
+- Dalgaard, P. (2018). [What's in a name? 20 years of R release management](https://www.youtube.com/watch?v=z1vTSdRolgI&t=909s). UseR! Conference, Brisbane, Australia.
+- Dalgaard, P. (2020). [A brief history of R and some thoughts about its future](https://www.youtube.com/watch?v=Uey45MSg8Y4). CelebRation 2020 conference, Copenhagen,
+Denmark.
+- Peng, R. (2015). [Overview and history of R](https://www.youtube.com/watch?v=STihTnVSZnI&t=835s).
+- Revolutions. (2014). [John Chambers recounts the history of S and R](https://blog.revolutionanalytics.com/2014/01/john-chambers-recounts-the-history-of-s-and-r.html#:~:text=0, released on February 29,visualize, and manipulate data".). An interview by Trevor Hastie.
+
+
+**History of S and R [papers/slides/resources]**
+
+- Becker, R. A., &amp; Chambers, J. M. (1978). [Design and implementation of the "S" system for interactive data analysis](https://ieeexplore.ieee.org/document/810495). The IEEE Computer Society's Second International Computer Software and Applications Conference, 1978. COMPSAC ’78., 626&ndash;629.
+- Chambers, J. M. (2006). [History of S and R (with some thoughts for the future)](https://www.r-project.org/user-2006/Slides/Chambers.pdf). Presentation at the UseR! Conference, Vienna, Austria.
+- D'Agostino McGowan, L. (2017). [R release names](https://livefreeordichotomize.com/2017/09/28/r-release-names/). Livefreeordichotomize blog.
+- Gentleman, R. (2009). R and modern statistical computing. Talk.
+- Gentleman, R., &amp; Ihaka, R. (2000). [Lexical scope and statistical computing](https://www.stat.auckland.ac.nz/~ihaka/downloads/lexical.pdf). *Journal of Computational and Graphical Statistics, 9*(3), 491–508.
+- Ihaka, R. (1998). [R: Past and future history](https://www.stat.auckland.ac.nz/~ihaka/downloads/Interface98.pdf). Interface '98.
+- Ihaka, R. (2009). [The R Project: A brief history and thoughts about the future](https://www.stat.auckland.ac.nz/~ihaka/downloads/Massey.pdf). *Massey University Statistics Day.* Massey University, Palmerston North, New Zealand.
+- Ihaka, R., &amp; Gentleman, R. (1996). [R: A language for data analysis and graphics](http://biostat.mc.vanderbilt.edu/wiki/pub/Main/JeffreyHorner/JCGSR.pdf). Journal of Computational and Graphical Statistics, 5(3), 299&ndash;314.
+- The R Foundation. (n.d.). [The R Project for Statistical Computing](https://www.r-project.org/). [website]
+

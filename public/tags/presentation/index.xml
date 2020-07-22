@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Presentation on Andrew Zieffler</title>
+    <link>/tags/presentation/</link>
+    <description>Recent content in Presentation on Andrew Zieffler</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 22 Jul 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/presentation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A History of R</title>
+      <link>/post/a-history-of-r/</link>
+      <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/a-history-of-r/</guid>
+      <description>Tomorrow (July 23, 2020 ) I am speaking on the history of the R statistical software environment as part of a virtual panel for a Lunch &amp;amp; Learn. I like how they used “featuring” in the announcement. It is like I am a hip-hop star! The title of my talk is, A History of R (in 15 minutes…and mostly in pictures).
+R @ 25 Lunch &amp;amp; Learn: Understanding the Landscape of the Popular Free/Open Source Statistics Software</description>
+    </item>
+    
+  </channel>
+</rss>
