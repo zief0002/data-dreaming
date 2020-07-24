@@ -39,7 +39,7 @@ First, my slides:
 
 - [PDF of the Slides](https://www.datadreaming.org/files/history-of-r-2020-07-15.pdf)
 
-The slides include a long list of references, many of which are videos of talks by the people who appear in my slides. And believe me, they can tell their story better than I can. Unfortunately when I flattened the PDF the links no longer work, so I re-print them here with links.
+The slides include a long list of references, many of which are videos of talks by the people who appear in my slides. And believe me, they can tell their story better than I can. ~~Unfortunately when I flattened the PDF the links no longer work, so I re-print them here with links.~~ The new PDF should have working links!
 
 **History of S and R [video]**
 
