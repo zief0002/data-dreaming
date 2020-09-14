@@ -14,7 +14,7 @@ I teach (have taught) the following courses at the University of Minnesota:
 - EPsy 8252: Methods in Data Analysis for Educational Research II &nbsp; [<a href="https://zief0002.github.io/epsy-8252/"><i class="fas fa-globe"></i></a>]
 - EPsy 8261: Statistical Methods I: Probability and Inference
 - EPsy 8262: Statistical Methods II: Regression and The General Linear Model
-- EPsy 8264: Advanced Multiple Regression &nbsp; [<a href="https://github.com/zief0002/epsy-8264"><i class="fas fa-globe"></i></a>]
+- EPsy 8264: Advanced Multiple Regression &nbsp; [<a href="https://zief0002.github.io/epsy-8264/"><i class="fas fa-globe"></i></a>]
 - EPsy 8282: Statistical Analysis of Longitudinal Data I
 
 
