@@ -20,10 +20,11 @@ I have written several notes to myself over the years as reminders. These includ
 
 - [blastula](https://github.com/rstudio/blastula) is a package for creating beautiful custom emails in R. It can be used to compose custom email bodies based on code, code output, and markdown; and send emails using SMTP servers - even GMail - or integrate with production services like RStudio Connect. Also available from CRAN.
 
+<br />
 
 ## Packages to Enhance Markdown Documents
 
-![](/2020-12-15-some-r-packages-to-keep-in-mind/index_files/Screen Shot 2020-12-15 at 2.22.02 PM.png){width=100%}
+![](../2020-12-15-some-r-packages-to-keep-in-mind/index_files/Screen Shot 2020-12-15 at 2.22.02 PM.png){width=100%}
 
 - [bookdown](https://github.com/rstudio/bookdown) facilitates writing books and long-form articles/reports with R Markdown. There are several examples of books writte in bookdown and documentation available at https://bookdown.org/.
 - [citr](https://github.com/crsh/citr) creates an RStudio addin to insert citations in an R Markdown document. 
@@ -36,20 +37,22 @@ I have written several notes to myself over the years as reminders. These includ
   + [xaringanExtra](https://github.com/gadenbuie/xaringanExtra) is a "playground of enhancements and extensions for xaringan slides". This package also includes functions for [sharing your slides](https://www.garrickadenbuie.com/blog/sharing-xaringan-slides/) on a website or Twitter.
   + [xaringanthemer](https://github.com/gadenbuie/xaringanthemer) adds some style to you xaringan produced slides.
 
+<br />
 
 ## Packages to Enhance Plots
 
-![](/2020-12-15-some-r-packages-to-keep-in-mind/index_files/Screen Shot 2020-12-15 at 2.26.11 PM.png)
+![](../2020-12-15-some-r-packages-to-keep-in-mind/index_files/Screen Shot 2020-12-15 at 2.26.11 PM.png)
 
 - [colorblindr](https://github.com/clauswilke/colorblindr) can simulate colorblindness in production-ready R figures.
 - [emoGG](https://github.com/dill/emoGG) can be used to add emoji into your ggplots.
 - [extrafont](https://github.com/wch/extrafont) makes it easier to include system fonts in your plots. Also available from CRAN.
 - [ggrough](https://xvrdm.github.io/ggrough/index.html) converts your ggplot2 plots to rough/sketchy charts, using the excellent javascript `roughjs` library.
 
+<br />
 
 ## Packages for Creating Tables
 
-![](/2020-12-15-some-r-packages-to-keep-in-mind/index_files/Screen Shot 2020-12-15 at 2.36.38 PM.png){width=100%}
+![](../2020-12-15-some-r-packages-to-keep-in-mind/index_files/Screen Shot 2020-12-15 at 2.36.38 PM.png){width=100%}
 
 - [gt](https://gt.rstudio.com/) creates "wonderful-looking tables using the R programming language. The gt philosophy: we can construct a wide variety of useful tables with a cohesive set of table parts. These include the table header, the stub, the column labels and spanner column labels, the table body, and the table footer."
 - [kableExtra](https://haozhu233.github.io/kableExtra/) includes functionality to enhance `kable()` tables. There is extensive documentation for producing tables in [HTML](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html) and [LaTeX](https://haozhu233.github.io/kableExtra/awesome_table_in_pdf.pdf).
@@ -57,9 +60,11 @@ I have written several notes to myself over the years as reminders. These includ
 - [stargazer](https://www.jakeruss.com/cheatsheets/stargazer/) can be used to create tables of regression model output.
 - [stargazer-booktabs](https://github.com/markwestcott34/stargazer-booktabs) is a slightly modified version of the stargazer package which outputs tables using the booktabs (LaTeX) commands (`\toprule`, `\midrule`, and `\bottomrule`) to include horizontal rules.
 
+<br />
+
 ## Fun R Packages
 
-![Fun package art](/2020-12-15-some-r-packages-to-keep-in-mind/index_files/Screen Shot 2020-12-15 at 2.33.28 PM.png){width=100%}
+![Fun package art](../2020-12-15-some-r-packages-to-keep-in-mind/index_files/Screen Shot 2020-12-15 at 2.33.28 PM.png){width=100%}
 
 - [cowsay](https://github.com/sckott/cowsay) creates a message accompanied by ASCII animal art. Also available from CRAN.
 - [dadjoke](https://github.com/jhollist/dadjoke/) produces dad jokes with the `groan()` function.
