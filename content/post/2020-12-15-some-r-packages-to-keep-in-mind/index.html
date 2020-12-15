@@ -1,0 +1,74 @@
+---
+title: Some R Packages to Keep In Mind
+author: Andy
+date: '2020-12-15'
+slug: []
+categories:
+  - notes
+tags:
+  - R
+  - Productivity
+subtitle: ''
+description: ''
+image: ''
+showtoc: false
+---
+
+<link href="index_files/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="index_files/anchor-sections/anchor-sections.js"></script>
+
+
+<p>I have written several notes to myself over the years as reminders. These include ideas for research, R packages I have seen and may use sometime), things to-do, etc. I am in the process of making some of these notes more public on my blog. This will act as a more searchable, curated “note” for myself, but also makes it available to anyone else who would benefit.</p>
+<div id="r-packages-for-productivity" class="section level2">
+<h2>R Packages for Productivity</h2>
+<ul>
+<li><a href="https://github.com/rstudio/blastula">blastula</a> is a package for creating beautiful custom emails in R. It can be used to compose custom email bodies based on code, code output, and markdown; and send emails using SMTP servers - even GMail - or integrate with production services like RStudio Connect. Also available from CRAN.</li>
+</ul>
+</div>
+<div id="packages-to-enhance-markdown-documents" class="section level2">
+<h2>Packages to Enhance Markdown Documents</h2>
+<ul>
+<li><a href="https://github.com/rstudio/bookdown">bookdown</a> facilitates writing books and long-form articles/reports with R Markdown. There are several examples of books writte in bookdown and documentation available at <a href="https://bookdown.org/" class="uri">https://bookdown.org/</a>.</li>
+<li><a href="https://github.com/crsh/citr">citr</a> creates an RStudio addin to insert citations in an R Markdown document.</li>
+<li><a href="https://github.com/hadley/emo">emo</a> can be used to easily add emoji into an R Markdown document.</li>
+<li><a href="https://github.com/datalorax/equatiomatic">equatiomatic</a> extracts output from the <code>lm()</code> function to write the equation using LaTeX.</li>
+<li><a href="https://github.com/hrbrmstr/markdowntemplates">markdowntemplates</a> includes a set of R markdown templates and knitr knit engine replacements.</li>
+<li><a href="https://github.com/crsh/papaja">papaja</a> can be used to easily prepare APA journal articles with R Markdown.</li>
+<li><a href="https://github.com/mitchelloharawild/vitae">vitae</a> makes creating and maintaining a Resume or CV with R Markdown simple. It provides a collection of LaTeX templates, with helpful functions to add content to the documents.</li>
+<li><a href="https://github.com/yihui/xaringan">xaringan</a> can be used to produce some slick slideshows with remark.js using R Markdown.
+<ul>
+<li><a href="https://github.com/gadenbuie/xaringanExtra">xaringanExtra</a> is a “playground of enhancements and extensions for xaringan slides”. This package also includes functions for <a href="https://www.garrickadenbuie.com/blog/sharing-xaringan-slides/">sharing your slides</a> on a website or Twitter.</li>
+<li><a href="https://github.com/gadenbuie/xaringanthemer">xaringanthemer</a> adds some style to you xaringan produced slides.</li>
+</ul></li>
+</ul>
+</div>
+<div id="packages-to-enhance-plots" class="section level2">
+<h2>Packages to Enhance Plots</h2>
+<ul>
+<li><a href="https://github.com/clauswilke/colorblindr">colorblindr</a> can simulate colorblindness in production-ready R figures.</li>
+<li><a href="https://github.com/dill/emoGG">emoGG</a> can be used to add emoji into your ggplots.</li>
+<li><a href="https://github.com/wch/extrafont">extrafont</a> makes it easier to include system fonts in your plots. Also available from CRAN.</li>
+<li><a href="https://xvrdm.github.io/ggrough/index.html">ggrough</a> converts your ggplot2 plots to rough/sketchy charts, using the excellent javascript <code>roughjs</code> library.</li>
+</ul>
+</div>
+<div id="packages-for-creating-tables" class="section level2">
+<h2>Packages for Creating Tables</h2>
+<ul>
+<li><a href="https://gt.rstudio.com/">gt</a> creates “wonderful-looking tables using the R programming language. The gt philosophy: we can construct a wide variety of useful tables with a cohesive set of table parts. These include the table header, the stub, the column labels and spanner column labels, the table body, and the table footer.”</li>
+<li><a href="https://haozhu233.github.io/kableExtra/">kableExtra</a> includes functionality to enhance <code>kable()</code> tables. There is extensive documentation for producing tables in <a href="https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html">HTML</a> and <a href="https://haozhu233.github.io/kableExtra/awesome_table_in_pdf.pdf">LaTeX</a>.</li>
+<li><a href="https://github.com/vincentarelbundock/modelsummary">modelsummary</a> creates “tables and plots to summarize statistical models and data”. These tables are also customizable.</li>
+<li><a href="https://www.jakeruss.com/cheatsheets/stargazer/">stargazer</a> can be used to create tables of regression model output.</li>
+<li><a href="https://github.com/markwestcott34/stargazer-booktabs">stargazer-booktabs</a> is a slightly modified version of the stargazer package which outputs tables using the booktabs (LaTeX) commands (<code>\toprule</code>, <code>\midrule</code>, and <code>\bottomrule</code>) to include horizontal rules.</li>
+</ul>
+</div>
+<div id="fun-r-packages" class="section level2">
+<h2>Fun R Packages</h2>
+<ul>
+<li><a href="https://github.com/sckott/cowsay">cowsay</a> creates a message accompanied by ASCII animal art. Also available from CRAN.</li>
+<li><a href="https://github.com/jhollist/dadjoke/">dadjoke</a> produces dad jokes with the <code>groan()</code> function.</li>
+<li><a href="https://github.com/itsrainingdata/emokid">emokid</a> outputs some emo messages when “you’re having trouble expressing how you feel about your broken code.”</li>
+<li><a href="https://cran.r-project.org/web/packages/fortunes/index.html">fortunes</a> includes a collection of fortunes and wisdom from the R community. Available from CRAN.</li>
+<li><a href="https://yihui.org/en/2011/08/the-fun-package-use-r-for-fun/">fun</a> allows you to play minesweeper in R, among other things. Also available from CRAN.</li>
+<li><a href="https://coolbutuseless.github.io/2020/11/15/play-zork-in-rstats/">Play Zork in R</a> This blog post gives some code to load archived infocom games and play them in the R console.</li>
+</ul>
+</div>
