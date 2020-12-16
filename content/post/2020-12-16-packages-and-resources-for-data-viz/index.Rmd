@@ -23,7 +23,9 @@ These are resources I was compiling for use in our course, *EPsy 1261: Understan
 ## Online Books
 
 - Healy, K. (2018). [Data Visualization: A Practical Introduction](https://socviz.co/).
+  + [socviz](https://github.com/kjhealy/socviz): R package to accompany Kieran Healy's book, *Data Visualization: A Practical Introduction*. It includes datasets, functions, and course materials.
 - Wilke, C. O. (2019). [Fundamentals of Data Visualization](https://serialmentor.com/dataviz/index.html).
+  + [practical_ggplot2](https://github.com/clauswilke/practical_ggplot2): R package to accompany Claus Wilke's book,  *Fundamentals of Data Visualization*. Great suggestions for making plots look great!
 
 <br />
 
@@ -40,6 +42,7 @@ These are resources I was compiling for use in our course, *EPsy 1261: Understan
 - Ranzolin, D. (2019, July 07). [Thoughts on animation and movement in data visualization.](https://daranzolin.github.io/2019-07-07-animation-thoughts/) Blog post.
 - Scherer, C. (2019). [The evolution of a ggplot](https://cedricscherer.netlify.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/). Blog post.
 - Schwabish, J. (2018, November 19). [Teaching data visualization to kids](https://policyviz.com/2018/11/19/teaching-data-visualization-to-kids/). *PolicyViz.* Online. 
+- Tol, P. (2019, May 25). [Notes on color palettes for scientific visualizations](https://personal.sron.nl/~pault/). Blog post.
 
 
 <br />
@@ -51,6 +54,9 @@ These are resources I was compiling for use in our course, *EPsy 1261: Understan
 - [Coolors](https://coolors.co/): Online palette generator and explorer. Can also display created alettes under many types of colorblindness.
 - [Digital Story Templates](https://github.com/ft-interactive/story-playbook): The Financial Times has created a set of six digital story templates to help its reporters and editors commission digital and visual stories.
 - [NAPA Cards](http://napa-cards.net/): Narrative Patterns for Data-Driven Storytelling.
+- [Neatline](https://neatline.org/): Neatline allows scholars, students, and curators to tell stories with maps, images and timelines.
+- [RAW Graphs](https://rawgraphs.io/): RAW Graphs is an open source data visualization framework built with the goal of making the visual representation of complex data easy for everyone.
+- [Scrollama](https://pudding.cool/process/introducing-scrollama/): Scrollama is a modern and lightweight JavaScript library for scrollytelling.
 - [TinEye](https://labs.tineye.com/): TinEye is a tool that can extract color palettes from an image. It also has image search capabilities.
 - [The Vistorian.](https://networkcube.github.io/vistorian/web/index.html) The Vistorian is an online platform that provides interactive visualization for various kinds of networks. It is a collaborative open-source research-project currently in the prototyping phase. It also allows you to import CSV files to visualize.
 - [Who can use this?](https://whocanuse.com/?b=FFFFFF&c=663399&f=20&s=): A tool that brings attention and understanding to how color contrast can affect different people with visual impairments.
@@ -95,8 +101,7 @@ These are resources I was compiling for use in our course, *EPsy 1261: Understan
 - [R4DS online learning community](https://github.com/rfordatascience): A GitHub organization for the R4DS online learning community.
 - [Tidy Tuesday](https://github.com/rfordatascience/tidytuesday): Real-world data that can be used for wrangling and visualization.
 - [The Stanford Open Policing Project](https://openpolicing.stanford.edu/data/): Standardized police stop data are available to download (by location). The data are provided in both CSV and RDS formats. In addition, shapefiles are available for select locations.
-- [practical_ggplot2](https://github.com/clauswilke/practical_ggplot2): R package to accompany Claus Wilke's book,  *Fundamentals of Data Visualization*. Great suggestions for making plots look great!
-- [socviz](https://github.com/kjhealy/socviz): R package to accompany Kieran Healy's book, *Data Visualization: A Practical Introduction*. It includes datasets, functions, and course materials.
+
 
 
 <br />
