@@ -38,6 +38,18 @@ R Packages for Productivity  blastula is a package for creating beautiful custom
     </item>
     
     <item>
+      <title>Journal of Statistics and Data Science Education (JSE) Reference Examples</title>
+      <link>https://www.datadreaming.org/post/journal-of-statistics-education-jse-references/</link>
+      <pubDate>Mon, 14 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.datadreaming.org/post/journal-of-statistics-education-jse-references/</guid>
+      <description>This post is to act as more of a reference for myself regarding the referencing for JSE articles. JSE references use the American Statistical Association’s style guide which is here.
+Zotero’s Style Repository includes a style file here.
+Article Examples Gould, R. (2004), “Variability: One Statistician’s View,” Statistics Education Research Journal, 3, 7–16. Available at https://iase-web.org/documents/SERJ/SERJ3(2)_Gould.pdf?1402525005.
+– – (2017), “Data Literacy is Statistical Literacy,” Statistics Education Research Journal, 16, 22–25.</description>
+    </item>
+    
+    <item>
       <title>A History of R</title>
       <link>https://www.datadreaming.org/post/a-history-of-r/</link>
       <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
@@ -267,7 +279,7 @@ Thirty years ago, my older brother, who was ten years old at the time, was tryin
       
       <guid>https://www.datadreaming.org/post/2019-statprep-workshops/</guid>
       <description>I just finished helping out with two StatPREP workshops in Columbia, Maryland and Fort Worth, Texas, respectively. StatPREP is an initiative of the Mathematical Association of America (MAA), in conjunction with American Mathematical Association of Two-Year Colleges (AMATYC) and the American Statistical Association (ASA), to introduce data and computing into introductory statistics courses—specifically in community college classrooms.
-Each summer, workshops are held in four locations, and each location hosts a workshop for two consecutive years.</description>
+ Summer 2019 StatPREP participants and workshop leaders at Howard Community College  Each summer, workshops are held in four locations, and each location hosts a workshop for two consecutive years.</description>
     </item>
     
     <item>
@@ -288,7 +300,8 @@ The text referring to the map made an inference about the accessibility to highe
       <pubDate>Mon, 03 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.datadreaming.org/post/richard-hamming-on-calculus/</guid>
-      <description>Reference </description>
+      <description>The way mathematics is currently taught it is exceedingly dull. In the calculus book we are currently using on my campus, I found no single problem whose answer I felt the student would care about! The problems in the text have the dignity of solving a crossword puzzle &amp;mdash; hard to be sure, but the result is of no significance in life. Richard Hamming, *Calculus and Discrete Mathematics* 
+Reference Hamming, R.</description>
     </item>
     
     <item>
@@ -526,7 +539,7 @@ Since CIS is a concurrent enrollment program, students are enrolled simultaneous
       
       <guid>https://www.datadreaming.org/top/about/</guid>
       <description>About Me I am a Senior Lecturer and researcher in the Quantitative Methods in Education program within the Department of Educational Psychology at the University of Minnesota. I currently teach undergaraduate and graduate-level courses in statistics and train and supervise graduate students in statistics education. In a previous life I taught mathematics and A.P. Statistics at ROCORI High School in Cold Spring, MN.
-My scholarship focuses on statistics education. I have authored/co-authored several papers and book chapters related to statistics education, and have been a co-PI on many NSF-funded statistics education research projects.</description>
+My scholarship focuses on statistics education.</description>
     </item>
     
     <item>
@@ -545,7 +558,8 @@ My scholarship focuses on statistics education. I have authored/co-authored seve
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.datadreaming.org/top/contact/</guid>
-      <description>Location, email, what-not 178 EdSciB 56 East River Road Minneapolis, MN 55455</description>
+      <description>Location, email, what-not 178 EdSciB 56 East River Road Minneapolis, MN 55455
+                                 </description>
     </item>
     
     <item>
@@ -564,7 +578,7 @@ My scholarship focuses on statistics education. I have authored/co-authored seve
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.datadreaming.org/top/publications/</guid>
-      <description>Selected Publications </description>
+      <description>Selected Publications 2018  Justice, N., Zieffler, A., Huberty, M., &amp;amp; delMas, R. (2018). Every rose has it&amp;#39;s thorn: Secondary teachers&amp;#39; reasoning about statistical models. ZDM&amp;mdash;The International Journal on Mathematics Education, 50(7), 1253&amp;ndash;1265. doi: 10.1007/s11858-018-0953-1 National Academies of Sciences, Engineering, and Medicine. (2018). [Contributing Author]. Data science for undergraduates: Opportunities and options. Washington, DC: The National Academies Press. doi: 10.17226/25104 Sabbag, A. G., Garfield, J., &amp;amp; Zieffler, A. (2018). Assessing statistical literacy and statistical reason- ing: The REALI instrument.</description>
     </item>
     
   </channel>

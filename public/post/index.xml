@@ -38,6 +38,18 @@ R Packages for Productivity  blastula is a package for creating beautiful custom
     </item>
     
     <item>
+      <title>Journal of Statistics and Data Science Education (JSE) Reference Examples</title>
+      <link>https://www.datadreaming.org/post/journal-of-statistics-education-jse-references/</link>
+      <pubDate>Mon, 14 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.datadreaming.org/post/journal-of-statistics-education-jse-references/</guid>
+      <description>This post is to act as more of a reference for myself regarding the referencing for JSE articles. JSE references use the American Statistical Association’s style guide which is here.
+Zotero’s Style Repository includes a style file here.
+Article Examples Gould, R. (2004), “Variability: One Statistician’s View,” Statistics Education Research Journal, 3, 7–16. Available at https://iase-web.org/documents/SERJ/SERJ3(2)_Gould.pdf?1402525005.
+– – (2017), “Data Literacy is Statistical Literacy,” Statistics Education Research Journal, 16, 22–25.</description>
+    </item>
+    
+    <item>
       <title>A History of R</title>
       <link>https://www.datadreaming.org/post/a-history-of-r/</link>
       <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
@@ -267,7 +279,7 @@ Thirty years ago, my older brother, who was ten years old at the time, was tryin
       
       <guid>https://www.datadreaming.org/post/2019-statprep-workshops/</guid>
       <description>I just finished helping out with two StatPREP workshops in Columbia, Maryland and Fort Worth, Texas, respectively. StatPREP is an initiative of the Mathematical Association of America (MAA), in conjunction with American Mathematical Association of Two-Year Colleges (AMATYC) and the American Statistical Association (ASA), to introduce data and computing into introductory statistics courses—specifically in community college classrooms.
-Each summer, workshops are held in four locations, and each location hosts a workshop for two consecutive years.</description>
+ Summer 2019 StatPREP participants and workshop leaders at Howard Community College  Each summer, workshops are held in four locations, and each location hosts a workshop for two consecutive years.</description>
     </item>
     
     <item>
@@ -288,7 +300,8 @@ The text referring to the map made an inference about the accessibility to highe
       <pubDate>Mon, 03 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.datadreaming.org/post/richard-hamming-on-calculus/</guid>
-      <description>Reference </description>
+      <description>The way mathematics is currently taught it is exceedingly dull. In the calculus book we are currently using on my campus, I found no single problem whose answer I felt the student would care about! The problems in the text have the dignity of solving a crossword puzzle &amp;mdash; hard to be sure, but the result is of no significance in life. Richard Hamming, *Calculus and Discrete Mathematics* 
+Reference Hamming, R.</description>
     </item>
     
     <item>
