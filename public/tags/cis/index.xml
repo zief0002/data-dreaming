@@ -2,21 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CIS on Andrew Zieffler</title>
-    <link>/tags/cis/</link>
+    <link>https://www.datadreaming.org/tags/cis/</link>
     <description>Recent content in CIS on Andrew Zieffler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 28 Feb 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/cis/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 28 Feb 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://www.datadreaming.org/tags/cis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>College in the Schools</title>
-      <link>/post/2018-02-19-college-in-the-schools/</link>
+      <link>https://www.datadreaming.org/post/2018-02-19-college-in-the-schools/</link>
       <pubDate>Wed, 28 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/2018-02-19-college-in-the-schools/</guid>
+      <guid>https://www.datadreaming.org/post/2018-02-19-college-in-the-schools/</guid>
       <description>College in the Schools is a concurrent enrollment program in which existing University of Minnesota courses are taught in high schools by high school teachers. All schools wishing to offer a CIS course go through an application process, including an interview and approval by the post-secondary academic department sponsoring the course of any high school teachers who will be teaching the course.
 Since CIS is a concurrent enrollment program, students are enrolled simultaneously in the University of Minnesota course (EPsy 3264: Basic and Applied Statistics) and a course at their high school.</description>
     </item>

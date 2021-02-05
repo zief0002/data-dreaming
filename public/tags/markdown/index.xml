@@ -2,21 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Markdown on Andrew Zieffler</title>
-    <link>/tags/markdown/</link>
+    <link>https://www.datadreaming.org/tags/markdown/</link>
     <description>Recent content in Markdown on Andrew Zieffler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Feb 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 09 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.datadreaming.org/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>APA Style Table in RMarkdown (HTML Version)</title>
-      <link>/post/apa-style-table-in-rmarkdown-html-version/</link>
+      <link>https://www.datadreaming.org/post/apa-style-table-in-rmarkdown-html-version/</link>
       <pubDate>Sun, 09 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/apa-style-table-in-rmarkdown-html-version/</guid>
+      <guid>https://www.datadreaming.org/post/apa-style-table-in-rmarkdown-html-version/</guid>
       <description>I will try to replicate the the following table from the 7th edition of the APA Publication Manual.
  Table 7.6 from the 7th edition of the APA Publication Manual (p. 213).   My Process I begin by creating an RMarkdown document that is rendered to HTML.
 --- title: &amp;quot;Untitled&amp;quot; author: &amp;quot;Andrew Zieffler&amp;quot; date: &amp;quot;1/12/2020&amp;quot; output: html_document --- In the RMarkdown body, I will load a few packages and set up a data frame to mimic the content from our goal table.</description>
@@ -24,59 +20,59 @@
     
     <item>
       <title>APA Tables using RMarkdown: Part 5</title>
-      <link>/post/apa-tables-using-rmarkdown-part-5/</link>
+      <link>https://www.datadreaming.org/post/apa-tables-using-rmarkdown-part-5/</link>
       <pubDate>Sat, 18 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/apa-tables-using-rmarkdown-part-5/</guid>
+      <guid>https://www.datadreaming.org/post/apa-tables-using-rmarkdown-part-5/</guid>
       <description>This is the fifth part of a short blog series I am writing to re-create some of the sample tables found in the 7th edition APA Publication Manual. In this post I will attempt to show how to create a table to present the results of several fitted models. (This type of table is not among the example tables in the 7th edition APA Publication Manual.) To do so, I will incorporate many ideas that I covered in the first, second, third and fourth of these posts.</description>
     </item>
     
     <item>
       <title>APA Tables using RMarkdown: Part 4</title>
-      <link>/post/apa-tables-using-rmarkdown-part-4/</link>
+      <link>https://www.datadreaming.org/post/apa-tables-using-rmarkdown-part-4/</link>
       <pubDate>Mon, 13 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/apa-tables-using-rmarkdown-part-4/</guid>
+      <guid>https://www.datadreaming.org/post/apa-tables-using-rmarkdown-part-4/</guid>
       <description>This is the fourth part of a short blog series I am writing to re-create some of the sample tables found in the 7th edition APA Publication Manual. In this post I will attempt to mimic Table 7.17 (p. 220). To do so, I will incorporate many ideas that I covered in the first, second, and third of these posts.
  Table 7.17 from the 7th edition of the APA Publication Manual (p.</description>
     </item>
     
     <item>
       <title>APA Tables using RMarkdown: Part 3</title>
-      <link>/post/apa-tables-using-rmarkdown-part-3/</link>
+      <link>https://www.datadreaming.org/post/apa-tables-using-rmarkdown-part-3/</link>
       <pubDate>Sun, 12 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/apa-tables-using-rmarkdown-part-3/</guid>
+      <guid>https://www.datadreaming.org/post/apa-tables-using-rmarkdown-part-3/</guid>
       <description>This is the third part of a short blog series I am writing to re-create some of the sample tables found in the 7th edition APA Publication Manual. In this post I will attempt to mimic Table 7.10 (p. 215). To do so, I will incorporate many ideas that I covered in the first and second of these posts.
  Table 7.10 from the 7th edition of the APA Publication Manual (p.</description>
     </item>
     
     <item>
       <title>APA Tables using RMarkdown: Part 2</title>
-      <link>/post/apa-tables-using-rmarkdown-part-2/</link>
+      <link>https://www.datadreaming.org/post/apa-tables-using-rmarkdown-part-2/</link>
       <pubDate>Sat, 11 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/apa-tables-using-rmarkdown-part-2/</guid>
+      <guid>https://www.datadreaming.org/post/apa-tables-using-rmarkdown-part-2/</guid>
       <description>This is the second part of a short blog series I am writing to re-create some of the sample tables found in the 7th edition APA Publication Manual. In this post I will attempt to re-create Table 7.8 (p. 214). To do so, I will incorporate many ideas that I covered in the first of these posts.
  Table 7.8 from the 7th edition of the APA Publication Manual (p.</description>
     </item>
     
     <item>
       <title>APA Tables Using RMarkdown</title>
-      <link>/post/apa-tables-using-rmarkdown/</link>
+      <link>https://www.datadreaming.org/post/apa-tables-using-rmarkdown/</link>
       <pubDate>Thu, 09 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/apa-tables-using-rmarkdown/</guid>
+      <guid>https://www.datadreaming.org/post/apa-tables-using-rmarkdown/</guid>
       <description>Often it is useful to format table output to make it look good or to adhere a particular style (e.g., APA). There are several packages that help in this endeavor when working in an Rmarkdown document. When I create tables using RMarkdown, the primary packages I use are:
  The kable() function from the knitr package; and Functions from the kableExtra package.  There are many packages for formatting tables, among others, include the flextable package, the gt package, the huxtable package, and the expss package.</description>
     </item>
     
     <item>
       <title>R Markdown Theme Gallery</title>
-      <link>/post/r-markdown-theme-gallery/</link>
+      <link>https://www.datadreaming.org/post/r-markdown-theme-gallery/</link>
       <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/r-markdown-theme-gallery/</guid>
+      <guid>https://www.datadreaming.org/post/r-markdown-theme-gallery/</guid>
       <description>R Markdown is a great way to integrate R code into a document. An example of the default theme used in R Markdown HTML documents is shown below.
 Pre-Packaged Themes There are several other canned themes you can use rather than the default theme. There are 12 additional themes that you can use without installing any other packages: “cerulean”, “cosmo”, “flatly”, “journal”, “lumen”, “paper”, “readable”, “sandstone”, “simplex”, “spacelab”, “united”, and “yeti”.</description>
     </item>

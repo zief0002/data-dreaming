@@ -2,54 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Writing on Andrew Zieffler</title>
-    <link>/tags/writing/</link>
+    <link>https://www.datadreaming.org/tags/writing/</link>
     <description>Recent content in Writing on Andrew Zieffler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 14 Sep 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/writing/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Journal of Statistics and Data Science Education (JSE) Reference Examples</title>
-      <link>/post/journal-of-statistics-education-jse-references/</link>
-      <pubDate>Mon, 14 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/post/journal-of-statistics-education-jse-references/</guid>
-      <description>This post is to act as more of a reference for myself regarding the referencing for JSE articles. JSE references use the American Statistical Association&amp;rsquo;s style guide which is here.
-Zotero&amp;rsquo;s Style Repository includes a style file here.
-Article Examples Gould, R. (2004), &amp;ldquo;Variability: One Statistician&amp;rsquo;s View,&amp;rdquo; Statistics Education Research Journal, 3, 7&amp;ndash;16. Available at https://iase-web.org/documents/SERJ/SERJ3(2)_Gould.pdf?1402525005.
-&amp;ndash; &amp;ndash; (2017), &amp;ldquo;Data Literacy is Statistical Literacy,&amp;rdquo; Statistics Education Research Journal, 16, 22&amp;ndash;25.</description>
-    </item>
-    
-    <item>
-      <title>Journal of Statistics and Data Science Education (JSE) Reference Examples</title>
-      <link>/post/journal-of-statistics-education-jse-references/</link>
-      <pubDate>Mon, 14 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/post/journal-of-statistics-education-jse-references/</guid>
-      <description>This post is to act as more of a reference for myself regarding the referencing for JSE articles. JSE references use the American Statistical Association&amp;rsquo;s style guide which is here.
-Zotero&amp;rsquo;s Style Repository includes a style file here.
-Article Examples Gould, R. (2004), &amp;ldquo;Variability: One Statistician&amp;rsquo;s View,&amp;rdquo; Statistics Education Research Journal, 3, 7&amp;ndash;16. Available at https://iase-web.org/documents/SERJ/SERJ3(2)_Gould.pdf?1402525005.
-&amp;ndash; &amp;ndash; (2017), &amp;ldquo;Data Literacy is Statistical Literacy,&amp;rdquo; Statistics Education Research Journal, 16, 22&amp;ndash;25.</description>
-    </item>
-    
+    <lastBuildDate>Sun, 01 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.datadreaming.org/tags/writing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Book Publishing in Academia</title>
-      <link>/post/book-publishing-in-academia/</link>
+      <link>https://www.datadreaming.org/post/book-publishing-in-academia/</link>
       <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/book-publishing-in-academia/</guid>
+      <guid>https://www.datadreaming.org/post/book-publishing-in-academia/</guid>
       <description>In 2019, I read a book called Patience &amp;amp; Fortitude: A Roving Chronicle of Book People, Book Places, and Book Culture. Aside from being incredibly entertaining and interesting, there was a passage that struck a chord with me that related to academic publishing. In this passage, James Billington, Librarian of Congress from 1987–2015, was lamenting the degradation of the book through the “hyperspecialization and bureaucratization” found in the academic monograph.</description>
     </item>
     
     <item>
       <title>APA Style Table in RMarkdown (HTML Version)</title>
-      <link>/post/apa-style-table-in-rmarkdown-html-version/</link>
+      <link>https://www.datadreaming.org/post/apa-style-table-in-rmarkdown-html-version/</link>
       <pubDate>Sun, 09 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/apa-style-table-in-rmarkdown-html-version/</guid>
+      <guid>https://www.datadreaming.org/post/apa-style-table-in-rmarkdown-html-version/</guid>
       <description>I will try to replicate the the following table from the 7th edition of the APA Publication Manual.
  Table 7.6 from the 7th edition of the APA Publication Manual (p. 213).   My Process I begin by creating an RMarkdown document that is rendered to HTML.
 --- title: &amp;quot;Untitled&amp;quot; author: &amp;quot;Andrew Zieffler&amp;quot; date: &amp;quot;1/12/2020&amp;quot; output: html_document --- In the RMarkdown body, I will load a few packages and set up a data frame to mimic the content from our goal table.</description>
@@ -57,69 +29,69 @@ Article Examples Gould, R. (2004), &amp;ldquo;Variability: One Statistician&amp;
     
     <item>
       <title>APA Tables using RMarkdown: Part 5</title>
-      <link>/post/apa-tables-using-rmarkdown-part-5/</link>
+      <link>https://www.datadreaming.org/post/apa-tables-using-rmarkdown-part-5/</link>
       <pubDate>Sat, 18 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/apa-tables-using-rmarkdown-part-5/</guid>
+      <guid>https://www.datadreaming.org/post/apa-tables-using-rmarkdown-part-5/</guid>
       <description>This is the fifth part of a short blog series I am writing to re-create some of the sample tables found in the 7th edition APA Publication Manual. In this post I will attempt to show how to create a table to present the results of several fitted models. (This type of table is not among the example tables in the 7th edition APA Publication Manual.) To do so, I will incorporate many ideas that I covered in the first, second, third and fourth of these posts.</description>
     </item>
     
     <item>
       <title>APA Tables using RMarkdown: Part 4</title>
-      <link>/post/apa-tables-using-rmarkdown-part-4/</link>
+      <link>https://www.datadreaming.org/post/apa-tables-using-rmarkdown-part-4/</link>
       <pubDate>Mon, 13 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/apa-tables-using-rmarkdown-part-4/</guid>
+      <guid>https://www.datadreaming.org/post/apa-tables-using-rmarkdown-part-4/</guid>
       <description>This is the fourth part of a short blog series I am writing to re-create some of the sample tables found in the 7th edition APA Publication Manual. In this post I will attempt to mimic Table 7.17 (p. 220). To do so, I will incorporate many ideas that I covered in the first, second, and third of these posts.
  Table 7.17 from the 7th edition of the APA Publication Manual (p.</description>
     </item>
     
     <item>
       <title>APA Tables using RMarkdown: Part 3</title>
-      <link>/post/apa-tables-using-rmarkdown-part-3/</link>
+      <link>https://www.datadreaming.org/post/apa-tables-using-rmarkdown-part-3/</link>
       <pubDate>Sun, 12 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/apa-tables-using-rmarkdown-part-3/</guid>
+      <guid>https://www.datadreaming.org/post/apa-tables-using-rmarkdown-part-3/</guid>
       <description>This is the third part of a short blog series I am writing to re-create some of the sample tables found in the 7th edition APA Publication Manual. In this post I will attempt to mimic Table 7.10 (p. 215). To do so, I will incorporate many ideas that I covered in the first and second of these posts.
  Table 7.10 from the 7th edition of the APA Publication Manual (p.</description>
     </item>
     
     <item>
       <title>APA Tables using RMarkdown: Part 2</title>
-      <link>/post/apa-tables-using-rmarkdown-part-2/</link>
+      <link>https://www.datadreaming.org/post/apa-tables-using-rmarkdown-part-2/</link>
       <pubDate>Sat, 11 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/apa-tables-using-rmarkdown-part-2/</guid>
+      <guid>https://www.datadreaming.org/post/apa-tables-using-rmarkdown-part-2/</guid>
       <description>This is the second part of a short blog series I am writing to re-create some of the sample tables found in the 7th edition APA Publication Manual. In this post I will attempt to re-create Table 7.8 (p. 214). To do so, I will incorporate many ideas that I covered in the first of these posts.
  Table 7.8 from the 7th edition of the APA Publication Manual (p.</description>
     </item>
     
     <item>
       <title>APA Tables Using RMarkdown</title>
-      <link>/post/apa-tables-using-rmarkdown/</link>
+      <link>https://www.datadreaming.org/post/apa-tables-using-rmarkdown/</link>
       <pubDate>Thu, 09 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/apa-tables-using-rmarkdown/</guid>
+      <guid>https://www.datadreaming.org/post/apa-tables-using-rmarkdown/</guid>
       <description>Often it is useful to format table output to make it look good or to adhere a particular style (e.g., APA). There are several packages that help in this endeavor when working in an Rmarkdown document. When I create tables using RMarkdown, the primary packages I use are:
  The kable() function from the knitr package; and Functions from the kableExtra package.  There are many packages for formatting tables, among others, include the flextable package, the gt package, the huxtable package, and the expss package.</description>
     </item>
     
     <item>
       <title>Thesis Season</title>
-      <link>/post/thesis-season/</link>
+      <link>https://www.datadreaming.org/post/thesis-season/</link>
       <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/thesis-season/</guid>
+      <guid>https://www.datadreaming.org/post/thesis-season/</guid>
       <description>It is the time of the semester when it seems every graduate student wants to make progress on their milestones, and several oral prelim exams and thesis defenses get crammed into a 1–2 week period. In the spirit of what I call “Thesis Season”, here are some good reads to keep this all in perspective.
 Luke Burns wrote an inspired piece for McSweeney’s entitled FAQ: The “Snake Fight” Portion of Your Thesis Defense.</description>
     </item>
     
     <item>
       <title>Dissertation Writing</title>
-      <link>/post/dissertation-writing/</link>
+      <link>https://www.datadreaming.org/post/dissertation-writing/</link>
       <pubDate>Wed, 24 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/dissertation-writing/</guid>
+      <guid>https://www.datadreaming.org/post/dissertation-writing/</guid>
       <description>Many times I see students get paralyzed by the idea of writing dissertation (or paper). Anne Lamott gives this advice to struggling writers:
 Thirty years ago, my older brother, who was ten years old at the time, was trying to get a report on birds written that he’d had three months to write. [It] was due the next day. We were out at our family cabin in Bolinas, and he was at the kitchen table close to tears, surrounded by binder paper and pencils and unopened books on birds immobilized by the hugeness of the task ahead.</description>
     </item>

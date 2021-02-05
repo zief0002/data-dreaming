@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>notes on Andrew Zieffler</title>
+    <link>https://www.datadreaming.org/categories/notes/</link>
+    <description>Recent content in notes on Andrew Zieffler</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 16 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.datadreaming.org/categories/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Packages and Resources for Data Viz</title>
+      <link>https://www.datadreaming.org/post/2020-12-16-packages-and-resources-for-data-viz/</link>
+      <pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.datadreaming.org/post/2020-12-16-packages-and-resources-for-data-viz/</guid>
+      <description>I have written several notes to myself over the years as reminders. These include ideas for research, R packages I have seen and may use sometime), things to-do, etc. I am in the process of making some of these notes more public on my blog. This will act as a more searchable, curated “note” for myself, but also makes it available to anyone else who would benefit.
+These are resources I was compiling for use in our course, EPsy 1261: Understanding Data Stories through Visualization &amp;amp; Computing.</description>
+    </item>
+    
+    <item>
+      <title>Some R Packages to Keep In Mind</title>
+      <link>https://www.datadreaming.org/post/2020-12-15-some-r-packages-to-keep-in-mind/</link>
+      <pubDate>Tue, 15 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.datadreaming.org/post/2020-12-15-some-r-packages-to-keep-in-mind/</guid>
+      <description>I have written several notes to myself over the years as reminders. These include ideas for research, R packages I have seen and may use sometime), things to-do, etc. I am in the process of making some of these notes more public on my blog. This will act as a more searchable, curated “note” for myself, but also makes it available to anyone else who would benefit.
+R Packages for Productivity  blastula is a package for creating beautiful custom emails in R.</description>
+    </item>
+    
+  </channel>
+</rss>

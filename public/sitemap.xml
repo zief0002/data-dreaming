@@ -3,415 +3,420 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/</loc>
-    <lastmod>2020-09-14T00:00:00+00:00</lastmod>
+    <loc>https://www.datadreaming.org/</loc>
+    <lastmod>2021-02-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/journal-of-statistics-education-jse-references/</loc>
-    <lastmod>2020-09-14T00:00:00+00:00</lastmod>
+    <loc>https://www.datadreaming.org/tags/miscellaneous/</loc>
+    <lastmod>2021-02-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/journal-of-statistics-education-jse-references/</loc>
-    <lastmod>2020-09-14T00:00:00+00:00</lastmod>
+    <loc>https://www.datadreaming.org/post/2021-02-05-some-tv-updates/</loc>
+    <lastmod>2021-02-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/statistics-education/</loc>
-    <lastmod>2020-09-14T00:00:00+00:00</lastmod>
+    <loc>https://www.datadreaming.org/tags/</loc>
+    <lastmod>2021-02-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/</loc>
-    <lastmod>2020-09-14T00:00:00+00:00</lastmod>
+    <loc>https://www.datadreaming.org/categories/</loc>
+    <lastmod>2020-12-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/writing/</loc>
-    <lastmod>2020-09-14T00:00:00+00:00</lastmod>
+    <loc>https://www.datadreaming.org/categories/notes/</loc>
+    <lastmod>2020-12-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/a-history-of-r/</loc>
+    <loc>https://www.datadreaming.org/post/2020-12-16-packages-and-resources-for-data-viz/</loc>
+    <lastmod>2020-12-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.datadreaming.org/tags/r/</loc>
+    <lastmod>2020-12-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.datadreaming.org/tags/teaching/</loc>
+    <lastmod>2020-12-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.datadreaming.org/tags/productivity/</loc>
+    <lastmod>2020-12-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.datadreaming.org/post/2020-12-15-some-r-packages-to-keep-in-mind/</loc>
+    <lastmod>2020-12-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.datadreaming.org/post/a-history-of-r/</loc>
     <lastmod>2020-07-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/presentation/</loc>
+    <loc>https://www.datadreaming.org/tags/presentation/</loc>
     <lastmod>2020-07-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/r/</loc>
-    <lastmod>2020-07-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/miscellaneous/</loc>
+    <loc>https://www.datadreaming.org/post/spelling-lesson/</loc>
     <lastmod>2020-07-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/spelling-lesson/</loc>
-    <lastmod>2020-07-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/to-richard-wright/</loc>
+    <loc>https://www.datadreaming.org/post/to-richard-wright/</loc>
     <lastmod>2020-06-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/welcome-to-my-office/</loc>
+    <loc>https://www.datadreaming.org/post/welcome-to-my-office/</loc>
     <lastmod>2020-03-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/book-publishing-in-academia/</loc>
+    <loc>https://www.datadreaming.org/post/book-publishing-in-academia/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/better-research-poster/</loc>
+    <loc>https://www.datadreaming.org/tags/writing/</loc>
+    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.datadreaming.org/post/better-research-poster/</loc>
     <lastmod>2020-02-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/research/</loc>
+    <loc>https://www.datadreaming.org/tags/research/</loc>
     <lastmod>2020-02-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/science/</loc>
+    <loc>https://www.datadreaming.org/tags/science/</loc>
     <lastmod>2020-02-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/some-plots-i-made/</loc>
+    <loc>https://www.datadreaming.org/post/some-plots-i-made/</loc>
     <lastmod>2020-02-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/apa-style-table-in-rmarkdown-html-version/</loc>
+    <loc>https://www.datadreaming.org/post/apa-style-table-in-rmarkdown-html-version/</loc>
     <lastmod>2020-02-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/markdown/</loc>
+    <loc>https://www.datadreaming.org/tags/markdown/</loc>
     <lastmod>2020-02-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/apa-tables-using-rmarkdown-part-5/</loc>
+    <loc>https://www.datadreaming.org/post/apa-tables-using-rmarkdown-part-5/</loc>
     <lastmod>2020-01-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/apa-tables-using-rmarkdown-part-4/</loc>
+    <loc>https://www.datadreaming.org/post/apa-tables-using-rmarkdown-part-4/</loc>
     <lastmod>2020-01-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/apa-tables-using-rmarkdown-part-3/</loc>
+    <loc>https://www.datadreaming.org/post/apa-tables-using-rmarkdown-part-3/</loc>
     <lastmod>2020-01-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/apa-tables-using-rmarkdown-part-2/</loc>
+    <loc>https://www.datadreaming.org/post/apa-tables-using-rmarkdown-part-2/</loc>
     <lastmod>2020-01-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/apa-tables-using-rmarkdown/</loc>
+    <loc>https://www.datadreaming.org/post/apa-tables-using-rmarkdown/</loc>
     <lastmod>2020-01-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/thesis-season/</loc>
+    <loc>https://www.datadreaming.org/post/thesis-season/</loc>
     <lastmod>2019-12-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/helping-the-earth/</loc>
+    <loc>https://www.datadreaming.org/post/helping-the-earth/</loc>
     <lastmod>2019-12-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/catalst/</loc>
+    <loc>https://www.datadreaming.org/tags/catalst/</loc>
     <lastmod>2019-12-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/teaching/</loc>
+    <loc>https://www.datadreaming.org/tags/statistics-education/</loc>
     <lastmod>2019-12-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/teaching-statistics-reading-discussion-group/</loc>
+    <loc>https://www.datadreaming.org/post/teaching-statistics-reading-discussion-group/</loc>
     <lastmod>2019-12-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/reproducibilitea-reading-group/</loc>
+    <loc>https://www.datadreaming.org/post/reproducibilitea-reading-group/</loc>
     <lastmod>2019-12-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/computing/</loc>
+    <loc>https://www.datadreaming.org/tags/computing/</loc>
     <lastmod>2019-11-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/two-online-articles/</loc>
+    <loc>https://www.datadreaming.org/post/two-online-articles/</loc>
     <lastmod>2019-11-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/television/</loc>
+    <loc>https://www.datadreaming.org/post/television/</loc>
     <lastmod>2019-10-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/illustrating-the-gender-gap-in-fiction/</loc>
+    <loc>https://www.datadreaming.org/post/illustrating-the-gender-gap-in-fiction/</loc>
     <lastmod>2019-10-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/dissertation-writing/</loc>
+    <loc>https://www.datadreaming.org/post/dissertation-writing/</loc>
     <lastmod>2019-07-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/quotation/</loc>
+    <loc>https://www.datadreaming.org/tags/quotation/</loc>
     <lastmod>2019-07-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/what-to-do-about-p-values/</loc>
+    <loc>https://www.datadreaming.org/post/what-to-do-about-p-values/</loc>
     <lastmod>2019-06-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/2019-statprep-workshops/</loc>
+    <loc>https://www.datadreaming.org/post/2019-statprep-workshops/</loc>
     <lastmod>2019-06-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/higher-education-in-minnesota/</loc>
+    <loc>https://www.datadreaming.org/post/higher-education-in-minnesota/</loc>
     <lastmod>2019-06-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/richard-hamming-on-calculus/</loc>
+    <loc>https://www.datadreaming.org/post/richard-hamming-on-calculus/</loc>
     <lastmod>2019-06-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/change-time-and-effort/</loc>
+    <loc>https://www.datadreaming.org/post/change-time-and-effort/</loc>
     <lastmod>2019-05-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/uscots-2019/</loc>
+    <loc>https://www.datadreaming.org/post/uscots-2019/</loc>
     <lastmod>2019-05-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/congratulations-ethan/</loc>
+    <loc>https://www.datadreaming.org/post/congratulations-ethan/</loc>
     <lastmod>2019-05-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/qme/</loc>
+    <loc>https://www.datadreaming.org/tags/qme/</loc>
     <lastmod>2019-05-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/cv/</loc>
+    <loc>https://www.datadreaming.org/tags/cv/</loc>
     <lastmod>2019-05-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/2019-05-06-cv-quotation/</loc>
+    <loc>https://www.datadreaming.org/post/2019-05-06-cv-quotation/</loc>
     <lastmod>2019-05-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/2019-05-02-student-awards/</loc>
+    <loc>https://www.datadreaming.org/post/2019-05-02-student-awards/</loc>
     <lastmod>2019-05-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/2019-05-01-cv-tips/</loc>
+    <loc>https://www.datadreaming.org/post/2019-05-01-cv-tips/</loc>
     <lastmod>2019-05-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/2019-04-30-computer-brain/</loc>
+    <loc>https://www.datadreaming.org/post/2019-04-30-computer-brain/</loc>
     <lastmod>2019-04-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/history/</loc>
+    <loc>https://www.datadreaming.org/tags/history/</loc>
     <lastmod>2019-04-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/2019-04-26-slhs-prosem/</loc>
+    <loc>https://www.datadreaming.org/post/2019-04-26-slhs-prosem/</loc>
     <lastmod>2019-04-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/</loc>
+    <loc>https://www.datadreaming.org/post/</loc>
     <lastmod>2018-11-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/2018-08-27-inbox-zero/</loc>
+    <loc>https://www.datadreaming.org/post/2018-08-27-inbox-zero/</loc>
     <lastmod>2018-08-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/productivity/</loc>
-    <lastmod>2018-08-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/ssc-computing-talk/</loc>
+    <loc>https://www.datadreaming.org/post/ssc-computing-talk/</loc>
     <lastmod>2018-06-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/r-markdown-theme-gallery/</loc>
+    <loc>https://www.datadreaming.org/post/r-markdown-theme-gallery/</loc>
     <lastmod>2018-04-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/spring-weather-in-minneapolis/</loc>
+    <loc>https://www.datadreaming.org/post/spring-weather-in-minneapolis/</loc>
     <lastmod>2018-04-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/faq/</loc>
+    <loc>https://www.datadreaming.org/tags/faq/</loc>
     <lastmod>2018-04-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/2018-04-09-epsy-5271-part-04/</loc>
+    <loc>https://www.datadreaming.org/post/2018-04-09-epsy-5271-part-04/</loc>
     <lastmod>2018-04-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/2018-04-06-epsy-8271-announcement/</loc>
+    <loc>https://www.datadreaming.org/post/2018-04-06-epsy-8271-announcement/</loc>
     <lastmod>2018-04-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/2018-04-02-epsy-5271-part-03/</loc>
+    <loc>https://www.datadreaming.org/post/2018-04-02-epsy-5271-part-03/</loc>
     <lastmod>2018-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/2018-03-30-epsy-5271-part-02/</loc>
+    <loc>https://www.datadreaming.org/post/2018-03-30-epsy-5271-part-02/</loc>
     <lastmod>2018-03-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/2018-03-28-epsy-5271/</loc>
+    <loc>https://www.datadreaming.org/post/2018-03-28-epsy-5271/</loc>
     <lastmod>2018-03-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/elo/</loc>
+    <loc>https://www.datadreaming.org/tags/elo/</loc>
     <lastmod>2018-03-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/hockey/</loc>
+    <loc>https://www.datadreaming.org/tags/hockey/</loc>
     <lastmod>2018-03-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/2018-03-15-boys-hockey-post-hoc/</loc>
+    <loc>https://www.datadreaming.org/post/2018-03-15-boys-hockey-post-hoc/</loc>
     <lastmod>2018-03-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/2018-03-08-boys-hockey/</loc>
+    <loc>https://www.datadreaming.org/post/2018-03-08-boys-hockey/</loc>
     <lastmod>2018-03-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/2018-03-03-boys-hockey/</loc>
+    <loc>https://www.datadreaming.org/post/2018-03-03-boys-hockey/</loc>
     <lastmod>2018-03-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/cis/</loc>
+    <loc>https://www.datadreaming.org/tags/cis/</loc>
     <lastmod>2018-02-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/2018-02-19-college-in-the-schools/</loc>
+    <loc>https://www.datadreaming.org/post/2018-02-19-college-in-the-schools/</loc>
     <lastmod>2018-02-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/epsy-3264/</loc>
+    <loc>https://www.datadreaming.org/tags/epsy-3264/</loc>
     <lastmod>2018-02-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>https://www.datadreaming.org/categories/course/</loc>
     <lastmod>2018-02-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/course/</loc>
+    <loc>https://www.datadreaming.org/post/epsy-3264-basic-and-applied-statistics/</loc>
     <lastmod>2018-02-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/epsy-3264-basic-and-applied-statistics/</loc>
-    <lastmod>2018-02-26T00:00:00+00:00</lastmod>
+    <loc>https://www.datadreaming.org/search/placeholder/</loc>
   </url>
   
   <url>
-    <loc>/post/2020-09-14-journal-of-statistics-education-jse-references/</loc>
-    <priority>0</priority>
+    <loc>https://www.datadreaming.org/top/about/</loc>
   </url>
   
   <url>
-    <loc>/search/placeholder/</loc>
+    <loc>https://www.datadreaming.org/top/blogroll/</loc>
   </url>
   
   <url>
-    <loc>/top/about/</loc>
+    <loc>https://www.datadreaming.org/top/contact/</loc>
   </url>
   
   <url>
-    <loc>/top/blogroll/</loc>
+    <loc>https://www.datadreaming.org/top/teaching/</loc>
   </url>
   
   <url>
-    <loc>/top/contact/</loc>
+    <loc>https://www.datadreaming.org/search/</loc>
   </url>
   
   <url>
-    <loc>/top/teaching/</loc>
+    <loc>https://www.datadreaming.org/top/publications/</loc>
   </url>
   
   <url>
-    <loc>/search/</loc>
-  </url>
-  
-  <url>
-    <loc>/top/publications/</loc>
-  </url>
-  
-  <url>
-    <loc>/top/</loc>
+    <loc>https://www.datadreaming.org/top/</loc>
   </url>
   
 </urlset>

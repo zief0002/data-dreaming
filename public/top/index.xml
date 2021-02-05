@@ -2,63 +2,56 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tops on Andrew Zieffler</title>
-    <link>/top/</link>
+    <link>https://www.datadreaming.org/top/</link>
     <description>Recent content in Tops on Andrew Zieffler</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="/top/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="https://www.datadreaming.org/top/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>/top/about/</link>
+      <link>https://www.datadreaming.org/top/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/top/about/</guid>
+      <guid>https://www.datadreaming.org/top/about/</guid>
       <description>About Me I am a Senior Lecturer and researcher in the Quantitative Methods in Education program within the Department of Educational Psychology at the University of Minnesota. I currently teach undergaraduate and graduate-level courses in statistics and train and supervise graduate students in statistics education. In a previous life I taught mathematics and A.P. Statistics at ROCORI High School in Cold Spring, MN.
-My scholarship focuses on statistics education.</description>
+My scholarship focuses on statistics education. I have authored/co-authored several papers and book chapters related to statistics education, and have been a co-PI on many NSF-funded statistics education research projects.</description>
     </item>
     
     <item>
       <title></title>
-      <link>/top/blogroll/</link>
+      <link>https://www.datadreaming.org/top/blogroll/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/top/blogroll/</guid>
-      <description> Blogroll Blogs I follow:
- Ask Good Questions &amp;mdash; A blog about teaching introductory statistics by Allan Rossman Educate-R &amp;mdash; Brandon LeBeau&amp;rsquo;s blog Marianne Elmquist &amp;mdash; Marianne Elmquist&amp;rsquo;s blog R Weekly &amp;mdash; Curated weekly updates from the entire R community Statistical Journeys &amp;mdash; Vimal Rao&amp;rsquo;s blog Statistics Teaching and Learning Corner &amp;mdash; A virtual space to share ideas about the teaching and learning of all areas of statistics at the post-secondary levels by Steven Foti, Laura Le, Laura Ziegler, Douglas Whitaker, and Adam Loy Teach Data Science &amp;mdash; A roadmap to recent developments in teaching data science by Hunter Glanz, Jo Hardin, and Nick Horton  </description>
+      <guid>https://www.datadreaming.org/top/blogroll/</guid>
+      <description>Blogroll Blogs I follow:
+ Ask Good Questions — A blog about teaching introductory statistics by Allan Rossman Educate-R — Brandon LeBeau&amp;rsquo;s blog Marianne Elmquist — Marianne Elmquist&amp;rsquo;s blog R Weekly — Curated weekly updates from the entire R community Statistical Journeys — Vimal Rao&amp;rsquo;s blog Statistics Teaching and Learning Corner — A virtual space to share ideas about the teaching and learning of all areas of statistics at the post-secondary levels by Steven Foti, Laura Le, Laura Ziegler, Douglas Whitaker, and Adam Loy Teach Data Science — A roadmap to recent developments in teaching data science by Hunter Glanz, Jo Hardin, and Nick Horton  </description>
     </item>
     
     <item>
       <title></title>
-      <link>/top/contact/</link>
+      <link>https://www.datadreaming.org/top/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/top/contact/</guid>
-      <description> Location, email, what-not 178 EdSciB 56 East River Road Minneapolis, MN 55455
-                                 </description>
+      <guid>https://www.datadreaming.org/top/contact/</guid>
+      <description>Location, email, what-not 178 EdSciB 56 East River Road Minneapolis, MN 55455</description>
     </item>
     
     <item>
       <title></title>
-      <link>/top/teaching/</link>
+      <link>https://www.datadreaming.org/top/teaching/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/top/teaching/</guid>
+      <guid>https://www.datadreaming.org/top/teaching/</guid>
       <description>Teaching I teach (have taught) the following courses at the University of Minnesota:
- EPsy 1261: Understanding Data Stories through Visualization and Computing EPsy 3264: Basic and Applied Statistics &amp;nbsp; [] [] [] EPsy 5244: Survey Design, Sampling, and Implementation EPsy 8220: Methods for Categorical Response Data in Educational Research EPsy 8251: Methods in Data Analysis for Educational Research I &amp;nbsp; [] EPsy 8252: Methods in Data Analysis for Educational Research II &amp;nbsp; [] EPsy 8261: Statistical Methods I: Probability and Inference EPsy 8262: Statistical Methods II: Regression and The General Linear Model EPsy 8264: Advanced Multiple Regression &amp;nbsp; [] EPsy 8282: Statistical Analysis of Longitudinal Data I  You can find many of my old course materials in my course archive.</description>
+ EPsy 1261: Understanding Data Stories through Visualization and Computing EPsy 3264: Basic and Applied Statistics [] [] [] EPsy 5244: Survey Design, Sampling, and Implementation EPsy 8220: Methods for Categorical Response Data in Educational Research EPsy 8251: Methods in Data Analysis for Educational Research I [] EPsy 8252: Methods in Data Analysis for Educational Research II [] EPsy 8261: Statistical Methods I: Probability and Inference EPsy 8262: Statistical Methods II: Regression and The General Linear Model EPsy 8264: Advanced Multiple Regression [] EPsy 8282: Statistical Analysis of Longitudinal Data I  You can find many of my old course materials in my course archive.</description>
     </item>
     
     <item>
       <title>Selected Publications</title>
-      <link>/top/publications/</link>
+      <link>https://www.datadreaming.org/top/publications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/top/publications/</guid>
-      <description>Selected Publications 2018  Justice, N., Zieffler, A., Huberty, M., &amp;amp; delMas, R. (2018). Every rose has it&amp;#39;s thorn: Secondary teachers&amp;#39; reasoning about statistical models. ZDM&amp;mdash;The International Journal on Mathematics Education, 50(7), 1253&amp;ndash;1265. doi: 10.1007/s11858-018-0953-1
-National Academies of Sciences, Engineering, and Medicine. (2018). [Contributing Author]. Data science for undergraduates: Opportunities and options. Washington, DC: The National Academies Press. doi: 10.17226&amp;frasl;25104
-Sabbag, A. G., Garfield, J., &amp;amp; Zieffler, A. (2018). Assessing statistical literacy and statistical reason- ing: The REALI instrument.</description>
+      <guid>https://www.datadreaming.org/top/publications/</guid>
+      <description>Selected Publications </description>
     </item>
     
   </channel>

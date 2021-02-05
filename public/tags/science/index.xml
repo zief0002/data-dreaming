@@ -2,40 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Science on Andrew Zieffler</title>
-    <link>/tags/science/</link>
+    <link>https://www.datadreaming.org/tags/science/</link>
     <description>Recent content in Science on Andrew Zieffler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Feb 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/science/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 27 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.datadreaming.org/tags/science/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Better Research Poster</title>
-      <link>/post/better-research-poster/</link>
+      <link>https://www.datadreaming.org/post/better-research-poster/</link>
       <pubDate>Thu, 27 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/better-research-poster/</guid>
+      <guid>https://www.datadreaming.org/post/better-research-poster/</guid>
       <description>Our department has an annual Graduate Student Research Day (GSRD) in which students present their research for the rest of the department. Although there are five speakers, one from each program in the department, the majority of students participate in a poster session. This year my student Chelsey Legacy put together a poster to present some of the data we collected from a fall administration of the Statistics Teaching Inventory.</description>
     </item>
     
     <item>
       <title>ReproducibiliTEA Journal Club</title>
-      <link>/post/reproducibilitea-reading-group/</link>
+      <link>https://www.datadreaming.org/post/reproducibilitea-reading-group/</link>
       <pubDate>Fri, 06 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/reproducibilitea-reading-group/</guid>
+      <guid>https://www.datadreaming.org/post/reproducibilitea-reading-group/</guid>
       <description>This semester I took part in the University of Minnesota’s ReproducibiliTEA Journal Club. Reprodicibility is “a grassroots journal club initiative that helps young researchers create local Open Science journal clubs at their universities to discuss diverse issues, papers and ideas about improving science, reproducibility and the Open Science movement.” (Read more at https://reproducibilitea.org/).
  UMN ReproducibiliTEA Chapter (Fall 2019)   The University of Minnesota chapter was sponsored by the Minnesota Center for Philosophy of Science (which meant we had food, coffee, and of course, tea each meeting) and followed the model from clubs in UK and Europe described on OSF.</description>
     </item>
     
     <item>
       <title>Deprecating Statistical Significance: Toward Better Science</title>
-      <link>/post/2019-04-26-slhs-prosem/</link>
+      <link>https://www.datadreaming.org/post/2019-04-26-slhs-prosem/</link>
       <pubDate>Fri, 26 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/2019-04-26-slhs-prosem/</guid>
+      <guid>https://www.datadreaming.org/post/2019-04-26-slhs-prosem/</guid>
       <description>On Friday April 26, 2019 I gave an invited talk to the Department of Speech-Language-Hearing Sciences in their Pro-Sem series. These are really neat as they are organized by the graduate students. This is the third one of these I have given over the years and each is a treat.
 In this talk I spoke about the ASA’s recent call for the deprecation of “statistical significance” and all its related variants (e.</description>
     </item>

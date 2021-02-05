@@ -2,55 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Andrew Zieffler</title>
-    <link>/</link>
+    <link>https://www.datadreaming.org/</link>
     <description>Recent content on Andrew Zieffler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 14 Sep 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 05 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.datadreaming.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Journal of Statistics and Data Science Education (JSE) Reference Examples</title>
-      <link>/post/journal-of-statistics-education-jse-references/</link>
-      <pubDate>Mon, 14 Sep 2020 00:00:00 +0000</pubDate>
+      <title>Some TV Updates</title>
+      <link>https://www.datadreaming.org/post/2021-02-05-some-tv-updates/</link>
+      <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>/post/journal-of-statistics-education-jse-references/</guid>
-      <description>This post is to act as more of a reference for myself regarding the referencing for JSE articles. JSE references use the American Statistical Association&amp;rsquo;s style guide which is here.
-Zotero&amp;rsquo;s Style Repository includes a style file here.
-Article Examples Gould, R. (2004), &amp;ldquo;Variability: One Statistician&amp;rsquo;s View,&amp;rdquo; Statistics Education Research Journal, 3, 7&amp;ndash;16. Available at https://iase-web.org/documents/SERJ/SERJ3(2)_Gould.pdf?1402525005.
-&amp;ndash; &amp;ndash; (2017), &amp;ldquo;Data Literacy is Statistical Literacy,&amp;rdquo; Statistics Education Research Journal, 16, 22&amp;ndash;25.</description>
+      <guid>https://www.datadreaming.org/post/2021-02-05-some-tv-updates/</guid>
+      <description>We are almost a year into this dumpster fire called Coronavirus, so I thought I would do a little updating about the TV shows I am watching to pass the time through this nightmare. In no particular order, other than how they come to mind, the “winners” are:
+All-American: I am watching this on Netflix and am most of the way through Season 2 (although Season 3 is airing now).</description>
     </item>
     
     <item>
-      <title>Journal of Statistics and Data Science Education (JSE) Reference Examples</title>
-      <link>/post/journal-of-statistics-education-jse-references/</link>
-      <pubDate>Mon, 14 Sep 2020 00:00:00 +0000</pubDate>
+      <title>Packages and Resources for Data Viz</title>
+      <link>https://www.datadreaming.org/post/2020-12-16-packages-and-resources-for-data-viz/</link>
+      <pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/journal-of-statistics-education-jse-references/</guid>
-      <description>This post is to act as more of a reference for myself regarding the referencing for JSE articles. JSE references use the American Statistical Association&amp;rsquo;s style guide which is here.
-Zotero&amp;rsquo;s Style Repository includes a style file here.
-Article Examples Gould, R. (2004), &amp;ldquo;Variability: One Statistician&amp;rsquo;s View,&amp;rdquo; Statistics Education Research Journal, 3, 7&amp;ndash;16. Available at https://iase-web.org/documents/SERJ/SERJ3(2)_Gould.pdf?1402525005.
-&amp;ndash; &amp;ndash; (2017), &amp;ldquo;Data Literacy is Statistical Literacy,&amp;rdquo; Statistics Education Research Journal, 16, 22&amp;ndash;25.</description>
+      <guid>https://www.datadreaming.org/post/2020-12-16-packages-and-resources-for-data-viz/</guid>
+      <description>I have written several notes to myself over the years as reminders. These include ideas for research, R packages I have seen and may use sometime), things to-do, etc. I am in the process of making some of these notes more public on my blog. This will act as a more searchable, curated “note” for myself, but also makes it available to anyone else who would benefit.
+These are resources I was compiling for use in our course, EPsy 1261: Understanding Data Stories through Visualization &amp;amp; Computing.</description>
+    </item>
+    
+    <item>
+      <title>Some R Packages to Keep In Mind</title>
+      <link>https://www.datadreaming.org/post/2020-12-15-some-r-packages-to-keep-in-mind/</link>
+      <pubDate>Tue, 15 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.datadreaming.org/post/2020-12-15-some-r-packages-to-keep-in-mind/</guid>
+      <description>I have written several notes to myself over the years as reminders. These include ideas for research, R packages I have seen and may use sometime), things to-do, etc. I am in the process of making some of these notes more public on my blog. This will act as a more searchable, curated “note” for myself, but also makes it available to anyone else who would benefit.
+R Packages for Productivity  blastula is a package for creating beautiful custom emails in R.</description>
     </item>
     
     <item>
       <title>A History of R</title>
-      <link>/post/a-history-of-r/</link>
+      <link>https://www.datadreaming.org/post/a-history-of-r/</link>
       <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/a-history-of-r/</guid>
+      <guid>https://www.datadreaming.org/post/a-history-of-r/</guid>
       <description>Tomorrow (July 23, 2020 ) I am speaking on the history of the R statistical software environment as part of a virtual panel for a Lunch &amp;amp; Learn. I like how they used “featuring” in the announcement. It is like I am a hip-hop star! The title of my talk is, A History of R (in 15 minutes…and mostly in pictures).
 R @ 25 Lunch &amp;amp; Learn: Understanding the Landscape of the Popular Free/Open Source Statistics Software</description>
     </item>
     
     <item>
       <title>Spelling Lesson</title>
-      <link>/post/spelling-lesson/</link>
+      <link>https://www.datadreaming.org/post/spelling-lesson/</link>
       <pubDate>Tue, 21 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/spelling-lesson/</guid>
+      <guid>https://www.datadreaming.org/post/spelling-lesson/</guid>
       <description>Came across this funny ditty by Ralph P. Boas in the June 1984 issue of The College Mathematics Journal. The complete citation is: Boas, R. P. (1984). Spelling lesson. The College Mathematics Journal, 15(3), 217.
 Spelling Lesson Weep for the mathematicians
 Posterity acclaims:
@@ -63,58 +65,58 @@ Although it almost rhymes with Birkhoff,</description>
     
     <item>
       <title>Four Sheets to the Wind And a One Way Ticket to France</title>
-      <link>/post/to-richard-wright/</link>
+      <link>https://www.datadreaming.org/post/to-richard-wright/</link>
       <pubDate>Tue, 30 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/to-richard-wright/</guid>
+      <guid>https://www.datadreaming.org/post/to-richard-wright/</guid>
       <description>Conrad Kent Rivers (1933–1968) was a renowned black poet who won the Savannah State Poetry Prize for his poem Poor Peon while he was still in high school. His poem Four Sheets to the Wind And a One-Way Ticket to France was published in his posthumous collection of poetry written about or dedicated to Richard Wright, The Wright Poems (1972).
  Conrad Kent River’s The Wright Poems. Issued as Volume Eighteen in Paul Breman’s “Heritage Series” of African-American poetry chapbooks.</description>
     </item>
     
     <item>
       <title>Welcome to My Office</title>
-      <link>/post/welcome-to-my-office/</link>
+      <link>https://www.datadreaming.org/post/welcome-to-my-office/</link>
       <pubDate>Thu, 26 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/welcome-to-my-office/</guid>
+      <guid>https://www.datadreaming.org/post/welcome-to-my-office/</guid>
       <description>In the great pandemic of 2020 many of us are working from home. Since 40+ students now see me in my home, I thought I would write a post about the room that they often see me in. So in that spirit, welcome to my home office.
  LEFT: Where the “magic” happens. Seated on the couch are two of my three newly minted teaching assistants. RIGHT: Another view of the office.</description>
     </item>
     
     <item>
       <title>Book Publishing in Academia</title>
-      <link>/post/book-publishing-in-academia/</link>
+      <link>https://www.datadreaming.org/post/book-publishing-in-academia/</link>
       <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/book-publishing-in-academia/</guid>
+      <guid>https://www.datadreaming.org/post/book-publishing-in-academia/</guid>
       <description>In 2019, I read a book called Patience &amp;amp; Fortitude: A Roving Chronicle of Book People, Book Places, and Book Culture. Aside from being incredibly entertaining and interesting, there was a passage that struck a chord with me that related to academic publishing. In this passage, James Billington, Librarian of Congress from 1987–2015, was lamenting the degradation of the book through the “hyperspecialization and bureaucratization” found in the academic monograph.</description>
     </item>
     
     <item>
       <title>Better Research Poster</title>
-      <link>/post/better-research-poster/</link>
+      <link>https://www.datadreaming.org/post/better-research-poster/</link>
       <pubDate>Thu, 27 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/better-research-poster/</guid>
+      <guid>https://www.datadreaming.org/post/better-research-poster/</guid>
       <description>Our department has an annual Graduate Student Research Day (GSRD) in which students present their research for the rest of the department. Although there are five speakers, one from each program in the department, the majority of students participate in a poster session. This year my student Chelsey Legacy put together a poster to present some of the data we collected from a fall administration of the Statistics Teaching Inventory.</description>
     </item>
     
     <item>
       <title>Some Plots I Made...</title>
-      <link>/post/some-plots-i-made/</link>
+      <link>https://www.datadreaming.org/post/some-plots-i-made/</link>
       <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/some-plots-i-made/</guid>
+      <guid>https://www.datadreaming.org/post/some-plots-i-made/</guid>
       <description>I am spring cleaning my computer and have a couple PNG files of plots I made that I want to adios. So, I thought to myself, “self…why don’t you put these on a blog post before you trash them forever.” It sounded like a good idea at the time, so here they are.
 This second plot is a sunburst plot I created for the data visualization course. If I remember right, this was created using my annual TV watching data from 2017 and made using RawGraphs.</description>
     </item>
     
     <item>
       <title>APA Style Table in RMarkdown (HTML Version)</title>
-      <link>/post/apa-style-table-in-rmarkdown-html-version/</link>
+      <link>https://www.datadreaming.org/post/apa-style-table-in-rmarkdown-html-version/</link>
       <pubDate>Sun, 09 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/apa-style-table-in-rmarkdown-html-version/</guid>
+      <guid>https://www.datadreaming.org/post/apa-style-table-in-rmarkdown-html-version/</guid>
       <description>I will try to replicate the the following table from the 7th edition of the APA Publication Manual.
  Table 7.6 from the 7th edition of the APA Publication Manual (p. 213).   My Process I begin by creating an RMarkdown document that is rendered to HTML.
 --- title: &amp;quot;Untitled&amp;quot; author: &amp;quot;Andrew Zieffler&amp;quot; date: &amp;quot;1/12/2020&amp;quot; output: html_document --- In the RMarkdown body, I will load a few packages and set up a data frame to mimic the content from our goal table.</description>
@@ -122,158 +124,158 @@ This second plot is a sunburst plot I created for the data visualization course.
     
     <item>
       <title>APA Tables using RMarkdown: Part 5</title>
-      <link>/post/apa-tables-using-rmarkdown-part-5/</link>
+      <link>https://www.datadreaming.org/post/apa-tables-using-rmarkdown-part-5/</link>
       <pubDate>Sat, 18 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/apa-tables-using-rmarkdown-part-5/</guid>
+      <guid>https://www.datadreaming.org/post/apa-tables-using-rmarkdown-part-5/</guid>
       <description>This is the fifth part of a short blog series I am writing to re-create some of the sample tables found in the 7th edition APA Publication Manual. In this post I will attempt to show how to create a table to present the results of several fitted models. (This type of table is not among the example tables in the 7th edition APA Publication Manual.) To do so, I will incorporate many ideas that I covered in the first, second, third and fourth of these posts.</description>
     </item>
     
     <item>
       <title>APA Tables using RMarkdown: Part 4</title>
-      <link>/post/apa-tables-using-rmarkdown-part-4/</link>
+      <link>https://www.datadreaming.org/post/apa-tables-using-rmarkdown-part-4/</link>
       <pubDate>Mon, 13 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/apa-tables-using-rmarkdown-part-4/</guid>
+      <guid>https://www.datadreaming.org/post/apa-tables-using-rmarkdown-part-4/</guid>
       <description>This is the fourth part of a short blog series I am writing to re-create some of the sample tables found in the 7th edition APA Publication Manual. In this post I will attempt to mimic Table 7.17 (p. 220). To do so, I will incorporate many ideas that I covered in the first, second, and third of these posts.
  Table 7.17 from the 7th edition of the APA Publication Manual (p.</description>
     </item>
     
     <item>
       <title>APA Tables using RMarkdown: Part 3</title>
-      <link>/post/apa-tables-using-rmarkdown-part-3/</link>
+      <link>https://www.datadreaming.org/post/apa-tables-using-rmarkdown-part-3/</link>
       <pubDate>Sun, 12 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/apa-tables-using-rmarkdown-part-3/</guid>
+      <guid>https://www.datadreaming.org/post/apa-tables-using-rmarkdown-part-3/</guid>
       <description>This is the third part of a short blog series I am writing to re-create some of the sample tables found in the 7th edition APA Publication Manual. In this post I will attempt to mimic Table 7.10 (p. 215). To do so, I will incorporate many ideas that I covered in the first and second of these posts.
  Table 7.10 from the 7th edition of the APA Publication Manual (p.</description>
     </item>
     
     <item>
       <title>APA Tables using RMarkdown: Part 2</title>
-      <link>/post/apa-tables-using-rmarkdown-part-2/</link>
+      <link>https://www.datadreaming.org/post/apa-tables-using-rmarkdown-part-2/</link>
       <pubDate>Sat, 11 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/apa-tables-using-rmarkdown-part-2/</guid>
+      <guid>https://www.datadreaming.org/post/apa-tables-using-rmarkdown-part-2/</guid>
       <description>This is the second part of a short blog series I am writing to re-create some of the sample tables found in the 7th edition APA Publication Manual. In this post I will attempt to re-create Table 7.8 (p. 214). To do so, I will incorporate many ideas that I covered in the first of these posts.
  Table 7.8 from the 7th edition of the APA Publication Manual (p.</description>
     </item>
     
     <item>
       <title>APA Tables Using RMarkdown</title>
-      <link>/post/apa-tables-using-rmarkdown/</link>
+      <link>https://www.datadreaming.org/post/apa-tables-using-rmarkdown/</link>
       <pubDate>Thu, 09 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/apa-tables-using-rmarkdown/</guid>
+      <guid>https://www.datadreaming.org/post/apa-tables-using-rmarkdown/</guid>
       <description>Often it is useful to format table output to make it look good or to adhere a particular style (e.g., APA). There are several packages that help in this endeavor when working in an Rmarkdown document. When I create tables using RMarkdown, the primary packages I use are:
  The kable() function from the knitr package; and Functions from the kableExtra package.  There are many packages for formatting tables, among others, include the flextable package, the gt package, the huxtable package, and the expss package.</description>
     </item>
     
     <item>
       <title>Thesis Season</title>
-      <link>/post/thesis-season/</link>
+      <link>https://www.datadreaming.org/post/thesis-season/</link>
       <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/thesis-season/</guid>
+      <guid>https://www.datadreaming.org/post/thesis-season/</guid>
       <description>It is the time of the semester when it seems every graduate student wants to make progress on their milestones, and several oral prelim exams and thesis defenses get crammed into a 1–2 week period. In the spirit of what I call “Thesis Season”, here are some good reads to keep this all in perspective.
 Luke Burns wrote an inspired piece for McSweeney’s entitled FAQ: The “Snake Fight” Portion of Your Thesis Defense.</description>
     </item>
     
     <item>
       <title>Helping the Earth</title>
-      <link>/post/helping-the-earth/</link>
+      <link>https://www.datadreaming.org/post/helping-the-earth/</link>
       <pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/helping-the-earth/</guid>
+      <guid>https://www.datadreaming.org/post/helping-the-earth/</guid>
       <description>Over the last few years I have tried to be a better steward of Planet Earth. There are a few specific actions that I have committed to that have actually had an impact on my life on a day-to-day basis. I share them with you in case you want to try them as well.
 Catalog Choice Catalog Choice is a non-profit organizatin whose mission is “to stop junk mail for good”.</description>
     </item>
     
     <item>
       <title>Teaching Statistics Reading/Discussion Group</title>
-      <link>/post/teaching-statistics-reading-discussion-group/</link>
+      <link>https://www.datadreaming.org/post/teaching-statistics-reading-discussion-group/</link>
       <pubDate>Mon, 09 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/teaching-statistics-reading-discussion-group/</guid>
+      <guid>https://www.datadreaming.org/post/teaching-statistics-reading-discussion-group/</guid>
       <description>Laura Le is organizing a reading/discussion group at the University of Minnesota in spring 2020 for anyone interested in teaching statistics. The group will meet Mondays from 4:00pm–5:00pm (location TBD). Here is the tentative plan for what this interest group will entail:
  Prior to the meeting, read/skim one article related to the topic of the week. During the meeting, discuss the topic/article for the first 30 minutes and video chat with a prominent statistics educator on that topic for the last 30 minutes.</description>
     </item>
     
     <item>
       <title>ReproducibiliTEA Journal Club</title>
-      <link>/post/reproducibilitea-reading-group/</link>
+      <link>https://www.datadreaming.org/post/reproducibilitea-reading-group/</link>
       <pubDate>Fri, 06 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/reproducibilitea-reading-group/</guid>
+      <guid>https://www.datadreaming.org/post/reproducibilitea-reading-group/</guid>
       <description>This semester I took part in the University of Minnesota’s ReproducibiliTEA Journal Club. Reprodicibility is “a grassroots journal club initiative that helps young researchers create local Open Science journal clubs at their universities to discuss diverse issues, papers and ideas about improving science, reproducibility and the Open Science movement.” (Read more at https://reproducibilitea.org/).
  UMN ReproducibiliTEA Chapter (Fall 2019)   The University of Minnesota chapter was sponsored by the Minnesota Center for Philosophy of Science (which meant we had food, coffee, and of course, tea each meeting) and followed the model from clubs in UK and Europe described on OSF.</description>
     </item>
     
     <item>
       <title>Two Online Articles</title>
-      <link>/post/two-online-articles/</link>
+      <link>https://www.datadreaming.org/post/two-online-articles/</link>
       <pubDate>Sun, 24 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/two-online-articles/</guid>
+      <guid>https://www.datadreaming.org/post/two-online-articles/</guid>
       <description>The internet is filled with interesting reads. Some thought-provoking, some inspiring, some enlightening, some just plain fun. Over the past few months I came across two that I would like to share with you.
 Article 1: How Margaret Dayhoff Brought Modern Computing to Biology The first, How Margaret Dayhoff Brought Modern Computing to Biology was published by The Smithsonian and provided a biological sketch of Margaret Dayoff’s early adoption of computation to catalog and analyze biological data, in her case proteins.</description>
     </item>
     
     <item>
       <title>Television</title>
-      <link>/post/television/</link>
+      <link>https://www.datadreaming.org/post/television/</link>
       <pubDate>Tue, 22 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/television/</guid>
+      <guid>https://www.datadreaming.org/post/television/</guid>
       <description>In 2017, my wife and I were fed up with the cost of cable television and were considering “cutting the cord”. In addition to cable, we also had Hulu, Netflix, and Amazon Prime, so our hypothesis was that we probably didn’t need cable. Before making the decision to cut cable, I wanted some data to help ensure that I would not be eliminating many of the TV shows that I watched.</description>
     </item>
     
     <item>
       <title>Illustrating the Gender Gap in Fiction</title>
-      <link>/post/illustrating-the-gender-gap-in-fiction/</link>
+      <link>https://www.datadreaming.org/post/illustrating-the-gender-gap-in-fiction/</link>
       <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/illustrating-the-gender-gap-in-fiction/</guid>
+      <guid>https://www.datadreaming.org/post/illustrating-the-gender-gap-in-fiction/</guid>
       <description>Loganberry Books, an independent bookstore in Cleveland, intitiated a social experiment for in March 2019 called Illustrating the Gender Gap in Fiction. This experiment, in honor of Women’s History Month, was decribed as, “a live performance art project where we will shelve the works by men in our LitArts room backwards”. What a cool idea, and very eye-opening.
  Shelves of backward books emphasize the gender imbalance in literature.   This would likely be worse if the experiment was carried out with mathematics, statistics, and computer science books.</description>
     </item>
     
     <item>
       <title>Dissertation Writing</title>
-      <link>/post/dissertation-writing/</link>
+      <link>https://www.datadreaming.org/post/dissertation-writing/</link>
       <pubDate>Wed, 24 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/dissertation-writing/</guid>
+      <guid>https://www.datadreaming.org/post/dissertation-writing/</guid>
       <description>Many times I see students get paralyzed by the idea of writing dissertation (or paper). Anne Lamott gives this advice to struggling writers:
 Thirty years ago, my older brother, who was ten years old at the time, was trying to get a report on birds written that he’d had three months to write. [It] was due the next day. We were out at our family cabin in Bolinas, and he was at the kitchen table close to tears, surrounded by binder paper and pencils and unopened books on birds immobilized by the hugeness of the task ahead.</description>
     </item>
     
     <item>
       <title>What to do about p-values?</title>
-      <link>/post/what-to-do-about-p-values/</link>
+      <link>https://www.datadreaming.org/post/what-to-do-about-p-values/</link>
       <pubDate>Wed, 26 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/what-to-do-about-p-values/</guid>
+      <guid>https://www.datadreaming.org/post/what-to-do-about-p-values/</guid>
       <description>In March, the ASA published a special issue of The American Statistician (TAS) related to statistical inference in the 21st century. In the initial article, Moving to a World Beyond “p &amp;lt; 0.05”, Wassersein, Schirm, and Lazar (2019) write for the ASA saying,
  “The ASA Statement on P-Values and Statistical Significance stopped just short of recommending that declarations of “statistical significance” be abandoned. We take that step here. We conclude, based on our review of the articles in this special issue and the broader literature, that it is time to stop using the term “statistically significant” entirely.</description>
     </item>
     
     <item>
       <title>2019 StatPREP Workshops</title>
-      <link>/post/2019-statprep-workshops/</link>
+      <link>https://www.datadreaming.org/post/2019-statprep-workshops/</link>
       <pubDate>Mon, 17 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/2019-statprep-workshops/</guid>
-      <description>I just finished helping out with two StatPREP workshops in Columbia, Maryland and Fort Worth, Texas, respectively. StatPREP is an initiative of the Mathematical Association of America (MAA), in conjunction with American Mathematical Association of Two-Year Colleges (AMATYC) and the American Statistical Association (ASA), to introduce data and computing into introductory statistics courses&amp;mdash;specifically in community college classrooms.
- Summer 2019 StatPREP participants and workshop leaders at Howard Community College  Each summer, workshops are held in four locations, and each location hosts a workshop for two consecutive years.</description>
+      <guid>https://www.datadreaming.org/post/2019-statprep-workshops/</guid>
+      <description>I just finished helping out with two StatPREP workshops in Columbia, Maryland and Fort Worth, Texas, respectively. StatPREP is an initiative of the Mathematical Association of America (MAA), in conjunction with American Mathematical Association of Two-Year Colleges (AMATYC) and the American Statistical Association (ASA), to introduce data and computing into introductory statistics courses—specifically in community college classrooms.
+Each summer, workshops are held in four locations, and each location hosts a workshop for two consecutive years.</description>
     </item>
     
     <item>
       <title>Higher Education in Minnesota</title>
-      <link>/post/higher-education-in-minnesota/</link>
+      <link>https://www.datadreaming.org/post/higher-education-in-minnesota/</link>
       <pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/higher-education-in-minnesota/</guid>
+      <guid>https://www.datadreaming.org/post/higher-education-in-minnesota/</guid>
       <description>I was recently perusing a book from 1960, Minnesota Heritage: A Panoramic Narrative of the Historical Development of the North Star State and came across the following map showing the locations of the colleges and universities in the state at the time.
  Figure 1: Minnesota Colleges and Universities in 1960  
 The text referring to the map made an inference about the accessibility to higher education,
@@ -282,97 +284,97 @@ The text referring to the map made an inference about the accessibility to highe
     
     <item>
       <title>Richard Hamming on the Teaching of Mathematics</title>
-      <link>/post/richard-hamming-on-calculus/</link>
+      <link>https://www.datadreaming.org/post/richard-hamming-on-calculus/</link>
       <pubDate>Mon, 03 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/richard-hamming-on-calculus/</guid>
-      <description>The way mathematics is currently taught it is exceedingly dull. In the calculus book we are currently using on my campus, I found no single problem whose answer I felt the student would care about! The problems in the text have the dignity of solving a crossword puzzle &amp;mdash; hard to be sure, but the result is of no significance in life. Richard Hamming, Calculus and Discrete Mathematics</description>
+      <guid>https://www.datadreaming.org/post/richard-hamming-on-calculus/</guid>
+      <description>Reference </description>
     </item>
     
     <item>
       <title>Change: Time and Effort</title>
-      <link>/post/change-time-and-effort/</link>
+      <link>https://www.datadreaming.org/post/change-time-and-effort/</link>
       <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/change-time-and-effort/</guid>
+      <guid>https://www.datadreaming.org/post/change-time-and-effort/</guid>
       <description>In the fall of 2008 (maybe 2007; my memory is fleeting) our department moved from Burton Hall to the, at the time, newly renovated Education Sciences Building. This building is beautiful from the outside; brick, overlooking the Mississippi River. The building was designed in such a way that (at least on my floor) there are two long parallel hallways with the faculty offices on the outside of these hallways (running the exterior wall of the building) and the interior filled with lab space (small offices) for research grants.</description>
     </item>
     
     <item>
       <title>USCOTS 2019</title>
-      <link>/post/uscots-2019/</link>
+      <link>https://www.datadreaming.org/post/uscots-2019/</link>
       <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/uscots-2019/</guid>
+      <guid>https://www.datadreaming.org/post/uscots-2019/</guid>
       <description>Last week I attended the United States Conference on Teaching Statistics. The biennial conference, which took place at Penn State, attracts statistics educators and statistics education researchers from across the world. It was a fantastic conference with keynotes from Jane Watson, Allen Schirm and Ron Wasserstein, John Kruschke, and Kari Lock Morgan.
 I cajoled four of my graduate students (Jonathan Brown, Mike Huberty, Chelsey Legacy, and Vimal Rao) to tag along, and it was fun to see them interacting with the people and ideas presented.</description>
     </item>
     
     <item>
       <title>Congratulations Ethan!</title>
-      <link>/post/congratulations-ethan/</link>
+      <link>https://www.datadreaming.org/post/congratulations-ethan/</link>
       <pubDate>Thu, 09 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/congratulations-ethan/</guid>
+      <guid>https://www.datadreaming.org/post/congratulations-ethan/</guid>
       <description>Ethan Brown, one of our Statistics Education students successfully defended his dissertation today! His dissertation research looked at how a sequence of structured activities impact students’ understanding about the Empirical Law of Large Numbers and sampling uncertainty. Ethan presented some of his preliminary analyses of this work at ICOTS 10 in Kyoto, Japan last year and received a commendation for that work [read his paper here.
 Ethan at the public part of his Final Oral Examination.</description>
     </item>
     
     <item>
       <title>CV: Sale Items vs. Research Plan</title>
-      <link>/post/2019-05-06-cv-quotation/</link>
+      <link>https://www.datadreaming.org/post/2019-05-06-cv-quotation/</link>
       <pubDate>Thu, 02 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/2019-05-06-cv-quotation/</guid>
+      <guid>https://www.datadreaming.org/post/2019-05-06-cv-quotation/</guid>
       <description>Karen Kelsky writes about the importance of identifying a research plan and building your CV around this plan in her book The Professor is In: The Essential Guide to Turning Your Ph.D. into a Job.
  A reader once wrote to explain: During my years as a tenure track assistant professor, I went about publishing and doing research the way I do the grocery shopping: concentrating on the sale items like conferences, book reviews, on-line collaborations, i.</description>
     </item>
     
     <item>
       <title>Student Awards! So Proud!</title>
-      <link>/post/2019-05-02-student-awards/</link>
+      <link>https://www.datadreaming.org/post/2019-05-02-student-awards/</link>
       <pubDate>Thu, 02 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/2019-05-02-student-awards/</guid>
+      <guid>https://www.datadreaming.org/post/2019-05-02-student-awards/</guid>
       <description>On April 26, 2019, two of my Statistics Education graduate students, Chelsey Legacy and Vimal Rao, were given awards during the annual Psychological Foundations and QME Awards and Recognition Ceremony.
 Chelsey Legacy (first row; right) was awarded the Graduate Student Teaching Award for her incredible work in the EPsy 3264 classroom. Vimal Rao (second row; second from right) was awarded the Graduate Student Leadership Award for his work in building community.</description>
     </item>
     
     <item>
       <title>CV Tips</title>
-      <link>/post/2019-05-01-cv-tips/</link>
+      <link>https://www.datadreaming.org/post/2019-05-01-cv-tips/</link>
       <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/2019-05-01-cv-tips/</guid>
+      <guid>https://www.datadreaming.org/post/2019-05-01-cv-tips/</guid>
       <description>My colleague Joseph Rios and I helped organize a monthly reading and seminar series, QME and Friends Read, for interested graduate students in our program. In March, we hosted a seminar on the Curriculum Vitae, or CV. In preparing for that seminar, I looked through many faculty and student CVs. I also read many blog posts, and scholarly work about putting together a CV. Based on all of this and my own expereiences and advice given to me, I decided to put together a post (maybe multiple posts) that includes some suggestions for compiling a CV.</description>
     </item>
     
     <item>
       <title>Computing in the &#39;60s</title>
-      <link>/post/2019-04-30-computer-brain/</link>
+      <link>https://www.datadreaming.org/post/2019-04-30-computer-brain/</link>
       <pubDate>Tue, 30 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/2019-04-30-computer-brain/</guid>
+      <guid>https://www.datadreaming.org/post/2019-04-30-computer-brain/</guid>
       <description>My dad was a mathematics teacher at Sartell High School and was also really into computing and programming. I remember learning BASIC with him on our Apple IIe and also programming our TI-99/4A. (To save a program on the TI, we had to hook up an external tape recorder and write to a cassette tape. Then to run the program, you played the tape!)
  Old issues of Byte, Compute, Family Computing (check out the 1982 TV ad below), and other magazines and educational trades were stacked a mile-high in our living room; many providing the outlines of a program to create some graphical spectacle (e.</description>
     </item>
     
     <item>
       <title>Deprecating Statistical Significance: Toward Better Science</title>
-      <link>/post/2019-04-26-slhs-prosem/</link>
+      <link>https://www.datadreaming.org/post/2019-04-26-slhs-prosem/</link>
       <pubDate>Fri, 26 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/2019-04-26-slhs-prosem/</guid>
+      <guid>https://www.datadreaming.org/post/2019-04-26-slhs-prosem/</guid>
       <description>On Friday April 26, 2019 I gave an invited talk to the Department of Speech-Language-Hearing Sciences in their Pro-Sem series. These are really neat as they are organized by the graduate students. This is the third one of these I have given over the years and each is a treat.
 In this talk I spoke about the ASA’s recent call for the deprecation of “statistical significance” and all its related variants (e.</description>
     </item>
     
     <item>
       <title>Inbox Zero</title>
-      <link>/post/2018-08-27-inbox-zero/</link>
+      <link>https://www.datadreaming.org/post/2018-08-27-inbox-zero/</link>
       <pubDate>Mon, 27 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/2018-08-27-inbox-zero/</guid>
+      <guid>https://www.datadreaming.org/post/2018-08-27-inbox-zero/</guid>
       <description>On Saturday August 25, 2018 at 8:08 PM I finally hit Inbox Zero!
 I did it by immediately copying the snippets of email I wanted into Evernote notes (my notetaking system). I also attended to to-dos more immediately, or added them to a note of “To-Dos”.
 I doubt I will stay at zero emails in my inbox, but I have been at fewer than 10 emails all summer. Hoping to keep things at this level as the semester gears up.</description>
@@ -380,10 +382,10 @@ I doubt I will stay at zero emails in my inbox, but I have been at fewer than 10
     
     <item>
       <title>Computing Talk at SSC 2018</title>
-      <link>/post/ssc-computing-talk/</link>
+      <link>https://www.datadreaming.org/post/ssc-computing-talk/</link>
       <pubDate>Sun, 03 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/ssc-computing-talk/</guid>
+      <guid>https://www.datadreaming.org/post/ssc-computing-talk/</guid>
       <description>I am giving a talk at the 46th Annual Meeting of the Statistical Society of Canada in Montreal on June 05, 2018. The talk is part of an invited session on Teaching Statistics to Graduate Students in the Health and Social Sciences. Information, including the slides, is available below.
 Title: Statistical Computing: Non-Ignorable Missingness in the Graduate-Level Social Science Curriculum
 Abstract: In 2010, Nolan and Temple Lang pointed out that &#34;</description>
@@ -391,40 +393,40 @@ Abstract: In 2010, Nolan and Temple Lang pointed out that &#34;</description>
     
     <item>
       <title>R Markdown Theme Gallery</title>
-      <link>/post/r-markdown-theme-gallery/</link>
+      <link>https://www.datadreaming.org/post/r-markdown-theme-gallery/</link>
       <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/r-markdown-theme-gallery/</guid>
+      <guid>https://www.datadreaming.org/post/r-markdown-theme-gallery/</guid>
       <description>R Markdown is a great way to integrate R code into a document. An example of the default theme used in R Markdown HTML documents is shown below.
 Pre-Packaged Themes There are several other canned themes you can use rather than the default theme. There are 12 additional themes that you can use without installing any other packages: “cerulean”, “cosmo”, “flatly”, “journal”, “lumen”, “paper”, “readable”, “sandstone”, “simplex”, “spacelab”, “united”, and “yeti”.</description>
     </item>
     
     <item>
       <title>Spring Weather in Minneapolis</title>
-      <link>/post/spring-weather-in-minneapolis/</link>
+      <link>https://www.datadreaming.org/post/spring-weather-in-minneapolis/</link>
       <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/spring-weather-in-minneapolis/</guid>
+      <guid>https://www.datadreaming.org/post/spring-weather-in-minneapolis/</guid>
       <description>It feels like this spring has been especially terrible weather-wise. We have gotten a lot of snow and it has been cold. To evaluate whether this is the case or whether I have hindsight bias, I pulled some historical weather data for the month of April from Weather Underground.
 library(dplyr) library(forcats) library(ggplot2) library(ggridges) library(readr) library(viridis) # Read in data april = read_csv(&amp;quot;~/Documents/github/Public-Stuff/data/april-weather.csv&amp;quot;) # Filter dates april = april %&amp;gt;% filter(date &amp;lt;= 11) I grabbed data back to 2008 (avialable at https://raw.</description>
     </item>
     
     <item>
       <title>Q&amp;A with Becoming a Teacher of Statistics Class: Part IV</title>
-      <link>/post/2018-04-09-epsy-5271-part-04/</link>
+      <link>https://www.datadreaming.org/post/2018-04-09-epsy-5271-part-04/</link>
       <pubDate>Mon, 09 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/2018-04-09-epsy-5271-part-04/</guid>
+      <guid>https://www.datadreaming.org/post/2018-04-09-epsy-5271-part-04/</guid>
       <description>This post is the fourth (and last) in a series of blogposts in which I respond to questions from the students in the Becoming a Teacher of Statistics course. In today’s posting I respond to questions that asked me for predictions about the future of statistics teaching and statistics education research.
 Before I get into the Q&amp;amp;A, let me just state: Prediction is hard. Leland Wilkinson in The Future of Statistical Computing reminded us of this when he cited a prediction about computers that Andrew Hamilton made in a 1949 issue of Popular Mechanics</description>
     </item>
     
     <item>
       <title>Statistics Education Research Seminar: Teaching Statistics from a Modeling Perspective</title>
-      <link>/post/2018-04-06-epsy-8271-announcement/</link>
+      <link>https://www.datadreaming.org/post/2018-04-06-epsy-8271-announcement/</link>
       <pubDate>Fri, 06 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/2018-04-06-epsy-8271-announcement/</guid>
+      <guid>https://www.datadreaming.org/post/2018-04-06-epsy-8271-announcement/</guid>
       <description>My colleague Robert delMas is teaching our doctoral-level research seminar, EPsy 8271 next fall, and it looks to be an interesting topic. The details about the course follow:
 EPSY 8271 | Statistics Education Research Seminar: Teaching Statistics from a Modeling Perspective (3 credits) Day/Time: Fridays, 9:00 a.m.–11:30 a.m. (Fall 2018)
 Location: 220 Wulling Hall Instructor: Robert delMas, Ph.D.
@@ -433,148 +435,136 @@ This seminar will focus on research related to teaching introductory statistics 
     
     <item>
       <title>Q&amp;A with Becoming a Teacher of Statistics Class: Part III</title>
-      <link>/post/2018-04-02-epsy-5271-part-03/</link>
+      <link>https://www.datadreaming.org/post/2018-04-02-epsy-5271-part-03/</link>
       <pubDate>Mon, 02 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/2018-04-02-epsy-5271-part-03/</guid>
+      <guid>https://www.datadreaming.org/post/2018-04-02-epsy-5271-part-03/</guid>
       <description>This post is the third in a series of blogposts in which I respond to questions from the students in the Becoming a Teacher of Statistics course. In today’s posting I respond to questions related to teaching.
 With a flipped classroom, the professor tapes their lecture and has students view the video online. I think the logical extreme of this is that at some point, certain lectures will become immensely popular or polished to the point of surpassing local professors’ lectures.</description>
     </item>
     
     <item>
       <title>Q&amp;A with Becoming a Teacher of Statistics Class: Part II</title>
-      <link>/post/2018-03-30-epsy-5271-part-02/</link>
+      <link>https://www.datadreaming.org/post/2018-03-30-epsy-5271-part-02/</link>
       <pubDate>Fri, 30 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/2018-03-30-epsy-5271-part-02/</guid>
+      <guid>https://www.datadreaming.org/post/2018-03-30-epsy-5271-part-02/</guid>
       <description>This post is the second in a series of blogposts in which I respond to questions from the students in the Becoming a Teacher of Statistics course. In today’s posting I respond to questions related to several of the projects I have worked on over the years.
 Can you tell us a little about your AIMS project? I think it’s not always easy for everyone to apply guidelines in order to change their behavior (in any context), but your AIMS project seems to fill that gap for stats educators-that is, it explicitly creates educational materials aligned with GAISE.</description>
     </item>
     
     <item>
       <title>Q&amp;A with Becoming a Teacher of Statistics Class</title>
-      <link>/post/2018-03-28-epsy-5271/</link>
+      <link>https://www.datadreaming.org/post/2018-03-28-epsy-5271/</link>
       <pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/2018-03-28-epsy-5271/</guid>
+      <guid>https://www.datadreaming.org/post/2018-03-28-epsy-5271/</guid>
       <description>This last Tuesday (03/27/2018) I was invited to go do a Q&amp;amp;A with the students in the EPsy 5271 Becoming a Teacher of Statistics course. This class also met via video-link with a similar course at Penn State. The students asked thoughful (sometimes difficult) questions and I tried to answer them. I asked them if I could blog out their questions and my responses and they kindy said “yes”. Rather than respond to all of them at once, I thought I would use this opportunity to create several blogposts.</description>
     </item>
     
     <item>
       <title>Minnesota State High School Boys Hockey Predictions (Post Hoc Analysis)</title>
-      <link>/post/2018-03-15-boys-hockey-post-hoc/</link>
+      <link>https://www.datadreaming.org/post/2018-03-15-boys-hockey-post-hoc/</link>
       <pubDate>Thu, 15 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/2018-03-15-boys-hockey-post-hoc/</guid>
+      <guid>https://www.datadreaming.org/post/2018-03-15-boys-hockey-post-hoc/</guid>
       <description>In two previous posts, post 1 and post 2, I used Monte Carlo simulation to predict the winner of the 2018 Minnesota State High School Boys Hockey tournament. Now that the tournament is over, I wanted to analyze how the model did and also think about ways to improve the predictions should I want to re-run such a simulation in the future.
 Accuracy of the Predictions So, how well did the simulation do in predicting the state tournament champion?</description>
     </item>
     
     <item>
       <title>Minnesota State High School Boys Hockey Predictions (Updated Quarterfinals)</title>
-      <link>/post/2018-03-08-boys-hockey/</link>
+      <link>https://www.datadreaming.org/post/2018-03-08-boys-hockey/</link>
       <pubDate>Thu, 08 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/2018-03-08-boys-hockey/</guid>
+      <guid>https://www.datadreaming.org/post/2018-03-08-boys-hockey/</guid>
       <description>In a previous post, I used Monte Carlo simulation to predict the winner of the 2018 Minnesota State High School Boys Hockey tournament. Now that the quarterfinal games have been played, I thought I would update my predictions. The process for this is to:
  Update the Elo ratings based on the quarterfinal games; Re-simulate the tournament  I simulated the Class A state tournament 10,000 times using the same process as described in my previous post.</description>
     </item>
     
     <item>
       <title>Minnesota State High School Boys Hockey Predictions</title>
-      <link>/post/2018-03-03-boys-hockey/</link>
+      <link>https://www.datadreaming.org/post/2018-03-03-boys-hockey/</link>
       <pubDate>Sat, 03 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/2018-03-03-boys-hockey/</guid>
+      <guid>https://www.datadreaming.org/post/2018-03-03-boys-hockey/</guid>
       <description>The state high school boys hockey tournament, scheduled for March 7–10, is one of the premiere sporting events in the state of Minnesota. According to Wikipedia, this event has drawn over 100,000 spectators 22 times in its history, eclipsing 135,000 spectoators in 2015. Many national caliber players played high school hockey in Minnesota, several taking part in the state tournament. Names like Neal Broten, Herb Brooks, and T. J. Oshie are alumni of state tournaments past.</description>
     </item>
     
     <item>
       <title>College in the Schools</title>
-      <link>/post/2018-02-19-college-in-the-schools/</link>
+      <link>https://www.datadreaming.org/post/2018-02-19-college-in-the-schools/</link>
       <pubDate>Wed, 28 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/2018-02-19-college-in-the-schools/</guid>
+      <guid>https://www.datadreaming.org/post/2018-02-19-college-in-the-schools/</guid>
       <description>College in the Schools is a concurrent enrollment program in which existing University of Minnesota courses are taught in high schools by high school teachers. All schools wishing to offer a CIS course go through an application process, including an interview and approval by the post-secondary academic department sponsoring the course of any high school teachers who will be teaching the course.
 Since CIS is a concurrent enrollment program, students are enrolled simultaneously in the University of Minnesota course (EPsy 3264: Basic and Applied Statistics) and a course at their high school.</description>
     </item>
     
     <item>
       <title>EPsy 3264: Basic and Applied Statistics</title>
-      <link>/post/epsy-3264-basic-and-applied-statistics/</link>
+      <link>https://www.datadreaming.org/post/epsy-3264-basic-and-applied-statistics/</link>
       <pubDate>Mon, 26 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/epsy-3264-basic-and-applied-statistics/</guid>
+      <guid>https://www.datadreaming.org/post/epsy-3264-basic-and-applied-statistics/</guid>
       <description>EPsy 3264 is a 3-credit course designed to engage students using a modeling and simulation approach to inference. This course fulfills the Mathematical Thinking component of the Liberal Education requirements at the University of Minnesota. Statistics is more than just an application of mathematics or a methodology used in some other discipline. Statistics is a principled way of thinking about the world. In particular, it is a principled approach to data collection, prediction, and scientific inference.</description>
     </item>
     
     <item>
       <title></title>
-      <link>/post/2020-09-14-journal-of-statistics-education-jse-references/</link>
+      <link>https://www.datadreaming.org/search/placeholder/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/post/2020-09-14-journal-of-statistics-education-jse-references/</guid>
+      <guid>https://www.datadreaming.org/search/placeholder/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>/search/placeholder/</link>
+      <link>https://www.datadreaming.org/top/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/search/placeholder/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/top/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/top/about/</guid>
+      <guid>https://www.datadreaming.org/top/about/</guid>
       <description>About Me I am a Senior Lecturer and researcher in the Quantitative Methods in Education program within the Department of Educational Psychology at the University of Minnesota. I currently teach undergaraduate and graduate-level courses in statistics and train and supervise graduate students in statistics education. In a previous life I taught mathematics and A.P. Statistics at ROCORI High School in Cold Spring, MN.
-My scholarship focuses on statistics education.</description>
+My scholarship focuses on statistics education. I have authored/co-authored several papers and book chapters related to statistics education, and have been a co-PI on many NSF-funded statistics education research projects.</description>
     </item>
     
     <item>
       <title></title>
-      <link>/top/blogroll/</link>
+      <link>https://www.datadreaming.org/top/blogroll/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/top/blogroll/</guid>
-      <description> Blogroll Blogs I follow:
- Ask Good Questions &amp;mdash; A blog about teaching introductory statistics by Allan Rossman Educate-R &amp;mdash; Brandon LeBeau&amp;rsquo;s blog Marianne Elmquist &amp;mdash; Marianne Elmquist&amp;rsquo;s blog R Weekly &amp;mdash; Curated weekly updates from the entire R community Statistical Journeys &amp;mdash; Vimal Rao&amp;rsquo;s blog Statistics Teaching and Learning Corner &amp;mdash; A virtual space to share ideas about the teaching and learning of all areas of statistics at the post-secondary levels by Steven Foti, Laura Le, Laura Ziegler, Douglas Whitaker, and Adam Loy Teach Data Science &amp;mdash; A roadmap to recent developments in teaching data science by Hunter Glanz, Jo Hardin, and Nick Horton  </description>
+      <guid>https://www.datadreaming.org/top/blogroll/</guid>
+      <description>Blogroll Blogs I follow:
+ Ask Good Questions — A blog about teaching introductory statistics by Allan Rossman Educate-R — Brandon LeBeau&amp;rsquo;s blog Marianne Elmquist — Marianne Elmquist&amp;rsquo;s blog R Weekly — Curated weekly updates from the entire R community Statistical Journeys — Vimal Rao&amp;rsquo;s blog Statistics Teaching and Learning Corner — A virtual space to share ideas about the teaching and learning of all areas of statistics at the post-secondary levels by Steven Foti, Laura Le, Laura Ziegler, Douglas Whitaker, and Adam Loy Teach Data Science — A roadmap to recent developments in teaching data science by Hunter Glanz, Jo Hardin, and Nick Horton  </description>
     </item>
     
     <item>
       <title></title>
-      <link>/top/contact/</link>
+      <link>https://www.datadreaming.org/top/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/top/contact/</guid>
-      <description> Location, email, what-not 178 EdSciB 56 East River Road Minneapolis, MN 55455
-                                 </description>
+      <guid>https://www.datadreaming.org/top/contact/</guid>
+      <description>Location, email, what-not 178 EdSciB 56 East River Road Minneapolis, MN 55455</description>
     </item>
     
     <item>
       <title></title>
-      <link>/top/teaching/</link>
+      <link>https://www.datadreaming.org/top/teaching/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/top/teaching/</guid>
+      <guid>https://www.datadreaming.org/top/teaching/</guid>
       <description>Teaching I teach (have taught) the following courses at the University of Minnesota:
- EPsy 1261: Understanding Data Stories through Visualization and Computing EPsy 3264: Basic and Applied Statistics &amp;nbsp; [] [] [] EPsy 5244: Survey Design, Sampling, and Implementation EPsy 8220: Methods for Categorical Response Data in Educational Research EPsy 8251: Methods in Data Analysis for Educational Research I &amp;nbsp; [] EPsy 8252: Methods in Data Analysis for Educational Research II &amp;nbsp; [] EPsy 8261: Statistical Methods I: Probability and Inference EPsy 8262: Statistical Methods II: Regression and The General Linear Model EPsy 8264: Advanced Multiple Regression &amp;nbsp; [] EPsy 8282: Statistical Analysis of Longitudinal Data I  You can find many of my old course materials in my course archive.</description>
+ EPsy 1261: Understanding Data Stories through Visualization and Computing EPsy 3264: Basic and Applied Statistics [] [] [] EPsy 5244: Survey Design, Sampling, and Implementation EPsy 8220: Methods for Categorical Response Data in Educational Research EPsy 8251: Methods in Data Analysis for Educational Research I [] EPsy 8252: Methods in Data Analysis for Educational Research II [] EPsy 8261: Statistical Methods I: Probability and Inference EPsy 8262: Statistical Methods II: Regression and The General Linear Model EPsy 8264: Advanced Multiple Regression [] EPsy 8282: Statistical Analysis of Longitudinal Data I  You can find many of my old course materials in my course archive.</description>
     </item>
     
     <item>
       <title>Selected Publications</title>
-      <link>/top/publications/</link>
+      <link>https://www.datadreaming.org/top/publications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/top/publications/</guid>
-      <description>Selected Publications 2018  Justice, N., Zieffler, A., Huberty, M., &amp;amp; delMas, R. (2018). Every rose has it&amp;#39;s thorn: Secondary teachers&amp;#39; reasoning about statistical models. ZDM&amp;mdash;The International Journal on Mathematics Education, 50(7), 1253&amp;ndash;1265. doi: 10.1007/s11858-018-0953-1
-National Academies of Sciences, Engineering, and Medicine. (2018). [Contributing Author]. Data science for undergraduates: Opportunities and options. Washington, DC: The National Academies Press. doi: 10.17226&amp;frasl;25104
-Sabbag, A. G., Garfield, J., &amp;amp; Zieffler, A. (2018). Assessing statistical literacy and statistical reason- ing: The REALI instrument.</description>
+      <guid>https://www.datadreaming.org/top/publications/</guid>
+      <description>Selected Publications </description>
     </item>
     
   </channel>

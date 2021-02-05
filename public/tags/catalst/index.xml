@@ -2,51 +2,47 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CATALST on Andrew Zieffler</title>
-    <link>/tags/catalst/</link>
+    <link>https://www.datadreaming.org/tags/catalst/</link>
     <description>Recent content in CATALST on Andrew Zieffler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Dec 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/catalst/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 09 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://www.datadreaming.org/tags/catalst/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Teaching Statistics Reading/Discussion Group</title>
-      <link>/post/teaching-statistics-reading-discussion-group/</link>
+      <link>https://www.datadreaming.org/post/teaching-statistics-reading-discussion-group/</link>
       <pubDate>Mon, 09 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/teaching-statistics-reading-discussion-group/</guid>
+      <guid>https://www.datadreaming.org/post/teaching-statistics-reading-discussion-group/</guid>
       <description>Laura Le is organizing a reading/discussion group at the University of Minnesota in spring 2020 for anyone interested in teaching statistics. The group will meet Mondays from 4:00pm–5:00pm (location TBD). Here is the tentative plan for what this interest group will entail:
  Prior to the meeting, read/skim one article related to the topic of the week. During the meeting, discuss the topic/article for the first 30 minutes and video chat with a prominent statistics educator on that topic for the last 30 minutes.</description>
     </item>
     
     <item>
       <title>USCOTS 2019</title>
-      <link>/post/uscots-2019/</link>
+      <link>https://www.datadreaming.org/post/uscots-2019/</link>
       <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/uscots-2019/</guid>
+      <guid>https://www.datadreaming.org/post/uscots-2019/</guid>
       <description>Last week I attended the United States Conference on Teaching Statistics. The biennial conference, which took place at Penn State, attracts statistics educators and statistics education researchers from across the world. It was a fantastic conference with keynotes from Jane Watson, Allen Schirm and Ron Wasserstein, John Kruschke, and Kari Lock Morgan.
 I cajoled four of my graduate students (Jonathan Brown, Mike Huberty, Chelsey Legacy, and Vimal Rao) to tag along, and it was fun to see them interacting with the people and ideas presented.</description>
     </item>
     
     <item>
       <title>College in the Schools</title>
-      <link>/post/2018-02-19-college-in-the-schools/</link>
+      <link>https://www.datadreaming.org/post/2018-02-19-college-in-the-schools/</link>
       <pubDate>Wed, 28 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/2018-02-19-college-in-the-schools/</guid>
+      <guid>https://www.datadreaming.org/post/2018-02-19-college-in-the-schools/</guid>
       <description>College in the Schools is a concurrent enrollment program in which existing University of Minnesota courses are taught in high schools by high school teachers. All schools wishing to offer a CIS course go through an application process, including an interview and approval by the post-secondary academic department sponsoring the course of any high school teachers who will be teaching the course.
 Since CIS is a concurrent enrollment program, students are enrolled simultaneously in the University of Minnesota course (EPsy 3264: Basic and Applied Statistics) and a course at their high school.</description>
     </item>
     
     <item>
       <title>EPsy 3264: Basic and Applied Statistics</title>
-      <link>/post/epsy-3264-basic-and-applied-statistics/</link>
+      <link>https://www.datadreaming.org/post/epsy-3264-basic-and-applied-statistics/</link>
       <pubDate>Mon, 26 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/epsy-3264-basic-and-applied-statistics/</guid>
+      <guid>https://www.datadreaming.org/post/epsy-3264-basic-and-applied-statistics/</guid>
       <description>EPsy 3264 is a 3-credit course designed to engage students using a modeling and simulation approach to inference. This course fulfills the Mathematical Thinking component of the Liberal Education requirements at the University of Minnesota. Statistics is more than just an application of mathematics or a methodology used in some other discipline. Statistics is a principled way of thinking about the world. In particular, it is a principled approach to data collection, prediction, and scientific inference.</description>
     </item>
     

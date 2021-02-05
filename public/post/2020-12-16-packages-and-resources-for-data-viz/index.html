@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Andrew Zieffler">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="https://www.datadreaming.org//img/typewriter.png">
+    <meta property="twitter:image" content="https://www.datadreaming.org//img/typewriter.png" />
+    
+
+    
+    <meta name="title" content="Packages and Resources for Data Viz" />
+    <meta property="og:title" content="Packages and Resources for Data Viz" />
+    <meta property="twitter:title" content="Packages and Resources for Data Viz" />
+    
+
+    
+    <meta name="description" content="">
+    <meta property="og:description" content="" />
+    <meta property="twitter:description" content="" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>Packages and Resources for Data Viz-Academic. Data lover. Statistics enthusiast.</title>
+
+    <link rel="canonical" href="/post/2020-12-16-packages-and-resources-for-data-viz/">
+
+    <link rel="stylesheet" href="/css/iDisqus.min.css"/>
+	
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    
+    <link rel="stylesheet" href="/css/syntax.css">
+    
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+    
+    
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/v4-shims.css">
+
+    
+    <link rel="stylesheet" href="https://www.datadreaming.org/css/main.css"><link rel="stylesheet" href="https://www.datadreaming.org/css/academicons.min.css">
+
+    
+    
+    <script src="/js/jquery.min.js"></script>
+    
+    
+    <script src="/js/bootstrap.min.js"></script>
+    
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/monokai-sublime.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    
+    <script src="https://www.datadreaming.org/js/lightbox.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <script src="https://www.datadreaming.org/js/main.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
+    
+
+</head>
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Andrew Zieffler</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                    
+		    
+                        <li><a href="/top/about/">ABOUT</a></li>
+                    
+                        <li><a href="/top/contact/">CONTACT</a></li>
+                    
+                        <li><a href="/top/publications/">PUBLICATIONS</a></li>
+                    
+                        <li><a href="/top/teaching/">TEACHING</a></li>
+                    
+                        <li><a href="/top/blogroll/">BLOGROLL</a></li>
+                    
+
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/typewriter.png')
+    }
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/r" title="R">
+                            R
+                        </a>
+                        
+                        <a class="tag" href="/tags/teaching" title="Teaching">
+                            Teaching
+                        </a>
+                        
+                    </div>
+                    <h1>Packages and Resources for Data Viz</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        Posted by 
+                        
+                            Andy
+                         
+                        on 
+                        Wednesday, December 16, 2020
+                        
+                        
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                
+<link href="index_files/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="index_files/anchor-sections/anchor-sections.js"></script>
+
+
+<p><em>I have written several notes to myself over the years as reminders. These include ideas for research, R packages I have seen and may use sometime), things to-do, etc. I am in the process of making some of these notes more public on my blog. This will act as a more searchable, curated “note” for myself, but also makes it available to anyone else who would benefit.</em></p>
+<p>These are resources I was compiling for use in our course, <em>EPsy 1261: Understanding Data Stories through Visualization &amp; Computing</em>.</p>
+<p><br /></p>
+<div id="online-books" class="section level2">
+<h2>Online Books</h2>
+<ul>
+<li>Healy, K. (2018). <a href="https://socviz.co/">Data Visualization: A Practical Introduction</a>.
+<ul>
+<li><a href="https://github.com/kjhealy/socviz">socviz</a>: R package to accompany Kieran Healy’s book, <em>Data Visualization: A Practical Introduction</em>. It includes datasets, functions, and course materials.</li>
+</ul></li>
+<li>Wilke, C. O. (2019). <a href="https://serialmentor.com/dataviz/index.html">Fundamentals of Data Visualization</a>.
+<ul>
+<li><a href="https://github.com/clauswilke/practical_ggplot2">practical_ggplot2</a>: R package to accompany Claus Wilke’s book, <em>Fundamentals of Data Visualization</em>. Great suggestions for making plots look great!</li>
+</ul></li>
+</ul>
+<p><br /></p>
+</div>
+<div id="general-resources-blog-posts-slides-etc." class="section level2">
+<h2>General Resources (Blog Posts, Slides, etc.)</h2>
+<ul>
+<li>Barrett, M. (2019). <a href="https://designing-ggplots.netlify.app/">Designing ggplots: Making clear figures that communicate.</a> Slides from a workshop presented at Southern California R Users All-Hands Meetup, Burbank, CA.</li>
+<li>Chase, W. (2019, May 29). <a href="https://www.williamrchase.com/slides/ggplot_intro.html#1">R you ready to make charts?</a> Slides from a Philly Dataviz Meetup.</li>
+<li>Correll, M. (2018, November 20). <a href="https://medium.com/multiple-views-visualization-research-explained/what-does-visualization-literacy-mean-anyway-22f3b3badc0">What does “visualization literacy” mean, anyway?</a> <em>Multiple Views: Visualization Research Explained.</em> Blog post.</li>
+<li>Hullman, J. (2020, April 06). <a href="https://medium.com/multiple-views-visualization-research-explained/being-bayesian-with-visualization-669892dc024b">Being Bayesian with visualization</a>. <em>Multiple Views: Visualization Research Explained.</em> Blog post.</li>
+<li>Kashnitsky, I. (2019). [Dotplot – the single most useful yet largely neglected dataviz type](<a href="https://ikashnitsky.github.io/2019/dotplot/" class="uri">https://ikashnitsky.github.io/2019/dotplot/</a> (Replace barplots). Blog post.</li>
+<li>Kirk, A. (2019, August 07). <a href="https://www.visualisingdata.com/2019/08/five-ways-to-design-for-red-green-colour-blindness/">Five ways to design for red-green colour blindness.</a> Blog post.</li>
+<li>Leo, S. (2019, March 27). <a href="https://medium.economist.com/mistakes-weve-drawn-a-few-8cdd8a42d368">Mistakes, we’ve drawn a few: Learning from our errors in data visualisation</a>. <em>The Economist.</em> Online.</li>
+<li>Ranzolin, D. (2019, July 07). <a href="https://daranzolin.github.io/2019-07-07-animation-thoughts/">Thoughts on animation and movement in data visualization.</a> Blog post.</li>
+<li>Scherer, C. (2019). <a href="https://cedricscherer.netlify.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/">The evolution of a ggplot</a>. Blog post.</li>
+<li>Schwabish, J. (2018, November 19). <a href="https://policyviz.com/2018/11/19/teaching-data-visualization-to-kids/">Teaching data visualization to kids</a>. <em>PolicyViz.</em> Online.</li>
+<li>Tol, P. (2019, May 25). <a href="https://personal.sron.nl/~pault/">Notes on color palettes for scientific visualizations</a>. Blog post.</li>
+</ul>
+<p><br /></p>
+</div>
+<div id="tools" class="section level2">
+<h2>Tools</h2>
+<ul>
+<li><a href="https://coolors.co/">Coolors</a>: Online palette generator and explorer. Can also display created alettes under many types of colorblindness.</li>
+<li><a href="https://github.com/ft-interactive/story-playbook">Digital Story Templates</a>: The Financial Times has created a set of six digital story templates to help its reporters and editors commission digital and visual stories.</li>
+<li><a href="http://napa-cards.net/">NAPA Cards</a>: Narrative Patterns for Data-Driven Storytelling.</li>
+<li><a href="https://neatline.org/">Neatline</a>: Neatline allows scholars, students, and curators to tell stories with maps, images and timelines.</li>
+<li><a href="https://rawgraphs.io/">RAW Graphs</a>: RAW Graphs is an open source data visualization framework built with the goal of making the visual representation of complex data easy for everyone.</li>
+<li><a href="https://pudding.cool/process/introducing-scrollama/">Scrollama</a>: Scrollama is a modern and lightweight JavaScript library for scrollytelling.</li>
+<li><a href="https://labs.tineye.com/">TinEye</a>: TinEye is a tool that can extract color palettes from an image. It also has image search capabilities.</li>
+<li><a href="https://networkcube.github.io/vistorian/web/index.html">The Vistorian.</a> The Vistorian is an online platform that provides interactive visualization for various kinds of networks. It is a collaborative open-source research-project currently in the prototyping phase. It also allows you to import CSV files to visualize.</li>
+<li><a href="https://whocanuse.com/?b=FFFFFF&amp;c=663399&amp;f=20&amp;s=">Who can use this?</a>: A tool that brings attention and understanding to how color contrast can affect different people with visual impairments.</li>
+</ul>
+<p><br /></p>
+</div>
+<div id="tutorials" class="section level2">
+<h2>Tutorials</h2>
+<ul>
+<li>Burkhart, C. <a href="https://ggplot2tutor.com/streetmaps/streetmaps/">Streetmaps: Create a streetmap of your favorite city with ggplot2 and powerpoint.</a> Blog post. Burkhart’s site also includes other tutorials to help you master ggplot2. Each tutorial provides a step-by-step guide that teaches you how to create visualizations that go beyond the basics of ggplot2.</li>
+</ul>
+<p><br /></p>
+</div>
+<div id="r-packages" class="section level2">
+<h2>R Packages</h2>
+<p><strong>Extensions</strong></p>
+<ul>
+<li><a href="https://github.com/njtierney/brolgar">brolgar</a>: Package to <strong>br</strong>owse <strong>o</strong>ver <strong>l</strong>ongitudinal data <strong>g</strong>raphically and <strong>a</strong>nalytically in <strong>R</strong>, by providing tools to efficiently explore raw longitudinal data, calculate features (summaries) for individuals, and evaluate diagnostics of statistical models.</li>
+<li><a href="https://xvrdm.github.io/ggrough/index.html">ggrough</a>: Package to converts ggplot2 plots to rough/sketchy charts, using the javascript <code>roughjs</code> library.</li>
+<li><a href="https://nbarrowman.github.io/vtree.html">vtree</a>: Package for displaying nested subsets of a data frame.</li>
+<li><a href="https://github.com/hrbrmstr/waffle">waffle</a>: Package to create waffleplots</li>
+</ul>
+<p><strong>Palettes/Themes</strong></p>
+<ul>
+<li><a href="https://github.com/EmilHvitfeldt/paletteer">paletteer</a>: Comprehensive collection of palettes in R. Includes palettes from many, many different R packages.</li>
+<li><a href="https://github.com/EdwinTh/dutchmasters">dutchmasters</a>: Collection of color palettes based on paintings by the Dutch masters Johannes Vermeer and Rembrandt van Rijn.</li>
+<li><a href="https://github.com/aljrico/harrypotter">harrypotter</a>: Collection of palettes based on the Harry Potter film series.</li>
+<li><a href="https://github.com/m-clark/NineteenEightyR">NineteenEightyR</a>: Collection of color palettes based on the 80s.</li>
+<li><a href="https://github.com/Ryo-N7/tvthemes">tvthemes</a>: Collection of various ggplot2 themes and color/fill palettes based on everybody’s favorite TV shows.</li>
+<li><a href="https://github.com/karthik/wesanderson">wesanderson</a>: Collection of color palettes based on Was Anderson movies.</li>
+</ul>
+<p><strong>Color Blindness</strong></p>
+<ul>
+<li><a href="https://github.com/clauswilke/colorblindr">colorblindr</a>: Simulate colorblindness in production-ready R figures.</li>
+</ul>
+<p><br /></p>
+</div>
+<div id="data-for-viz" class="section level2">
+<h2>Data for Viz</h2>
+<ul>
+<li><a href="https://github.com/rfordatascience">R4DS online learning community</a>: A GitHub organization for the R4DS online learning community.</li>
+<li><a href="https://github.com/rfordatascience/tidytuesday">Tidy Tuesday</a>: Real-world data that can be used for wrangling and visualization.</li>
+<li><a href="https://openpolicing.stanford.edu/data/">The Stanford Open Policing Project</a>: Standardized police stop data are available to download (by location). The data are provided in both CSV and RDS formats. In addition, shapefiles are available for select locations.</li>
+</ul>
+<p><br /></p>
+</div>
+<div id="miscellaneous" class="section level2">
+<h2>Miscellaneous</h2>
+<ul>
+<li><a href="https://statmodeling.stat.columbia.edu/2018/09/15/columbia-data-science-institute-art-contest/">Flyer from Columbia Data Science Institute art contest</a></li>
+</ul>
+</div>
+
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/2020-12-15-some-r-packages-to-keep-in-mind/" data-toggle="tooltip" data-placement="top" title="Some R Packages to Keep In Mind">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/post/2021-02-05-some-tv-updates/" data-toggle="tooltip" data-placement="top" title="Some TV Updates">Next
+                            Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+                
+<div id="disqus-comment"></div>
+
+
+
+            </div>
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                   
+                    
+                    
+                    
+                    
+                    
+
+                    
+
+		    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; Andrew Zieffler 2021
+                    <br>
+                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+</body>
+</html>

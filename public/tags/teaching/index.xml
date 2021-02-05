@@ -2,51 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Teaching on Andrew Zieffler</title>
-    <link>/tags/teaching/</link>
+    <link>https://www.datadreaming.org/tags/teaching/</link>
     <description>Recent content in Teaching on Andrew Zieffler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Dec 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/teaching/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Wed, 16 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.datadreaming.org/tags/teaching/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Packages and Resources for Data Viz</title>
+      <link>https://www.datadreaming.org/post/2020-12-16-packages-and-resources-for-data-viz/</link>
+      <pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.datadreaming.org/post/2020-12-16-packages-and-resources-for-data-viz/</guid>
+      <description>I have written several notes to myself over the years as reminders. These include ideas for research, R packages I have seen and may use sometime), things to-do, etc. I am in the process of making some of these notes more public on my blog. This will act as a more searchable, curated “note” for myself, but also makes it available to anyone else who would benefit.
+These are resources I was compiling for use in our course, EPsy 1261: Understanding Data Stories through Visualization &amp;amp; Computing.</description>
+    </item>
     
     <item>
       <title>Teaching Statistics Reading/Discussion Group</title>
-      <link>/post/teaching-statistics-reading-discussion-group/</link>
+      <link>https://www.datadreaming.org/post/teaching-statistics-reading-discussion-group/</link>
       <pubDate>Mon, 09 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/teaching-statistics-reading-discussion-group/</guid>
+      <guid>https://www.datadreaming.org/post/teaching-statistics-reading-discussion-group/</guid>
       <description>Laura Le is organizing a reading/discussion group at the University of Minnesota in spring 2020 for anyone interested in teaching statistics. The group will meet Mondays from 4:00pm–5:00pm (location TBD). Here is the tentative plan for what this interest group will entail:
  Prior to the meeting, read/skim one article related to the topic of the week. During the meeting, discuss the topic/article for the first 30 minutes and video chat with a prominent statistics educator on that topic for the last 30 minutes.</description>
     </item>
     
     <item>
       <title>What to do about p-values?</title>
-      <link>/post/what-to-do-about-p-values/</link>
+      <link>https://www.datadreaming.org/post/what-to-do-about-p-values/</link>
       <pubDate>Wed, 26 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/what-to-do-about-p-values/</guid>
+      <guid>https://www.datadreaming.org/post/what-to-do-about-p-values/</guid>
       <description>In March, the ASA published a special issue of The American Statistician (TAS) related to statistical inference in the 21st century. In the initial article, Moving to a World Beyond “p &amp;lt; 0.05”, Wassersein, Schirm, and Lazar (2019) write for the ASA saying,
  “The ASA Statement on P-Values and Statistical Significance stopped just short of recommending that declarations of “statistical significance” be abandoned. We take that step here. We conclude, based on our review of the articles in this special issue and the broader literature, that it is time to stop using the term “statistically significant” entirely.</description>
     </item>
     
     <item>
       <title>USCOTS 2019</title>
-      <link>/post/uscots-2019/</link>
+      <link>https://www.datadreaming.org/post/uscots-2019/</link>
       <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/uscots-2019/</guid>
+      <guid>https://www.datadreaming.org/post/uscots-2019/</guid>
       <description>Last week I attended the United States Conference on Teaching Statistics. The biennial conference, which took place at Penn State, attracts statistics educators and statistics education researchers from across the world. It was a fantastic conference with keynotes from Jane Watson, Allen Schirm and Ron Wasserstein, John Kruschke, and Kari Lock Morgan.
 I cajoled four of my graduate students (Jonathan Brown, Mike Huberty, Chelsey Legacy, and Vimal Rao) to tag along, and it was fun to see them interacting with the people and ideas presented.</description>
     </item>
     
     <item>
       <title>Computing Talk at SSC 2018</title>
-      <link>/post/ssc-computing-talk/</link>
+      <link>https://www.datadreaming.org/post/ssc-computing-talk/</link>
       <pubDate>Sun, 03 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/ssc-computing-talk/</guid>
+      <guid>https://www.datadreaming.org/post/ssc-computing-talk/</guid>
       <description>I am giving a talk at the 46th Annual Meeting of the Statistical Society of Canada in Montreal on June 05, 2018. The talk is part of an invited session on Teaching Statistics to Graduate Students in the Health and Social Sciences. Information, including the slides, is available below.
 Title: Statistical Computing: Non-Ignorable Missingness in the Graduate-Level Social Science Curriculum
 Abstract: In 2010, Nolan and Temple Lang pointed out that &#34;</description>
@@ -54,20 +60,20 @@ Abstract: In 2010, Nolan and Temple Lang pointed out that &#34;</description>
     
     <item>
       <title>Q&amp;A with Becoming a Teacher of Statistics Class: Part IV</title>
-      <link>/post/2018-04-09-epsy-5271-part-04/</link>
+      <link>https://www.datadreaming.org/post/2018-04-09-epsy-5271-part-04/</link>
       <pubDate>Mon, 09 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/2018-04-09-epsy-5271-part-04/</guid>
+      <guid>https://www.datadreaming.org/post/2018-04-09-epsy-5271-part-04/</guid>
       <description>This post is the fourth (and last) in a series of blogposts in which I respond to questions from the students in the Becoming a Teacher of Statistics course. In today’s posting I respond to questions that asked me for predictions about the future of statistics teaching and statistics education research.
 Before I get into the Q&amp;amp;A, let me just state: Prediction is hard. Leland Wilkinson in The Future of Statistical Computing reminded us of this when he cited a prediction about computers that Andrew Hamilton made in a 1949 issue of Popular Mechanics</description>
     </item>
     
     <item>
       <title>Statistics Education Research Seminar: Teaching Statistics from a Modeling Perspective</title>
-      <link>/post/2018-04-06-epsy-8271-announcement/</link>
+      <link>https://www.datadreaming.org/post/2018-04-06-epsy-8271-announcement/</link>
       <pubDate>Fri, 06 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/2018-04-06-epsy-8271-announcement/</guid>
+      <guid>https://www.datadreaming.org/post/2018-04-06-epsy-8271-announcement/</guid>
       <description>My colleague Robert delMas is teaching our doctoral-level research seminar, EPsy 8271 next fall, and it looks to be an interesting topic. The details about the course follow:
 EPSY 8271 | Statistics Education Research Seminar: Teaching Statistics from a Modeling Perspective (3 credits) Day/Time: Fridays, 9:00 a.m.–11:30 a.m. (Fall 2018)
 Location: 220 Wulling Hall Instructor: Robert delMas, Ph.D.
@@ -76,49 +82,49 @@ This seminar will focus on research related to teaching introductory statistics 
     
     <item>
       <title>Q&amp;A with Becoming a Teacher of Statistics Class: Part III</title>
-      <link>/post/2018-04-02-epsy-5271-part-03/</link>
+      <link>https://www.datadreaming.org/post/2018-04-02-epsy-5271-part-03/</link>
       <pubDate>Mon, 02 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/2018-04-02-epsy-5271-part-03/</guid>
+      <guid>https://www.datadreaming.org/post/2018-04-02-epsy-5271-part-03/</guid>
       <description>This post is the third in a series of blogposts in which I respond to questions from the students in the Becoming a Teacher of Statistics course. In today’s posting I respond to questions related to teaching.
 With a flipped classroom, the professor tapes their lecture and has students view the video online. I think the logical extreme of this is that at some point, certain lectures will become immensely popular or polished to the point of surpassing local professors’ lectures.</description>
     </item>
     
     <item>
       <title>Q&amp;A with Becoming a Teacher of Statistics Class: Part II</title>
-      <link>/post/2018-03-30-epsy-5271-part-02/</link>
+      <link>https://www.datadreaming.org/post/2018-03-30-epsy-5271-part-02/</link>
       <pubDate>Fri, 30 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/2018-03-30-epsy-5271-part-02/</guid>
+      <guid>https://www.datadreaming.org/post/2018-03-30-epsy-5271-part-02/</guid>
       <description>This post is the second in a series of blogposts in which I respond to questions from the students in the Becoming a Teacher of Statistics course. In today’s posting I respond to questions related to several of the projects I have worked on over the years.
 Can you tell us a little about your AIMS project? I think it’s not always easy for everyone to apply guidelines in order to change their behavior (in any context), but your AIMS project seems to fill that gap for stats educators-that is, it explicitly creates educational materials aligned with GAISE.</description>
     </item>
     
     <item>
       <title>Q&amp;A with Becoming a Teacher of Statistics Class</title>
-      <link>/post/2018-03-28-epsy-5271/</link>
+      <link>https://www.datadreaming.org/post/2018-03-28-epsy-5271/</link>
       <pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/2018-03-28-epsy-5271/</guid>
+      <guid>https://www.datadreaming.org/post/2018-03-28-epsy-5271/</guid>
       <description>This last Tuesday (03/27/2018) I was invited to go do a Q&amp;amp;A with the students in the EPsy 5271 Becoming a Teacher of Statistics course. This class also met via video-link with a similar course at Penn State. The students asked thoughful (sometimes difficult) questions and I tried to answer them. I asked them if I could blog out their questions and my responses and they kindy said “yes”. Rather than respond to all of them at once, I thought I would use this opportunity to create several blogposts.</description>
     </item>
     
     <item>
       <title>College in the Schools</title>
-      <link>/post/2018-02-19-college-in-the-schools/</link>
+      <link>https://www.datadreaming.org/post/2018-02-19-college-in-the-schools/</link>
       <pubDate>Wed, 28 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/2018-02-19-college-in-the-schools/</guid>
+      <guid>https://www.datadreaming.org/post/2018-02-19-college-in-the-schools/</guid>
       <description>College in the Schools is a concurrent enrollment program in which existing University of Minnesota courses are taught in high schools by high school teachers. All schools wishing to offer a CIS course go through an application process, including an interview and approval by the post-secondary academic department sponsoring the course of any high school teachers who will be teaching the course.
 Since CIS is a concurrent enrollment program, students are enrolled simultaneously in the University of Minnesota course (EPsy 3264: Basic and Applied Statistics) and a course at their high school.</description>
     </item>
     
     <item>
       <title>EPsy 3264: Basic and Applied Statistics</title>
-      <link>/post/epsy-3264-basic-and-applied-statistics/</link>
+      <link>https://www.datadreaming.org/post/epsy-3264-basic-and-applied-statistics/</link>
       <pubDate>Mon, 26 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/epsy-3264-basic-and-applied-statistics/</guid>
+      <guid>https://www.datadreaming.org/post/epsy-3264-basic-and-applied-statistics/</guid>
       <description>EPsy 3264 is a 3-credit course designed to engage students using a modeling and simulation approach to inference. This course fulfills the Mathematical Thinking component of the Liberal Education requirements at the University of Minnesota. Statistics is more than just an application of mathematics or a methodology used in some other discipline. Statistics is a principled way of thinking about the world. In particular, it is a principled approach to data collection, prediction, and scientific inference.</description>
     </item>
     

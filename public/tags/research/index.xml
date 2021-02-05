@@ -2,50 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Research on Andrew Zieffler</title>
-    <link>/tags/research/</link>
+    <link>https://www.datadreaming.org/tags/research/</link>
     <description>Recent content in Research on Andrew Zieffler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Feb 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/research/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 27 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.datadreaming.org/tags/research/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Better Research Poster</title>
-      <link>/post/better-research-poster/</link>
+      <link>https://www.datadreaming.org/post/better-research-poster/</link>
       <pubDate>Thu, 27 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/better-research-poster/</guid>
+      <guid>https://www.datadreaming.org/post/better-research-poster/</guid>
       <description>Our department has an annual Graduate Student Research Day (GSRD) in which students present their research for the rest of the department. Although there are five speakers, one from each program in the department, the majority of students participate in a poster session. This year my student Chelsey Legacy put together a poster to present some of the data we collected from a fall administration of the Statistics Teaching Inventory.</description>
     </item>
     
     <item>
       <title>Thesis Season</title>
-      <link>/post/thesis-season/</link>
+      <link>https://www.datadreaming.org/post/thesis-season/</link>
       <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/thesis-season/</guid>
+      <guid>https://www.datadreaming.org/post/thesis-season/</guid>
       <description>It is the time of the semester when it seems every graduate student wants to make progress on their milestones, and several oral prelim exams and thesis defenses get crammed into a 1–2 week period. In the spirit of what I call “Thesis Season”, here are some good reads to keep this all in perspective.
 Luke Burns wrote an inspired piece for McSweeney’s entitled FAQ: The “Snake Fight” Portion of Your Thesis Defense.</description>
     </item>
     
     <item>
       <title>ReproducibiliTEA Journal Club</title>
-      <link>/post/reproducibilitea-reading-group/</link>
+      <link>https://www.datadreaming.org/post/reproducibilitea-reading-group/</link>
       <pubDate>Fri, 06 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/reproducibilitea-reading-group/</guid>
+      <guid>https://www.datadreaming.org/post/reproducibilitea-reading-group/</guid>
       <description>This semester I took part in the University of Minnesota’s ReproducibiliTEA Journal Club. Reprodicibility is “a grassroots journal club initiative that helps young researchers create local Open Science journal clubs at their universities to discuss diverse issues, papers and ideas about improving science, reproducibility and the Open Science movement.” (Read more at https://reproducibilitea.org/).
  UMN ReproducibiliTEA Chapter (Fall 2019)   The University of Minnesota chapter was sponsored by the Minnesota Center for Philosophy of Science (which meant we had food, coffee, and of course, tea each meeting) and followed the model from clubs in UK and Europe described on OSF.</description>
     </item>
     
     <item>
       <title>Statistics Education Research Seminar: Teaching Statistics from a Modeling Perspective</title>
-      <link>/post/2018-04-06-epsy-8271-announcement/</link>
+      <link>https://www.datadreaming.org/post/2018-04-06-epsy-8271-announcement/</link>
       <pubDate>Fri, 06 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/2018-04-06-epsy-8271-announcement/</guid>
+      <guid>https://www.datadreaming.org/post/2018-04-06-epsy-8271-announcement/</guid>
       <description>My colleague Robert delMas is teaching our doctoral-level research seminar, EPsy 8271 next fall, and it looks to be an interesting topic. The details about the course follow:
 EPSY 8271 | Statistics Education Research Seminar: Teaching Statistics from a Modeling Perspective (3 credits) Day/Time: Fridays, 9:00 a.m.–11:30 a.m. (Fall 2018)
 Location: 220 Wulling Hall Instructor: Robert delMas, Ph.D.
