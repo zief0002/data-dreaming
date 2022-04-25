@@ -10,6 +10,21 @@ title: Selected Publications
 
 <div class="row h-100">
   <div class="col-xs-12 col-md-2" style="margin-top:15px">
+  <h4>2022</h4>
+  </div>
+  
+  <div class="col-xs-12 col-md-10" style="margin-top:0px">
+    
+  <div class="hanging-indent">Legacy, C., Zieffler, A., Fry, E., &amp; Le, L. (2022). <a href="https://doi.org/10.52041/serj.v21i1.63">COMPUTES: An instrument to measure introductory statistics instructors' emphasis on computational practices.</a> <i>Statistics Education Research Journal, 21</i>(1). doi: 10.52041/serj.v21i1.63</div>  
+  
+  </div>
+</div>
+
+
+<!-- 2021 Publications -->
+
+<div class="row h-100">
+  <div class="col-xs-12 col-md-2" style="margin-top:15px">
   <h4>2021</h4>
   </div>
   
