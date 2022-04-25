@@ -6,6 +6,27 @@ title: Selected Publications
 ### Selected Publications
 
 
+<!-- 2022 Publications -->
+
+<div class="row h-100">
+  <div class="col-xs-12 col-md-2" style="margin-top:15px">
+  <h4>2021</h4>
+  </div>
+  
+  <div class="col-xs-12 col-md-10" style="margin-top:0px">
+    
+  <div class="hanging-indent">Horton, N. J., Baumer, Benjamin S., Zieffler, A., &amp; Barr, V. (2021). <a href="https://doi.org/10.1162/99608f92.8233428d">The Data Science Corps Wrangle-Analyze-Visualize program: Building data acumen for undergraduate students.</a> <i>Harvard Data Science Review, 3</i>(1). doi: 10.1162/99608f92.8233428d</div>  
+  
+  <div class="hanging-indent">Yu, C.-H., Mathiowetz, V. G., Zieffler, A., &amp; Tomlin, G. S. (2021). <a href="https://doi.org/10.5014/ajot.2021.043455">Efficacy of a forearm rotation orthosis for persons with a hemiparetic arm.</a> <i>American Journal of Occupational Therapy, 75</i>(6), 7506205110. doi: 10.5014/ajot.2021.043455</div>
+
+<div class="hanging-indent">Zieffler, A., Justice, N., delMas, R., &amp; Huberty, M. (2021). <a href="https://doi.org/10.1080/26939169.2021.1900759">The use of algorithmic models to develop secondary teachers' understanding of the statistical modeling process.</a> <i>Journal of Statistics and Data Science Education, 29</i>(1), 131&ndash;147. doi: 10.1080/26939169.2021.1900759</div>
+  
+  </div>
+</div>
+
+
+
+
 <!-- 2018 Publications -->
 
 <div class="row h-100">
