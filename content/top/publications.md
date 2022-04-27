@@ -8,12 +8,15 @@ title: Selected Publications
 
 <!-- 2022 Publications -->
 
-<div class="row h-100">
-  <div class="col-xs-12 col-md-2" style="margin-top:15px">
-  <h4>2022</h4>
+<br />
+
+
+<div class="row h-100" style="border-bottom:1px solid black; margin-top:15px;">
+  <div class="col-xs-12 col-md-2" style="margin-top:0px; padding: 10px;">
+    <h4 style="margin-top:0px;">2022</h4>
   </div>
   
-  <div class="col-xs-12 col-md-10" style="margin-top:0px">
+  <div class="col-xs-12 col-md-10" style="margin-top:0px; padding: 10px;">
     
   <div class="hanging-indent">Legacy, C., Zieffler, A., Fry, E., &amp; Le, L. (2022). <a href="https://doi.org/10.52041/serj.v21i1.63">COMPUTES: An instrument to measure introductory statistics instructors' emphasis on computational practices.</a> <i>Statistics Education Research Journal, 21</i>(1). doi: 10.52041/serj.v21i1.63</div>  
   
@@ -23,12 +26,12 @@ title: Selected Publications
 
 <!-- 2021 Publications -->
 
-<div class="row h-100">
-  <div class="col-xs-12 col-md-2" style="margin-top:15px">
-  <h4>2021</h4>
+<div class="row h-100" style="border-bottom:1px solid black; margin-top:15px;">
+  <div class="col-xs-12 col-md-2" style="margin-top:0px; padding: 10px;">
+    <h4 style="margin-top:0px;">2021</h4>
   </div>
   
-  <div class="col-xs-12 col-md-10" style="margin-top:0px">
+  <div class="col-xs-12 col-md-10" style="margin-top:0px; padding: 10px;">
     
   <div class="hanging-indent">Horton, N. J., Baumer, Benjamin S., Zieffler, A., &amp; Barr, V. (2021). <a href="https://doi.org/10.1162/99608f92.8233428d">The Data Science Corps Wrangle-Analyze-Visualize program: Building data acumen for undergraduate students.</a> <i>Harvard Data Science Review, 3</i>(1). doi: 10.1162/99608f92.8233428d</div>  
   
@@ -44,12 +47,12 @@ title: Selected Publications
 
 <!-- 2018 Publications -->
 
-<div class="row h-100">
-  <div class="col-xs-12 col-md-2" style="margin-top:15px">
-  <h4>2018</h4>
+<div class="row h-100" style="border-bottom:1px solid black; margin-top:15px;">
+  <div class="col-xs-12 col-md-2" style="margin-top:0px; padding: 10px;">
+    <h4 style="margin-top:0px;">2018</h4>
   </div>
   
-  <div class="col-xs-12 col-md-10" style="margin-top:0px">
+  <div class="col-xs-12 col-md-10" style="margin-top:0px; padding: 10px;">
     
   <div class="hanging-indent">Justice, N., Zieffler, A., Huberty, M., &amp; delMas, R. (2018). <a href="https://rdcu.be/UdF1">Every rose has it&#39;s thorn: Secondary teachers&#39; reasoning about statistical models</a>. <i>ZDM&mdash;The International Journal on Mathematics Education, 50</i>(7), 1253&ndash;1265. doi: 10.1007/s11858-018-0953-1</div>
   
@@ -62,12 +65,12 @@ title: Selected Publications
 
 <!-- 2017 Publications -->
 
-<div class="row h-100">
-  <div class="col-xs-12 col-md-2" style="margin-top:15px">
-  <h4>2017</h4>
+<div class="row h-100" style="border-bottom:1px solid black; margin-top:15px;">
+  <div class="col-xs-12 col-md-2" style="margin-top:0px; padding: 10px;">
+    <h4 style="margin-top:0px;">2017</h4>
   </div>
   
-  <div class="col-xs-12 col-md-10" style="margin-top:0px">
+  <div class="col-xs-12 col-md-10" style="margin-top:0px; padding: 10px;">
   
   <div class="hanging-indent">Garfield, J., Zieffler, A., &amp; Fry, E. (2017). What is statistics education? In D. Ben-Zvi, K. Makar, & J. Garfield (Eds.), <i>The international handbook of research in statistics education</i> (pp. 37–70). Cham, Switzerland: Springer International Publishing.</div>
     
@@ -80,12 +83,12 @@ title: Selected Publications
 
 <!-- 2015 Publications -->
 
-<div class="row h-100">
-  <div class="col-xs-12 col-md-2" style="margin-top:15px">
-  <h4>2015</h4>
+<div class="row h-100" style="border-bottom:1px solid black; margin-top:15px;">
+  <div class="col-xs-12 col-md-2" style="margin-top:0px; padding: 10px;">
+    <h4 style="margin-top:0px;">2015</h4>
   </div>
   
-  <div class="col-xs-12 col-md-10" style="margin-top:0px">
+  <div class="col-xs-12 col-md-10" style="margin-top:0px; padding: 10px;">
     
   <div class="hanging-indent">Sabbag, A. G., &amp; Zieffler, A. (2015). Assessing learning outcomes: An analysis of the GOALS-2 instrument. <i>Statistics Education Research Journal, 14</i>(2), 93&ndash;116. <a href="http://iase-web.org/documents/SERJ/SERJ14(2)_Sabbag.pdf">http://iase-web.org/documents/SERJ/SERJ14(2)_Sabbag.pdf</a></div>
   

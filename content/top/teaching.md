@@ -18,6 +18,6 @@ I teach (have taught) the following courses at the University of Minnesota:
 - EPsy 8282: Statistical Analysis of Longitudinal Data I
 
 
-You can find many of my old course materials in my [course archive](https://github.com/zief0002/course-archive).
+You can find many of my old syllabi in my [Syllabus Graveyard](https://github.com/zief0002/syllabus-graveyard).
 
 
