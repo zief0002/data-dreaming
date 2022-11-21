@@ -40,5 +40,5 @@ Currently, I serve as co-editor of the journal [Technology Innovations in Statis
 ### Curriculum Vitae
 
 
-<a href="https://www.datadreaming.org/files/zieffler-cv-2022-04-25.pdf"><span><i class="ai ai-cv ai-2x" style="vertical-align:middle;"></i></span></a>
-<span style="color: rgba(0,0,0,0.6); font-size:13px;"> [<i>Updated 2022-04-25</i>]</span>
+<a href="https://www.datadreaming.org/files/zieffler-cv-2022-10-31.pdf"><span><i class="ai ai-cv ai-2x" style="vertical-align:middle;"></i></span></a>
+<span style="color: rgba(0,0,0,0.6); font-size:13px;"> [<i>Updated 2022-10-31</i>]</span>
